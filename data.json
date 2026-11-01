@@ -724,6 +724,38 @@
     }
    ],
    "repo": "bathroom-plumbing-3d"
+  },
+  {
+   "id": "survey-tool",
+   "name": "工程測量工具",
+   "en": "Survey Calculator",
+   "cat": "建築&營造工具",
+   "live": "https://claude.ai/artifact/Bzb2ka8WJVFvE4xtabcHbL",
+   "summary": "網頁版工程測量計算：座標反算（兩點求距離與方位角）、正算（放樣推點）、兩線交點、三點求圓心與半徑。N/E 座標、方位角由北順時針；計算在瀏覽器本機進行。（外部作品，網頁不在本帳號）",
+   "notes": [
+    {
+     "level": "info",
+     "text": "Claude 網頁作品，不在本帳號的作品清單，頁面沒標作者；計算結果依現場規範複核。"
+    }
+   ],
+   "machine": "線上",
+   "repo": ""
+  },
+  {
+   "id": "self-check",
+   "name": "自檢表",
+   "en": "Self-Inspection Checklist",
+   "cat": "建築&營造工具",
+   "live": "https://chrislove866-coder.github.io/Bensontest-1016/",
+   "summary": "酪梨營造工具箱：工地自主檢查表離線版，可離線填寫、簽名、產生 PDF。（外部作品，網頁不在本帳號）",
+   "notes": [
+    {
+     "level": "info",
+     "text": "網頁在 GitHub 帳號 chrislove866-coder 的公開專案 Bensontest-1016，不在 EASON-237588 底下。"
+    }
+   ],
+   "machine": "線上",
+   "repo": ""
   }
  ],
  "status": [
@@ -826,8 +858,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793544512000,
-   "last_msg": "管理包新版網頁 v2.2.1：字不發光、外框光降三分之一、標語一行"
+   "last_ts": 1793544999000,
+   "last_msg": "專案清單加入工程測量工具、自檢表（建築&營造工具）"
   },
   {
    "exists": true,
@@ -873,6 +905,16 @@
    "ver": "",
    "last_ts": 1793457301000,
    "last_msg": "浴室排水3D v1.9.0：加「Craft & Core Design」45 度滑動浮水印"
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
   }
  ],
  "todos": [
@@ -895,7 +937,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793544529217,
- "generated_text": "11/01 22:48",
+ "generated": 1793545020513,
+ "generated_text": "11/01 22:57",
  "host": "HP"
 }
