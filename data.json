@@ -430,6 +430,13 @@
    "repo": "dwg-legend-boxselect"
   },
   {
+   "id": "g6bid",
+   "name": "發包資料比對",
+   "en": "Bid Document Comparison",
+   "cat": "建築&營造工具",
+   "summary": "標單、圖說多版本逐項比對與稽核報告。"
+  },
+  {
    "id": "skills",
    "name": "Claude Code Skills",
    "cat": "系統與管理",
@@ -835,6 +842,11 @@
   {
    "exists": true,
    "git": true,
+   "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
    "ver": "",
    "last_ts": 1793410547000,
    "last_msg": "index-trend-ops：三候選改成平衡板／乙 45／甲 30（2026-10-31 HP）"
@@ -858,8 +870,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793544999000,
-   "last_msg": "專案清單加入工程測量工具、自檢表（建築&營造工具）"
+   "last_ts": 1793545331000,
+   "last_msg": "手機版：發包資料比對改成只放名稱"
   },
   {
    "exists": true,
@@ -937,7 +949,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793545020513,
- "generated_text": "11/01 22:57",
+ "generated": 1793545357902,
+ "generated_text": "11/01 23:02",
  "host": "HP"
 }
