@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Craft &amp; Core Design</title>
+<style>
+  /* 科技版：深底發光面板、新細明體白字＋外圍彩光（光暈不超過 4 點、不用粗體）、白芯青光橫線、無縱線 */
+  :root{
+    --bg:#06121a; --panel:#0b1a24; --red:#ff4d5e; --green:#3dff8a; --dim:#b8d4dc;
+    --glow:0 0 2px rgba(0,229,255,.55);
+    --glowHead:0 0 2px #00E5FF,0 0 4px rgba(0,229,255,.7);
+    --glowY:0 0 2px #FFFF00,0 0 4px rgba(255,255,0,.8);
+    --glowR:0 0 2px #ff4d5e,0 0 4px rgba(255,77,94,.8);
+    --glowG:0 0 2px #3dff8a,0 0 4px rgba(61,255,138,.7);
+    --frame:1px solid rgba(255,255,255,.75);
+    --frameGlow:0 0 2px #00E5FF,0 0 5px rgba(0,229,255,.7);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;background:var(--bg);color:#fff;
+    font:15px/1.65 PMingLiU,"新細明體",MingLiU,serif;font-weight:400;text-shadow:var(--glow)}
+  b,strong,h1,h2,h3{font-weight:400}
+  main{max-width:760px;margin:0 auto;padding:22px 16px 60px}
+  button{font:inherit;cursor:pointer;color:inherit;text-shadow:inherit}
+
+  /* 發光面板：外框青光呼吸閃爍（只動外框光，字的光暈不變） */
+  .hero,.item,.box,details.ref{background:var(--panel);border:var(--frame);border-radius:12px;box-shadow:var(--frameGlow);
+    animation:frameBlink 1.8s ease-in-out infinite}
+  @keyframes frameBlink{
+    0%,100%{border-color:rgba(255,255,255,.55);box-shadow:0 0 2px #00E5FF,0 0 4px rgba(0,229,255,.45)}
+    50%{border-color:#fff;box-shadow:0 0 3px #00E5FF,0 0 14px rgba(0,229,255,.95),0 0 26px rgba(0,229,255,.4)}}
+  @media (prefers-reduced-motion: reduce){.hero,.item,.box,details.ref{animation:none}}
+  .hero .motto{margin:6px 0 0;font-size:14.5px;letter-spacing:2px;color:#fff;text-shadow:var(--glowY)}
+  .hero .motto .zh{font-size:12px;letter-spacing:1px}
+
+  /* 白芯青光橫線：每列一條跨整列，無縱線 */
+  .todos li + li::before,.upd + .upd::before,.notes li + li::before{
+    content:'';position:absolute;left:0;right:0;top:0;height:1px;background:#fff;
+    box-shadow:0 0 1.5px .5px #00E5FF,0 0 4px .5px rgba(0,229,255,.6)}
+
+  .hero{padding:22px 18px 18px;text-align:center;margin-bottom:18px}
+  .hero h1{margin:0;font-size:28px;letter-spacing:3px;text-shadow:var(--glowHead)}
+  .hero h1 small{font-size:13px;letter-spacing:0;color:var(--dim);margin-left:6px}
+  .hero .host{font-size:13px;color:var(--dim);margin-top:4px}
+  .quick{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .pill{border:1px solid rgba(0,229,255,.8);background:transparent;border-radius:999px;padding:5px 16px;font-size:14px;box-shadow:0 0 2px #00E5FF}
+  .pill:hover{background:rgba(0,229,255,.08)}
+  .pill.main{text-shadow:var(--glowY);border-color:rgba(255,255,0,.85);box-shadow:0 0 2px #FFFF00}
+  .pill:disabled{opacity:.5}
+
+  .item{display:flex;align-items:center;gap:14px;padding:14px 16px;margin-bottom:14px;cursor:pointer;text-align:left;width:100%;transition:background .15s}
+  .item:hover{background:#0f2430}
+  .ico{flex:none;width:50px;height:50px;border-radius:10px;border:1px solid rgba(0,229,255,.85);
+       box-shadow:0 0 2px #00E5FF,inset 0 0 4px rgba(0,229,255,.35);display:grid;place-items:center;
+       font-size:22px;text-shadow:var(--glowHead);position:relative}
+  .ico.sm{width:44px;height:44px;font-size:19px}
+  .ico .n{position:absolute;top:-7px;right:-7px;background:var(--bg);font-size:12px;border:1px solid var(--red);
+          box-shadow:0 0 3px var(--red);text-shadow:var(--glowR);border-radius:999px;min-width:21px;height:21px;padding:0 5px;
+          display:grid;place-items:center}
+  .txt{flex:1;min-width:0}
+  .txt b{display:block;font-size:18px;letter-spacing:1px;text-shadow:var(--glowHead)}
+  .txt span{display:block;color:var(--dim);font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .chev{flex:none;font-size:24px;line-height:1;text-shadow:var(--glowHead)}
+  .txt a.live{display:block;color:#fff;font-size:13.5px;text-decoration:none;white-space:nowrap;overflow:hidden;
+              text-overflow:ellipsis;text-shadow:var(--glowY)}
+  .txt a.live:hover{text-decoration:underline}
+  .txt .nolive{display:block;color:var(--dim);font-size:13px}
+  .en{font-size:12px;color:var(--dim);margin-left:8px;letter-spacing:.5px;text-shadow:var(--glow);font-family:Georgia,"Times New Roman",serif}
+  .pver{font-size:12.5px;color:var(--dim);margin-left:8px;letter-spacing:0;text-shadow:var(--glow)}
+  .item.dash{border-style:dashed;cursor:default;box-shadow:0 0 2px rgba(0,229,255,.5)}
+  .item.dash .ico{opacity:.7}
+
+  .box{padding:16px 18px;margin-bottom:16px}
+  .box h2{margin:0 0 8px;font-size:18px;display:flex;align-items:center;gap:8px;text-shadow:var(--glowHead)}
+  .box h2 .cnt{font-size:13px;color:var(--dim);text-shadow:var(--glow)}
+  .todobox > summary{cursor:pointer;list-style:none}
+  .todobox > summary::-webkit-details-marker{display:none}
+  .todobox > summary h2{margin:0}
+  .todobox > summary h2::before{content:'\25B8';font-size:14px;transition:transform .15s}
+  .todobox[open] > summary h2::before{transform:rotate(90deg)}
+  .todobox[open] > summary{margin-bottom:8px}
+
+  .todos{margin:0;padding:0}
+  .todos li{list-style:none;display:flex;gap:10px;align-items:flex-start;padding:8px 0;position:relative}
+  .todos input{margin-top:6px;accent-color:#00E5FF}
+  .todos details{flex:1;min-width:0}
+  .todos summary{cursor:pointer;list-style:none}
+  .todos summary::-webkit-details-marker{display:none}
+  .todos .tproj{font-size:13px;margin-right:6px;text-shadow:var(--glowY)}
+  .todos .tfull{color:var(--dim);font-size:13.5px;white-space:pre-wrap;margin-top:4px}
+  .todos .done summary{text-decoration:line-through;color:var(--dim)}
+  .todos .mini{flex:none;border:1px solid rgba(0,229,255,.7);background:transparent;border-radius:8px;padding:1px 9px;font-size:13px}
+  .lv{flex:none;width:8px;height:8px;border-radius:50%;margin-top:9px;background:#00E5FF;box-shadow:0 0 3px #00E5FF}
+  .lv.warn{background:#FFFF00;box-shadow:0 0 3px #FFFF00} .lv.danger{background:var(--red);box-shadow:0 0 3px var(--red)}
+  .addrow{display:flex;gap:8px;margin-top:10px}
+  .addrow .btn,.finish .btn{flex:none;white-space:nowrap}
+  input[type=text]{font:inherit;border:1px solid rgba(0,229,255,.6);border-radius:10px;padding:7px 12px;width:100%;
+                   background:#06141c;color:#fff;text-shadow:none}
+  input[type=text]::placeholder{color:#6f8f99}
+  input[type=text]:focus{outline:none;box-shadow:0 0 3px #00E5FF}
+
+  .upd{padding:10px 0 8px;position:relative}
+  .upd .d{font-size:16px;display:flex;align-items:center;gap:8px;text-shadow:var(--glowHead)}
+  .tag{border:1px solid #FFFF00;font-size:12px;border-radius:999px;padding:0 9px;text-shadow:var(--glowY);box-shadow:0 0 2px #FFFF00}
+  .upd ul{margin:6px 0 0;padding-left:20px}
+  .upd li{margin:3px 0;font-size:14.5px}
+  .upd li em{font-style:normal;text-shadow:var(--glowY)}
+  .upd li small{color:var(--dim);font-size:12px;margin-left:4px}
+
+  .bar{display:flex;align-items:center;gap:10px;margin:2px 0 16px}
+  .back{border:0;background:none;font-size:15px;padding:6px 4px;text-shadow:var(--glowHead)}
+  .bar h1{margin:0;font-size:22px;letter-spacing:2px;text-shadow:var(--glowHead)}
+
+  .badges{display:flex;gap:6px;flex-wrap:wrap}
+  .b{font-size:12.5px;padding:0 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+  .b.ok{border-color:var(--green);text-shadow:var(--glowG)}
+  .b.pull{border-color:#00E5FF;text-shadow:var(--glowHead)}
+  .b.push{border-color:#FFFF00;text-shadow:var(--glowY)}
+  .b.dirty{border-color:var(--red);text-shadow:var(--glowR)}
+  .b.gone,.b.here{border-color:rgba(184,212,220,.5);color:var(--dim)}
+
+  .det .sum{color:var(--dim);font-size:14px;margin:8px 0}
+  .det .repo{color:var(--dim);font-size:13px;font-family:Consolas,monospace}
+  .det .last{font-size:13.5px;color:var(--dim);margin:6px 0}
+  .det .last.bad{color:#fff;text-shadow:var(--glowR)}
+  .notes{margin:6px 0 0;padding:0}
+  .notes li{list-style:none;display:flex;gap:8px;font-size:14px;padding:6px 0;position:relative}
+  .works a{color:#fff;text-shadow:var(--glowHead)}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .btn{border:1px solid rgba(0,229,255,.75);background:transparent;border-radius:10px;padding:6px 13px;font-size:14px;box-shadow:0 0 2px #00E5FF}
+  a.btn{display:inline-block;text-decoration:none;color:#fff}
+  .btn:hover{background:rgba(0,229,255,.08)}
+  .btn.go{border-color:#FFFF00;box-shadow:0 0 2px #FFFF00;text-shadow:var(--glowY)}
+  .btn.fin{border-color:var(--green);box-shadow:0 0 2px var(--green);text-shadow:var(--glowG)}
+  .btn.ghost{border-color:transparent;box-shadow:none;color:var(--dim)}
+  .finish{display:flex;gap:8px;margin-top:12px}
+  code{font-family:Consolas,monospace;background:#06141c;border:1px solid rgba(0,229,255,.4);border-radius:6px;padding:2px 6px;
+       font-size:12px;display:inline-block;text-shadow:none}
+
+  details.ref{padding:0 18px;margin-bottom:12px}
+  details.ref summary{cursor:pointer;padding:12px 0;text-shadow:var(--glowHead)}
+  details.ref[open]{padding-bottom:14px}
+  .hint{color:var(--dim);font-size:13.5px}
+  .cmdbox{display:flex;gap:8px;margin-top:6px}
+  .cmdbox pre{flex:1;margin:0;background:#06141c;border:1px solid rgba(0,229,255,.4);border-radius:8px;padding:9px 11px;
+              overflow-x:auto;font:12.5px/1.6 Consolas,monospace;text-shadow:none}
+  .empty{color:var(--dim);text-align:center;padding:30px 0}
+
+  #log{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(760px,100%);max-height:55vh;overflow:auto;
+       background:var(--panel);border:var(--frame);border-bottom:0;border-radius:12px 12px 0 0;box-shadow:var(--frameGlow);
+       padding:14px 18px 22px;font:13px/1.55 Consolas,PMingLiU,monospace;display:none;z-index:30}
+  #log.on{display:block}
+  #log h3{margin:0 0 10px;font-size:15px;display:flex;justify-content:space-between;align-items:center;text-shadow:var(--glowHead)}
+  .step{border-left:2px solid rgba(0,229,255,.5);padding:2px 0 6px 10px;margin-bottom:6px;white-space:pre-wrap;word-break:break-word}
+  .step.bad{border-color:var(--red)} .step.good{border-color:var(--green)}
+  .step em{font-style:normal;color:var(--dim)}
+
+  @media (max-width:480px){
+    .hero h1{font-size:23px;letter-spacing:2px}
+    .txt b{font-size:16.5px}
+  }
+</style>
+</head>
+<body>
+<main id="app"><div class="empty">讀取中…</div></main>
+
+<div id="log">
+  <h3><span id="logTitle">執行結果</span><button class="btn ghost" onclick="closeLog()">關閉</button></h3>
+  <div id="logBody"></div>
+</div>
+
+<script>
+const VERSION = 'v2.2.0';
+let S = null;
+const NL = String.fromCharCode(10);
+const BS = String.fromCharCode(92);
+const esc = s => String(s ?? '').replace(/[&<>"']/g,
+  c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+const CAT_SUB = {'交易策略':'期貨・台股・黃金策略與儀表板','建築&營造工具':'圖例計算・標單比對・工地小工具',
+  '公司案件與文件':'招標評估・案件資料・公司文件','個人小品':'網頁作品與實驗','系統與管理':'管理包・技能・學院專區','未分類':'還沒指定分類的專案'};
+// 中文標題後面的英文小字
+const EN = {'交易策略':'Trading Strategies','建築&營造工具':'Architecture & Construction Tools','公司案件與文件':'Company Cases & Documents',
+  '個人小品':'Side Projects','系統與管理':'System & Management','未分類':'Uncategorized','待辦與提醒':'To-dos & Reminders',
+  '最新更新':'Latest Updates','注意事項':'Notes','新電腦第一次設定':'New Machine Setup','不跟著到公司的東西':'Not Synced to Office'};
+const en = t => EN[t] ? `<small class="en">${EN[t]}</small>` : '';
+const ICO_COLORS = ['#3f6b22','#2f5aa0','#a8642a','#6b4fa0','#2a8a7a','#a03f5a'];
+
+async function api(path, body = {}) {
+  const r = await fetch(path, {method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({...body, token: S.token})});
+  return r.json();
+}
+function openLog(title) {
+  document.getElementById('logTitle').textContent = title;
+  document.getElementById('logBody').innerHTML = '<div class="step"><em>執行中…</em></div>';
+  document.getElementById('log').classList.add('on');
+}
+function closeLog(){ document.getElementById('log').classList.remove('on'); }
+function showSteps(steps, prefix = '') {
+  document.getElementById('logBody').innerHTML = (steps || []).map(([name, code, out]) =>
+    `<div class="step ${code === 0 ? 'good' : 'bad'}"><em>${esc(prefix)}${esc(name)}${code === 0 ? '' : ` — 失敗 (${code})`}</em>${out ? NL + esc(out) : ''}</div>`).join('');
+}
+function showMsg(res) {
+  const bad = res.error;
+  document.getElementById('logBody').innerHTML = `<div class="step ${bad ? 'bad' : 'good'}">${esc(bad || res.msg || '完成')}</div>`;
+  if (res.open_url) setTimeout(() => window.open(res.open_url, '_blank'), res.open_delay || 0);
+}
+
+// 手機版：不是本機網址就是 GitHub Pages 上的唯讀版，讀管理包伺服器推上去的 data.json
+const STATIC = !/^(127\.0\.0\.1|localhost)$/.test(location.hostname);
+async function load() {
+  try {
+    const next = STATIC ? await (await fetch('data.json?t=' + Date.now(), {cache: 'no-store'})).json()
+                        : await (await fetch('/api/state')).json();
+    if (STATIC && S && next.generated === S.generated) return;
+    S = next;
+  } catch (e) {
+    if (!S) document.getElementById('app').innerHTML = STATIC ? '<div class="empty">讀不到資料，稍後再試。</div>'
+                                                             : '<div class="empty">連不上 hub.py，主控台視窗可能被關掉了。</div>';
+    return;
+  }
+  render();
+}
+if (STATIC) setInterval(load, 60000);
+
+// 畫面路由：#/ 首頁、#/cat/分類、#/p/專案代號（瀏覽器上一頁可用）
+function route() {
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (h.startsWith('/cat/')) return {page:'cat', cat:h.slice(5)};
+  if (h.startsWith('/p/')) return {page:'proj', id:h.slice(3)};
+  return {page:'home'};
+}
+window.addEventListener('hashchange', () => { render(); window.scrollTo(0, 0); });
+function go(h){ location.hash = h; }
+
+// 被新版取代的專案（projects.json 填 superseded_by）不列在分類裡，資料照留
+function catOf(p) { return p.superseded_by ? '' : (S.categories || []).includes(p.cat) ? p.cat : '未分類'; }
+function catList() {
+  const c = [...(S.categories || [])];
+  if (S.projects.some(p => catOf(p) === '未分類')) c.push('未分類');
+  return c;
+}
+// 需要注意：落後、未推送、未提交、沒 git init
+function needs(i) {
+  if (STATIC) return false;
+  const st = S.status[i], p = S.projects[i];
+  if (!st || !st.exists) return false;
+  if (!st.git) return !!p.repo;
+  return !!(st.behind || st.ahead || st.dirty);
+}
+
+function render() {
+  if (!S) return;
+  const r = route();
+  const app = document.getElementById('app');
+  if (r.page === 'cat') app.innerHTML = pageCat(r.cat);
+  else if (r.page === 'proj') app.innerHTML = pageProj(r.id);
+  else app.innerHTML = pageHome();
+}
+
+/* ---------- 首頁 ---------- */
+function pageHome() {
+  const undone = S.todos.filter(t => !t.done).length;
+  const cats = catList().map(c => {
+    const idx = S.projects.map((p, i) => i).filter(i => catOf(S.projects[i]) === c);
+    const warn = idx.filter(needs).length;
+    return `<button class="item" onclick="go('/cat/${encodeURIComponent(c)}')">
+      <div class="ico">${esc([...c][0])}${warn ? `<span class="n" title="需要處理">${warn}</span>` : ''}</div>
+      <div class="txt"><b>${esc(c)}${en(c)}</b><span>${idx.length} 個專案・${esc(CAT_SUB[c] || '')}</span></div>
+      <span class="chev">›</span></button>`;
+  }).join('');
+  const newOnes = STATIC ? '' : S.unregistered.length
+    ? S.unregistered.map(u => `<div class="item dash"><div class="ico">＋</div>
+        <div class="txt"><b>${esc(u.dir)}</b><span>偵測到未登錄的資料夾・${esc(u.repo || '未設定遠端')}</span></div>
+        <button class="btn go" onclick="addProject('${esc(u.dir)}','${esc(u.repo)}')">加入清單</button></div>`).join('')
+    : `<div class="item dash"><div class="ico">＋</div><div class="txt"><b>新增專案</b>
+        <span>在 C..C 底下建資料夾，這裡會自動偵測</span></div></div>`;
+  return `
+  <section class="hero">
+    <h1>Craft &amp; Core Design<small>${VERSION}</small></h1>
+    <p class="motto">Craft <span class="zh">精緻裝修</span>・Core <span class="zh">壁中筋脈</span>・<span class="zh">內外兼修的專業底蘊</span></p>
+    <div class="host">${STATIC ? `資料更新：${esc(S.generated_text || '')}（${esc(S.host)}）` : `${esc(S.host)}・${S.projects.length} 個專案`}</div>
+    ${STATIC ? '' : `<div class="quick">
+      <button class="pill main" onclick="startAll()">全部開工</button>
+      <button class="pill" id="fetchBtn" onclick="fetchAll()">連線查看遠端</button>
+      <button class="pill" onclick="load()">重新整理</button>
+    </div>`}
+  </section>
+  <details class="box todobox" ${todoOpen() ? 'open' : ''} ontoggle="saveTodoOpen(this.open)">
+    <summary><h2>待辦與提醒${en('待辦與提醒')} <span class="cnt">${undone} 條未完成</span></h2></summary>
+    ${todosHtml()}
+    ${STATIC ? '' : `<div class="addrow"><input type="text" id="todoText" placeholder="新增一條待辦…"
+      onkeydown="if(event.key==='Enter')addTodo()"><button class="btn go" onclick="addTodo()">加入</button></div>`}
+  </details>
+  ${cats}
+  ${newOnes}
+  <section class="box"><h2>最新更新${en('最新更新')}</h2>${updatesHtml()}</section>
+  ${STATIC ? '' : refsHtml()}`;
+}
+
+// 待辦區塊捲起／放開，狀態只記在這台瀏覽器（預設捲起）
+function todoOpen() { try { return localStorage.getItem('hub.todoOpen') === '1'; } catch (e) { return false; } }
+function saveTodoOpen(open) { try { localStorage.setItem('hub.todoOpen', open ? '1' : ''); } catch (e) {} }
+function todosHtml() {
+  if (!S.todos.length) return '<div class="hint">目前沒有待辦</div>';
+  return `<ul class="todos">${S.todos.map((t, i) => `
+    <li class="${t.done ? 'done' : ''}">
+      ${STATIC ? '' : `<input type="checkbox" ${t.done ? 'checked' : ''} onchange="toggleTodo(${i})">`}
+      <i class="lv ${t.level || 'info'}"></i>
+      <details><summary>${todoHead(t)}</summary><div class="tfull">${esc(t.text)}</div></details>
+      ${STATIC || t.done ? '' : `<button class="mini" onclick="runTodo(${i})">啟動</button>`}
+      ${STATIC ? '' : `<button class="mini" onclick="delTodo(${i})">刪</button>`}
+    </li>`).join('')}</ul>`;
+}
+function todoHead(t) {
+  const [proj, rest] = t.text.includes('｜') ? t.text.split('｜', 2) : ['', t.text];
+  let title = t.title || rest.split(/[：（(。；]/)[0];
+  if (title.length > 40) title = title.slice(0, 40) + '…';
+  return (proj ? `<span class="tproj">${esc(proj)}</span>` : '') + `<span>${esc(title)}</span>`;
+}
+
+// 最新更新：各專案最後一次提交，依日期分組；三天內標 NEW
+const RECENT_MS = 3 * 24 * 3600 * 1000;
+function updatesHtml() {
+  const rows = S.projects.map((p, i) => ({p, st: S.status[i]}))
+    .filter(x => x.st && x.st.last_ts).sort((a, b) => b.st.last_ts - a.st.last_ts).slice(0, 10);
+  if (!rows.length) return '<div class="hint">還沒有提交紀錄</div>';
+  const groups = [];
+  rows.forEach(x => {
+    const d = new Date(x.st.last_ts);
+    const key = `${d.getFullYear()}–${String(d.getMonth() + 1).padStart(2, '0')}–${String(d.getDate()).padStart(2, '0')}`;
+    let g = groups.find(g => g.key === key);
+    if (!g) groups.push(g = {key, t: x.st.last_ts, items: []});
+    g.items.push(x);
+  });
+  return groups.map(g => `<div class="upd">
+    <div class="d">${g.key}${Date.now() - g.t < RECENT_MS ? '<span class="tag">NEW</span>' : ''}</div>
+    <ul>${g.items.map(x => `<li><em>${esc(x.p.name)}</em>　${esc(x.st.last_msg)}<small>${ago(x.st.last_ts)}</small></li>`).join('')}</ul>
+  </div>`).join('');
+}
+
+function refsHtml() {
+  const s = S.setup, x = S.excluded;
+  let html = '';
+  if (s) html += `<details class="ref"><summary>新電腦第一次設定${en('新電腦第一次設定')}</summary><p class="hint">${esc(s.note || '')}</p>` +
+    (s.steps || []).map(st => `<div style="margin-top:10px"><b style="font-size:14px">${esc(st.label)}</b>
+      ${st.clone ? cmdBlock(cloneCmd()) : (st.cmd ? cmdBlock(st.cmd) : '')}
+      ${st.note ? `<p class="hint" style="margin:6px 0 0">${esc(st.note)}</p>` : ''}</div>`).join('') + '</details>';
+  if (x) html += `<details class="ref"><summary>不跟著到公司的東西${en('不跟著到公司的東西')}</summary><p class="hint">${esc(x.note || '')}</p>
+    <ul class="notes">${(x.items || []).map(i => `<li><i class="lv"></i><span>${esc(i)}</span></li>`).join('')}</ul></details>`;
+  return html;
+}
+function cloneCmd() {
+  const home = S.projects.filter(p => p.repo && !p.path);
+  const rows = ['mkdir "%USERPROFILE%' + BS + 'Desktop' + BS + 'C..C"', 'cd /d "%USERPROFILE%' + BS + 'Desktop' + BS + 'C..C"']
+    .concat(home.map(p => 'gh repo clone ' + S.github + '/' + p.repo + '  ' + p.dir));
+  S.projects.filter(p => p.repo && p.path).forEach(p => {
+    const target = p.path.replace(/^~/, '%USERPROFILE%').replace(/\//g, BS);
+    rows.push(''); rows.push('rem ' + p.name + ' 不在 C..C 底下，若該資料夾已有東西先改名備份');
+    rows.push('git clone https://github.com/' + S.github + '/' + p.repo + '.git "' + target + '"');
+  });
+  return rows.join(NL);
+}
+function cmdBlock(text) {
+  return `<div class="cmdbox"><pre>${esc(text)}</pre><button class="btn" onclick="copyCmd(this, this.previousElementSibling.textContent)">複製</button></div>`;
+}
+function copyCmd(btn, text) {
+  navigator.clipboard.writeText(text).then(() => { btn.textContent = '已複製'; setTimeout(() => btn.textContent = '複製', 1200); });
+}
+
+/* ---------- 分類頁 ---------- */
+function lastTouch(id, st) {
+  const r = readLastRun()[id];
+  return Math.max(r ? r.t : 0, st && st.last_ts ? st.last_ts : 0);
+}
+// 版本序號：伺服器從專案主頁抓到的優先，抓不到用 projects.json 手填的 ver
+function verTag(i) {
+  const v = (S.status[i] && S.status[i].ver) || S.projects[i].ver || '';
+  return v ? `<small class="pver">${esc(v)}</small>` : '';
+}
+function pageCat(c) {
+  const idx = S.projects.map((p, i) => i).filter(i => catOf(S.projects[i]) === c)
+    .sort((a, b) => (!S.projects[a].live - !S.projects[b].live)
+      || lastTouch(S.projects[b].id, S.status[b]) - lastTouch(S.projects[a].id, S.status[a]));  // 沒網址的排最後
+  return `<div class="bar"><button class="back" onclick="go('/')">‹ 首頁</button><h1>${esc(c)}${en(c)}</h1></div>
+    ${idx.map(i => {
+      const p = S.projects[i], st = S.status[i];
+      const col = ICO_COLORS[[...p.name].reduce((a, ch) => a + ch.charCodeAt(0), 0) % ICO_COLORS.length];
+      // 只放最新網址（線上版），細節到專案頁再看
+      // 有多個作品（works）就每個作品一行，名稱後面帶版本號（改版時記得更新 projects.json 的 title）
+      const link = (url, text) => `<a class="live" href="${esc(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(text)} ↗</a>`;
+      const sub = (p.works || []).length
+        ? p.works.map(w => link(w.url, w.title)).join('')
+        : p.live ? link(p.live, p.live.replace(/^https?:\/\//, '').replace(/\/$/, ''))
+        : '<span class="nolive">沒有網址</span>';
+      return `<div class="item" role="button" tabindex="0" onclick="go('/p/${encodeURIComponent(p.id)}')">
+        <div class="ico sm">${esc([...p.name][0])}${needs(i) ? '<span class="n">!</span>' : ''}</div>
+        <div class="txt"><b>${esc(p.name)}${p.en ? `<small class="en">${esc(p.en)}</small>` : ''}${verTag(i)}</b>${sub}</div>
+        <span class="chev">›</span></div>`;
+    }).join('') || '<div class="empty">這個分類沒有專案</div>'}`;
+}
+
+/* ---------- 專案詳細頁 ---------- */
+function badges(st, p) {
+  const where = p.machine ? `<span class="b here">${esc(p.machine)}</span>` : '';
+  if (!st.exists) return where + '<span class="b gone">資料夾不在這台電腦</span>' + (p.repo ? '' : '<span class="b dirty">無版控</span>');
+  if (!st.git) return where + (p.repo ? '<span class="b dirty">還沒 git init</span>' : '<span class="b gone">只存本機・不上 GitHub</span>');
+  const b = [];
+  if (st.behind) b.push(`<span class="b pull">落後 ${st.behind} 個提交</span>`);
+  if (st.ahead) b.push(`<span class="b push">${st.ahead} 個未推送</span>`);
+  if (st.dirty) b.push(`<span class="b dirty">${st.dirty} 個未提交</span>`);
+  if (st.no_upstream) b.push('<span class="b gone">沒有對應的遠端分支</span>');
+  if (!b.length) b.push('<span class="b ok">乾淨且同步</span>');
+  if (st.branch && st.branch !== 'main') b.push(`<span class="b gone">${esc(st.branch)}</span>`);
+  return where + b.join('');
+}
+const LASTRUN_KEY = 'hub.lastrun';
+function readLastRun() { try { return JSON.parse(localStorage.getItem(LASTRUN_KEY)) || {}; } catch (e) { return {}; } }
+function markRun(id, label, ok = true) {
+  const all = readLastRun(); all[id] = {label, ok, t: Date.now()};
+  try { localStorage.setItem(LASTRUN_KEY, JSON.stringify(all)); } catch (e) {}
+}
+function ago(t) {
+  const m = Math.round((Date.now() - t) / 60000);
+  if (m < 1) return '剛剛'; if (m < 60) return m + ' 分鐘前';
+  const h = Math.round(m / 60); if (h < 24) return h + ' 小時前';
+  const d = new Date(t); return `${Math.round(h / 24)} 天前（${d.getMonth() + 1}/${d.getDate()}）`;
+}
+function lastRunLine(id, st) {
+  let r = readLastRun()[id];
+  if (st && st.last_ts && (!r || st.last_ts > r.t)) r = {label: '提交：' + st.last_msg, ok: true, t: st.last_ts};
+  if (!r) return '<p class="last">最後執行：尚無紀錄</p>';
+  return `<p class="last ${r.ok ? '' : 'bad'}">最後執行：${esc(r.label)}${r.ok ? '' : '（失敗）'}・${ago(r.t)}</p>`;
+}
+const stepsOk = steps => (steps || []).every(s => s[1] === 0);
+
+function pageProj(id) {
+  const i = S.projects.findIndex(p => p.id === id);
+  if (i < 0) return `<div class="bar"><button class="back" onclick="go('/')">‹ 首頁</button></div><div class="empty">找不到這個專案</div>`;
+  const p = S.projects[i], st = S.status[i], c = catOf(p), away = !st.exists;
+  const acts = (p.actions || []).map((a, j) => `<button class="btn" onclick="runAction('${p.id}',${j})">${esc(a.label)}</button>`).join('');
+  return `<div class="bar"><button class="back" onclick="go('/cat/${encodeURIComponent(c)}')">‹ ${esc(c)}</button></div>
+  <section class="box det">
+    <h2 style="font-size:22px;margin-bottom:2px">${esc(p.name)}${p.en ? `<small class="en">${esc(p.en)}</small>` : ''}${verTag(i)}</h2>
+    <div class="repo">${esc(p.repo || '（沒有 GitHub）')}</div>
+    ${STATIC ? '' : lastRunLine(p.id, st)}
+    ${STATIC ? '' : `<div class="badges">${badges(st, p)}</div>`}
+    ${p.summary ? `<p class="sum">${esc(p.summary)}</p>` : ''}
+    ${(p.works || []).length ? `<div class="works">${p.works.map(w => `<div>${esc(w.desc)}：<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.title)} ↗</a></div>`).join('')}</div>` : ''}
+    ${p.publish ? `<p class="sum"><b>發佈：</b>${esc(p.publish)}</p>` : ''}
+    ${STATIC ? '' : away ? `<p class="sum">${p.repo ? `這台沒有這個資料夾。要在這裡開發：<br><code>gh repo clone ${esc(S.github)}/${esc(p.repo)} ${esc(p.dir)}</code>`
+              : '這台沒有這個資料夾，而且它沒有 GitHub —— 只存在另一台電腦上。'}</p>` : `
+    <div class="btns">
+      <button class="btn go" onclick="startWork('${p.id}')">開工（拉最新）</button>
+      <button class="btn" onclick="openIt('${p.id}','editor')">編輯器</button>
+      <button class="btn" onclick="openIt('${p.id}','claude')">Claude Code</button>
+      <button class="btn" onclick="openIt('${p.id}','folder')">資料夾</button>
+      <button class="btn" onclick="openIt('${p.id}','terminal')">終端機</button>
+    </div>
+    ${acts ? `<div class="btns">${acts}</div>` : ''}
+    <div class="finish"><input type="text" id="msg-${p.id}" placeholder="收工說明：改了什麼？"
+      onkeydown="if(event.key==='Enter')finishWork('${p.id}')"><button class="btn fin" onclick="finishWork('${p.id}')">收工</button></div>`}
+    ${STATIC ? (p.live ? `<div class="btns"><a class="btn go" href="${esc(p.live)}" target="_blank" rel="noopener">開啟線上版 ↗</a></div>` : '') : `<div class="btns">
+      ${p.live ? `<button class="btn ghost" onclick="openIt('${p.id}','live')">線上版 ↗</button>` : ''}
+      ${p.repo ? `<button class="btn ghost" onclick="openIt('${p.id}','github')">GitHub ↗</button>` : ''}
+      <button class="btn ghost" onclick="addNote('${p.id}')">＋注意事項</button>
+    </div>`}
+  </section>
+  ${(p.notes || []).length ? `<section class="box"><h2>注意事項${en('注意事項')}</h2><ul class="notes">${p.notes.map(n =>
+    `<li><i class="lv ${n.level}"></i><span>${esc(n.text)}</span></li>`).join('')}</ul></section>` : ''}`;
+}
+
+/* ---------- 動作 ---------- */
+async function runTodo(i) { openLog('啟動待辦'); showMsg(await api('/api/todo', {run: i})); }
+async function toggleTodo(i) { await api('/api/todo', {toggle: i}); load(); }
+async function delTodo(i) { await api('/api/todo', {delete: i}); load(); }
+async function addTodo() {
+  const box = document.getElementById('todoText');
+  if (!box.value.trim()) return;
+  await api('/api/todo', {add: box.value.trim()}); load();
+}
+async function addProject(dir, repo) { openLog('加入專案'); showMsg(await api('/api/add_project', {dir, repo, name: dir})); load(); }
+async function startWork(id) {
+  openLog('開工'); const res = await api('/api/start', {id});
+  showSteps(res.steps); markRun(id, '開工', stepsOk(res.steps)); load();
+}
+async function finishWork(id) {
+  const box = document.getElementById('msg-' + id);
+  openLog('收工'); const res = await api('/api/finish', {id, message: box.value});
+  showSteps(res.steps); const ok = stepsOk(res.steps);
+  markRun(id, box.value.trim() ? '收工：' + box.value.trim() : '收工', ok);
+  if (ok) box.value = ''; load();
+}
+const OPEN_LABEL = {editor:'開編輯器', claude:'開 Claude Code', folder:'開資料夾', terminal:'開終端機', live:'開線上版', github:'開 GitHub'};
+async function openIt(id, what) {
+  openLog('開啟'); const res = await api('/api/open', {id, what});
+  showMsg(res); markRun(id, OPEN_LABEL[what] || '開啟', !res.error); render();
+}
+async function runAction(id, index) {
+  const res = await api('/api/action', {id, index});
+  const a = ((S.projects.find(p => p.id === id) || {}).actions || [])[index];
+  markRun(id, a ? a.label : '專屬指令', res.steps ? stepsOk(res.steps) : !res.error);
+  render(); openLog('執行');
+  if (res.steps) { showSteps(res.steps); if (res.open_url) window.open(res.open_url, '_blank'); } else showMsg(res);
+}
+async function addNote(id) {
+  const text = prompt('要記住的注意事項：'); if (!text) return;
+  const level = prompt('嚴重度 info / warn / danger', 'info') || 'info';
+  await api('/api/note', {id, text, level}); load();
+}
+async function startAll() {
+  openLog('全部開工'); const res = await api('/api/start_all');
+  res.batch.forEach(b => { const p = S.projects.find(x => x.name === b.name); if (p) markRun(p.id, '全部開工', stepsOk(b.steps)); });
+  document.getElementById('logBody').innerHTML = res.batch.map(b =>
+    `<div class="step ${b.steps.every(s => s[1] === 0) ? 'good' : 'bad'}"><em>${esc(b.name)}</em>${NL}${b.steps.map(s => esc(s[0] + '：' + s[2])).join(NL)}</div>`).join('');
+  load();
+}
+async function fetchAll() {
+  const btn = document.getElementById('fetchBtn');
+  if (btn) { btn.disabled = true; btn.textContent = '查詢中…'; }
+  await api('/api/fetch_all'); load();
+}
+
+load();
+</script>
+</body>
+</html>
