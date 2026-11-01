@@ -825,9 +825,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v2.2.0",
-   "last_ts": 1793544108000,
-   "last_msg": "管理包手機唯讀版上線（eason-237588.github.io/ccd）"
+   "ver": "v2.2.1",
+   "last_ts": 1793544512000,
+   "last_msg": "管理包新版網頁 v2.2.1：字不發光、外框光降三分之一、標語一行"
   },
   {
    "exists": true,
@@ -895,7 +895,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793544154882,
- "generated_text": "11/01 22:42",
+ "generated": 1793544529217,
+ "generated_text": "11/01 22:48",
  "host": "HP"
 }

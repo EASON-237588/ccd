@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Craft &amp; Core Design</title>
 <style>
-  /* 科技版：深底發光面板、新細明體白字＋外圍彩光（光暈不超過 4 點、不用粗體）、白芯青光橫線、無縱線 */
+  /* 科技版：深底發光面板、新細明體實色字（v2.2.1 起字不發光，手機上會糊）、白芯青光橫線、無縱線 */
   :root{
-    --bg:#06121a; --panel:#0b1a24; --red:#ff4d5e; --green:#3dff8a; --dim:#b8d4dc;
-    --glow:0 0 2px rgba(0,229,255,.55);
-    --glowHead:0 0 2px #00E5FF,0 0 4px rgba(0,229,255,.7);
-    --glowY:0 0 2px #FFFF00,0 0 4px rgba(255,255,0,.8);
-    --glowR:0 0 2px #ff4d5e,0 0 4px rgba(255,77,94,.8);
-    --glowG:0 0 2px #3dff8a,0 0 4px rgba(61,255,138,.7);
+    --bg:#06121a; --panel:#0b1a24; --red:#ff4d5e; --green:#3dff8a; --dim:#b8d4dc; --yellow:#FFEE58;
+    --glow:none; --glowHead:none; --glowY:none; --glowR:none; --glowG:none;
     --frame:1px solid rgba(255,255,255,.75);
-    --frameGlow:0 0 2px #00E5FF,0 0 5px rgba(0,229,255,.7);
+    --frameGlow:0 0 2px #00E5FF,0 0 3px rgba(0,229,255,.47);
   }
+  /* 原本靠彩光染色的字改成實色 */
+  .hero .motto,.pill.main,.txt a.live,.todos .tproj,.tag,.upd li em,.b.push,.btn.go{color:var(--yellow)!important}
+  .ico .n,.b.dirty,.det .last.bad{color:var(--red)!important}
+  .b.ok,.btn.fin{color:var(--green)!important}
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;background:var(--bg);color:#fff;
     font:15px/1.65 PMingLiU,"新細明體",MingLiU,serif;font-weight:400;text-shadow:var(--glow)}
@@ -27,11 +27,12 @@
   .hero,.item,.box,details.ref{background:var(--panel);border:var(--frame);border-radius:12px;box-shadow:var(--frameGlow);
     animation:frameBlink 1.8s ease-in-out infinite}
   @keyframes frameBlink{
-    0%,100%{border-color:rgba(255,255,255,.55);box-shadow:0 0 2px #00E5FF,0 0 4px rgba(0,229,255,.45)}
-    50%{border-color:#fff;box-shadow:0 0 3px #00E5FF,0 0 14px rgba(0,229,255,.95),0 0 26px rgba(0,229,255,.4)}}
+    0%,100%{border-color:rgba(255,255,255,.5);box-shadow:0 0 1.5px #00E5FF,0 0 3px rgba(0,229,255,.3)}
+    50%{border-color:rgba(255,255,255,.85);box-shadow:0 0 2px #00E5FF,0 0 9px rgba(0,229,255,.63),0 0 17px rgba(0,229,255,.27)}}
   @media (prefers-reduced-motion: reduce){.hero,.item,.box,details.ref{animation:none}}
-  .hero .motto{margin:6px 0 0;font-size:14.5px;letter-spacing:2px;color:#fff;text-shadow:var(--glowY)}
-  .hero .motto .zh{font-size:12px;letter-spacing:1px}
+  /* 標語固定一行，窄螢幕跟著縮字 */
+  .hero .motto{margin:6px 0 0;font-size:clamp(9px,3.5vw,14.5px);letter-spacing:.1em;white-space:nowrap;text-shadow:var(--glowY)}
+  .hero .motto .zh{font-size:.83em;letter-spacing:.06em}
 
   /* 白芯青光橫線：每列一條跨整列，無縱線 */
   .todos li + li::before,.upd + .upd::before,.notes li + li::before{
@@ -170,7 +171,7 @@
 </div>
 
 <script>
-const VERSION = 'v2.2.0';
+const VERSION = 'v2.2.1';
 let S = null;
 const NL = String.fromCharCode(10);
 const BS = String.fromCharCode(92);
