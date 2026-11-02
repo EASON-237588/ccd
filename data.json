@@ -633,8 +633,8 @@
   },
   {
    "id": "bathroom-plumbing-3d",
-   "name": "浴室給排水模擬",
-   "en": "Bathroom Plumbing Simulator",
+   "name": "機電3D模擬",
+   "en": "MEP 3D Simulator",
    "cat": "建築&營造工具",
    "live": "https://claude.ai/artifact/DLeVFyrj6ypMHFYvbHoSsT",
    "works": [
@@ -652,9 +652,14 @@
      "desc": "整體浴室（1421L A Type，v1.5.3）",
      "title": "整體浴室給排水模擬 v1.5.3",
      "url": "https://claude.ai/artifact/TCavuyjPoYwuoMz863y5BM"
+    },
+    {
+     "desc": "機電整合模型 3D（給水、排水分層，水流動畫；v1.4.2，私人網址）",
+     "title": "機電整合模型3D v1.4.2",
+     "url": "https://claude.ai/artifact/JQVigjsedqDVJzGMNiuhm6"
     }
    ],
-   "summary": "浴室給排水 3D 模擬（另有機電3D產生器規劃書，暫停）",
+   "summary": "機電 3D 模擬：浴室給排水 3D 三款，加上機電整合模型 3D 網頁（桌面上獨立資料夾）；機電3D產生器規劃書暫停",
    "notes": [
     {
      "level": "warn",
@@ -714,14 +719,6 @@
    ],
    "machine": "線上",
    "repo": ""
-  },
-  {
-   "id": "mep-integrated-model-3d",
-   "name": "機電整合模型3D",
-   "live": "",
-   "summary": "",
-   "notes": [],
-   "repo": "mep-integrated-model-3d"
   }
  ],
  "status": [
@@ -827,8 +824,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793632685000,
-   "last_msg": "共用記憶：機電整合模型3D 更新狀態（私人倉庫已建並推上去）"
+   "last_ts": 1793633101000,
+   "last_msg": "專案清單：浴室給排水模擬改名機電3D模擬，加入機電整合模型3D 作品"
   },
   {
    "exists": true,
@@ -868,8 +865,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793609120000,
-   "last_msg": "淡綠款 v1.9.1、現代款 v3.31.1：浮水印改公司英文名；說明加浮水印慣例"
+   "last_ts": 1793633105000,
+   "last_msg": "說明：改名機電3D模擬，補上機電整合模型3D 一列"
   },
   {
    "exists": true,
@@ -880,13 +877,6 @@
    "exists": true,
    "git": true,
    "ver": ""
-  },
-  {
-   "exists": true,
-   "git": true,
-   "ver": "v1.4.2",
-   "last_ts": 1793632681000,
-   "last_msg": "機電整合模型 3D：說明補上網址與倉庫狀態"
   }
  ],
  "todos": [
@@ -915,7 +905,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793632838944,
- "generated_text": "11/02 23:20",
+ "generated": 1793633208199,
+ "generated_text": "11/02 23:26",
  "host": "HP"
 }
