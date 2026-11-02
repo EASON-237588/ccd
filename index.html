@@ -210,18 +210,6 @@ function showMsg(res) {
 
 // 手機版：不是本機網址就是 GitHub Pages 上的唯讀版，讀管理包伺服器推上去的 data.json
 const STATIC = !/^(127\.0\.0\.1|localhost)$/.test(location.hostname);
-// 自用網址（TT 系列，2026-11-02）不放公開的 data.json：手機點一次設定連結（#links=…），存在這支手機的瀏覽器裡
-const PRIV_KEY = 'hub.privLinks';
-function privLinks() { try { return JSON.parse(localStorage.getItem(PRIV_KEY)) || {}; } catch (e) { return {}; } }
-if (location.hash.startsWith('#links=')) {
-  try {
-    const add = JSON.parse(decodeURIComponent(location.hash.slice(7)));
-    localStorage.setItem(PRIV_KEY, JSON.stringify(Object.assign(privLinks(), add)));
-    alert('這支手機已記住 ' + Object.keys(add).length + ' 個自用連結');
-  } catch (e) { alert('設定連結讀不懂，請重新複製一次'); }
-  history.replaceState(null, '', location.pathname);
-}
-const liveOf = p => p.live || privLinks()[p.id] || '';
 async function load() {
   try {
     const next = STATIC ? await (await fetch('data.json?t=' + Date.now(), {cache: 'no-store'})).json()
@@ -394,7 +382,7 @@ function verTag(i) {
 }
 function pageCat(c) {
   const idx = S.projects.map((p, i) => i).filter(i => catOf(S.projects[i]) === c)
-    .sort((a, b) => (!liveOf(S.projects[a]) - !liveOf(S.projects[b]))
+    .sort((a, b) => (!S.projects[a].live - !S.projects[b].live)
       || lastTouch(S.projects[b].id, S.status[b]) - lastTouch(S.projects[a].id, S.status[a]));  // 沒網址的排最後
   return `<div class="bar"><button class="back" onclick="go('/')">‹ 首頁</button><h1>${esc(c)}${en(c)}</h1></div>
     ${idx.map(i => {
@@ -405,7 +393,7 @@ function pageCat(c) {
       const link = (url, text) => `<a class="live" href="${esc(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(text)} ↗</a>`;
       const sub = (p.works || []).length
         ? p.works.map(w => link(w.url, w.title)).join('')
-        : liveOf(p) ? link(liveOf(p), liveOf(p).replace(/^https?:\/\//, '').replace(/\/$/, ''))
+        : p.live ? link(p.live, p.live.replace(/^https?:\/\//, '').replace(/\/$/, ''))
         : '<span class="nolive">沒有網址</span>';
       return `<div class="item" role="button" tabindex="0" onclick="go('/p/${encodeURIComponent(p.id)}')">
         <div class="ico sm">${esc([...p.name][0])}${needs(i) ? '<span class="n">!</span>' : ''}</div>
@@ -474,7 +462,7 @@ function pageProj(id) {
     ${acts ? `<div class="btns">${acts}</div>` : ''}
     <div class="finish"><input type="text" id="msg-${p.id}" placeholder="收工說明：改了什麼？"
       onkeydown="if(event.key==='Enter')finishWork('${p.id}')"><button class="btn fin" onclick="finishWork('${p.id}')">收工</button></div>`}
-    ${STATIC ? (liveOf(p) ? `<div class="btns"><a class="btn go" href="${esc(liveOf(p))}" target="_blank" rel="noopener">開啟線上版 ↗</a></div>` : '') : `<div class="btns">
+    ${STATIC ? (p.live ? `<div class="btns"><a class="btn go" href="${esc(p.live)}" target="_blank" rel="noopener">開啟線上版 ↗</a></div>` : '') : `<div class="btns">
       ${p.live ? `<button class="btn ghost" onclick="openIt('${p.id}','live')">線上版 ↗</button>` : ''}
       ${p.repo ? `<button class="btn ghost" onclick="openIt('${p.id}','github')">GitHub ↗</button>` : ''}
       <button class="btn ghost" onclick="addNote('${p.id}')">＋注意事項</button>
