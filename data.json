@@ -639,13 +639,13 @@
    "live": "https://claude.ai/artifact/DLeVFyrj6ypMHFYvbHoSsT",
    "works": [
     {
-     "desc": "浴室排水3D（淡綠立柱面盆款，v1.9.0）",
-     "title": "浴室排水3D v1.9.0",
+     "desc": "浴室排水3D（淡綠立柱面盆款，v1.9.1）",
+     "title": "浴室排水3D v1.9.1",
      "url": "https://claude.ai/artifact/H4Yhj6wcwc5YLWUCWNsoif"
     },
     {
-     "desc": "現代款（浴室給排水模擬，v3.31.0）",
-     "title": "浴室給排水模擬 v3.31.0",
+     "desc": "現代款（浴室給排水模擬，v3.31.1）",
+     "title": "浴室給排水模擬 v3.31.1",
      "url": "https://claude.ai/artifact/DLeVFyrj6ypMHFYvbHoSsT"
     },
     {
@@ -674,7 +674,11 @@
     },
     {
      "level": "info",
-     "text": "網址：浴室排水3D＝H4Yhj6wcwc5YLWUCWNsoif（v1.8.0，知道連結可看）；現代款＝DLeVFyrj6ypMHFYvbHoSsT（v3.30.0，目前只有本人可看）。換電腦更新時發布要帶網址，否則會變成新網址"
+     "text": "網址：浴室排水3D＝H4Yhj6wcwc5YLWUCWNsoif（v1.9.1）；現代款＝DLeVFyrj6ypMHFYvbHoSsT（v3.31.1）；整體浴室＝TCavuyjPoYwuoMz863y5BM（v1.5.3）；三個都是知道連結的人可看。換電腦更新時發布要帶網址，否則會變成新網址"
+    },
+    {
+     "level": "warn",
+     "text": "浮水印慣例（2026-11-02 使用者定）：所有 3D 作品一律用「Chong Wei Technology Engineering Co., Ltd.」，45 度斜排滑動、透明度 0.5；新作品照抄現有 #wm 樣式（格子寬 760、第二行 x 394），不要換別的文字，除非使用者另外指定"
     }
    ],
    "repo": "bathroom-plumbing-3d"
@@ -823,8 +827,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793608383000,
-   "last_msg": "共用記憶：整體浴室被抓錯清單補上插座方向"
+   "last_ts": 1793609185000,
+   "last_msg": "共用記憶：舊浮水印提醒改指向公司英文名慣例（格子寬 760）"
   },
   {
    "exists": true,
@@ -866,8 +870,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793608366000,
-   "last_msg": "整體浴室款 v1.5.3：馬桶上方雙插座改橫放（照 A 向立面）"
+   "last_ts": 1793609120000,
+   "last_msg": "淡綠款 v1.9.1、現代款 v3.31.1：浮水印改公司英文名；說明加浮水印慣例"
   },
   {
    "exists": true,
@@ -906,7 +910,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793608389001,
- "generated_text": "11/02 16:33",
+ "generated": 1793609190239,
+ "generated_text": "11/02 16:46",
  "host": "公司"
 }
