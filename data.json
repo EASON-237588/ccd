@@ -824,8 +824,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793633299000,
-   "last_msg": "專案清單與共用記憶：機電整合模型3D 搬進機電3D模擬資料夾"
+   "last_ts": 1793634175000,
+   "last_msg": "共用記憶：機電整合模型3D 更新到 v1.4.4（大字載入畫面、網址已開連結可看）"
   },
   {
    "exists": true,
@@ -905,7 +905,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793633394677,
- "generated_text": "11/02 23:29",
+ "generated": 1793634319935,
+ "generated_text": "11/02 23:45",
  "host": "HP"
 }
