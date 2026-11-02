@@ -171,7 +171,7 @@
 </div>
 
 <script>
-const VERSION = 'v2.2.1';
+const VERSION = 'v2.2.2';
 let S = null;
 const NL = String.fromCharCode(10);
 const BS = String.fromCharCode(92);
@@ -222,6 +222,17 @@ if (location.hash.startsWith('#links=')) {
   history.replaceState(null, '', location.pathname);
 }
 const liveOf = p => p.live || privLinks()[p.id] || '';
+function pastePriv() {
+  const s = prompt('貼上設定連結（整串網址，或 #links= 後面那段）');
+  if (!s) return;
+  const i = s.indexOf('#links=');
+  try {
+    const add = JSON.parse(decodeURIComponent((i >= 0 ? s.slice(i + 7) : s).trim()));
+    localStorage.setItem(PRIV_KEY, JSON.stringify(Object.assign(privLinks(), add)));
+    alert('這支手機已記住 ' + Object.keys(add).length + ' 個自用連結');
+    render();
+  } catch (e) { alert('設定連結讀不懂，請重新複製一次'); }
+}
 async function load() {
   try {
     const next = STATIC ? await (await fetch('data.json?t=' + Date.now(), {cache: 'no-store'})).json()
@@ -283,7 +294,10 @@ function pageHome() {
       <div class="txt"><b>${esc(c)}${en(c)}</b><span>${idx.length} 個專案・${esc(CAT_SUB[c] || '')}</span></div>
       <span class="chev">›</span></button>`;
   }).join('');
-  const newOnes = STATIC ? '' : S.unregistered.length
+  // 加到主畫面的網頁跟瀏覽器分開存資料，點設定連結會跳去瀏覽器；沒有自用網址時給一個在這裡貼上的入口（2026-11-03）
+  const newOnes = STATIC ? (Object.keys(privLinks()).length ? '' : `<button class="item dash" onclick="pastePriv()"><div class="ico">連</div>
+        <div class="txt"><b>貼上自用連結</b><span>TT 系列顯示「沒有網址」時：先複製設定連結，再按這裡貼上</span></div>
+        <span class="chev">›</span></button>`) : S.unregistered.length
     ? S.unregistered.map(u => `<div class="item dash"><div class="ico">＋</div>
         <div class="txt"><b>${esc(u.dir)}</b><span>偵測到未登錄的資料夾・${esc(u.repo || '未設定遠端')}</span></div>
         <button class="btn go" onclick="addProject('${esc(u.dir)}','${esc(u.repo)}')">加入清單</button></div>`).join('')
