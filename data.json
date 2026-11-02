@@ -714,6 +714,14 @@
    ],
    "machine": "線上",
    "repo": ""
+  },
+  {
+   "id": "mep-integrated-model-3d",
+   "name": "機電整合模型3D",
+   "live": "",
+   "summary": "",
+   "notes": [],
+   "repo": "mep-integrated-model-3d"
   }
  ],
  "status": [
@@ -819,8 +827,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793632282000,
-   "last_msg": "共用記憶：新增機電整合模型3D 專案記憶"
+   "last_ts": 1793632685000,
+   "last_msg": "共用記憶：機電整合模型3D 更新狀態（私人倉庫已建並推上去）"
   },
   {
    "exists": true,
@@ -872,6 +880,13 @@
    "exists": true,
    "git": true,
    "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": "v1.4.2",
+   "last_ts": 1793632681000,
+   "last_msg": "機電整合模型 3D：說明補上網址與倉庫狀態"
   }
  ],
  "todos": [
@@ -900,7 +915,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793632288236,
- "generated_text": "11/02 23:11",
+ "generated": 1793632838944,
+ "generated_text": "11/02 23:20",
  "host": "HP"
 }
