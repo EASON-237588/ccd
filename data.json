@@ -97,21 +97,8 @@
    "name": "TT財報分析",
    "en": "TW Financial Analysis",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/tw-stock-analysis-f3f9488f/",
    "summary": "三維財報儀表板。Python 後端抓 Goodinfo 財報，build_static.py 可產出免伺服器的單檔版。",
-   "publish": "python build_static.py 產出 dist/ 單檔版；docs/ 是 Pages 來源。",
-   "notes": [
-    {
-     "level": "info",
-     "text": "唯一需要外部套件的專案：pip install requests beautifulsoup4。"
-    },
-    {
-     "level": "info",
-     "text": "docs/ 是 GitHub Pages 來源，dist/ 是單檔產出，兩者都不要手改。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "tw-stock-analysis-f3f9488f"
+   "machine": "共用"
   },
   {
    "id": "weather",
@@ -565,58 +552,16 @@
    "name": "TT趨勢儀表板",
    "en": "TW Trend Dashboard",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/tw-trend-dashboard-09d8e5ce/",
    "summary": "TT的趨勢儀表板：加權指數日線 Range Filter 取樣 15、倍數 4，轉多就買進 00631L（台灣 50 正 2）、轉空就空手。目前 v1.9.0，五格依序是正 2、加權、台積電、聯發科、元大台灣高股息優質龍頭基金 B 類型（月配息；後三格各用自己價格跑同一套濾網，只當看盤參考；基金一天一個淨值畫成線，淨值由轉接站代抓 Yahoo）；K 棒與背景依多空上色（紅持有、綠空手），不畫濾網線與進出點；標題列是「價格方塊（持有紅底、空手綠底）＋漲跌點數＋商品名稱（黃字）＋持有／空手 MM/DD 起」，12 年績效與逐筆進出在「交易明細」；游標提示框只顯示日期與收盤；盤中試算會翻轉時跳警告窗。圖表讀證交所，盤中正 2 與個股即時價走自建 Cloudflare 轉接站 tw-quote，12 年績效用 FinMind。12 年（2014/10/31 起）只做多 vs 抱著：正 2 +3,754% 對 +4,353%、加權 +401% 對 +449%、台積電 +1,207% 對 +1,846%、聯發科 +980% 對 +968%（大多頭期間策略多半輸抱著）。外資台指期格已刪。",
-   "publish": "推上 main 即更新 GitHub Pages（公開 repo）。改版要同時改 index.html 的 VERSION 與標題；網頁會自動偵測新版並提示。GitHub Pages 暫存約 10 分鐘，驗證線上版要加一個沒用過的網址參數（用過的參數也會被暫存）。使用者習慣：先本機預覽（手機尺寸）、說確定才升版號推上去。",
-   "notes": [
-    {
-     "level": "warn",
-     "text": "每次開工都要跑「實際紀錄」資料夾的更新紀錄程式（python 更新紀錄.py），把上次之後的進出追加進進出紀錄檔，用總表＋逐筆明細＋績效曲線圖回報（起算 2026-01-02，只看百分比，未扣手續費與證交稅），再指名提交 實際紀錄/進出紀錄.csv 與 實際紀錄/績效曲線.png 並推上去。"
-    },
-    {
-     "level": "info",
-     "text": "2026-10-12 回測結論：個股與 1 倍 ETF 加任何趨勢濾網報酬都輸抱著，只有「正 2＋看加權日線濾網」在 2000～08、2009～17、2018～26 三段都贏 0050 抱著；22 檔 ETF 看大盤都比看自己好。三大法人現貨買賣超、正 2 外資持股都沒參考價值；外資台指期（放寬＋20 天 8,000 口門檻）2018～2026 全段 58.2% 對現行 44.9% 但回撤 30%→47%、2022 更差，只當參考，觀察數個月再決定。"
-    },
-    {
-     "level": "warn",
-     "text": "資料坑：Yahoo 的 ETF 分割還原日期錯（0050、00631L、00632R），所以回測用加權指數模擬；Yahoo 60 分 K 每天最後一根不含 13:30 集合競價；正 2 分割是 1 拆 22（直接拿收盤價取整數會得到 23，要先扣停牌期間指數漲跌×2）；外資持股資料 3/30 就換成分割後股數。"
-    },
-    {
-     "level": "info",
-     "text": "2026-10-12 新增即時價轉接站：Cloudflare Worker「tw-quote」（程式在 repo 的 worker 資料夾，部署指令 npx -y wrangler@4 deploy），代抓證交所即時報價，只允許儀表板網址讀取。證交所、Yahoo 都不開放網頁直接讀，FinMind 即時要付費。轉接站連不上時正 2 退回指數估算、個股只顯示收盤。盤中跳動還沒實測過，開盤後要看一次。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "tw-trend-dashboard-09d8e5ce"
+   "machine": "共用"
   },
   {
    "id": "tw-strategy",
    "name": "TT策略分析",
    "en": "TW Strategy Analysis",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/tw-strategy-624a0d79/",
    "summary": "手機直向單檔網頁（v013）：輸入任何TT代號（另含正 2、加權指數、高股息龍頭 B 基金）看主策略「RF＋大盤 只做多」（Range Filter 15/4，且加權指數 RF 15/4 也是多方才做多）的目前狀態、近 3 年（2023/10/20 起、前後兩段）對買進抱著的績效與最慘回落、依策略上色的 K 棒（紅持有綠空手）、策略進出明細、財報體質評分（強／中／弱）；總表列自選清單；「有機會做多」分頁列每日收盤後全市場掃描出「財報健全且剛轉做多」的股票，有新結果時按鈕閃爍。資料：瀏覽器直接讀 FinMind（日線＋除權息自行還原、財報），基金淨值走TT趨勢的轉接站 tw-quote；全市場掃描用 Yahoo。原始碼在私人 repo tw-strategy-src，線上網頁在公開 repo tw-strategy（只放打包後網頁與 chance.json）。",
-   "publish": "改原始碼 → python bump.py → python build_web.py → python 發布.py（推到自用網址 tw-strategy-624a0d79，網頁每分鐘比對 version.json 會跳新版提示）；原始碼另外提交推到私人 tw-strategy-src。先本機預覽手機直向，使用者說確定才發布。",
-   "notes": [
-    {
-     "level": "warn",
-     "text": "精神是「穩定賺小錢」。全市場 1,859 檔近 3 年評估：RF＋大盤 有 88% 股票最慘回落比抱著小（中位 36% 對 51%），但隨便挑股票套用中位報酬只有 +2%、一半賠錢——策略只壓回落，賺不賺看選股。RF 只做多、通道 20 日、多空都做都已評估較差並從網頁拿掉，個股不做空。"
-    },
-    {
-     "level": "info",
-     "text": "10/19 使用者定：自選股只留財報體質「強」的（台積電、金像電、聯發科；正 2、加權、高股息基金沒有財報，保留）。已用過的裝置由 CFG.WATCH_DEL 一次性移除，之後使用者自己加減不受影響。"
-    },
-    {
-     "level": "info",
-     "text": "工作排程器「有機會做多掃描」：這台（PC2601003）週一～五 15:30 跑 每日掃描.py --日誌（錯過補跑、用電池也跑），日誌在暫存資料夾 有機會做多掃描.log；只推 chance.json。10/19 使用者定：有機會做多只留財報體質「強」（評分 ≥ 5）。"
-    },
-    {
-     "level": "info",
-     "text": "FinMind 免費額度依網路位址一小時約 300 次，同一個 Wi-Fi 的手機共用；用完時網頁顯示「資料來源暫時抓不到」。改策略要同步改 data.js 與 策略.py，跑 node 驗證.js 代號… 再 python 驗證.py 對帳。只做手機直向。"
-    }
-   ],
-   "machine": "共用（每日掃描排程只在 PC2601003）",
-   "repo": "tw-strategy-src"
+   "machine": "共用（每日掃描排程只在 PC2601003）"
   },
   {
    "id": "tw-daytrade",
@@ -684,10 +629,7 @@
    "name": "TT策略分析",
    "en": "TW Strategy Analysis",
    "cat": "交易策略",
-   "live": "",
-   "summary": "",
-   "notes": [],
-   "repo": "tw-strategy-src"
+   "summary": ""
   },
   {
    "id": "bathroom-plumbing-3d",
@@ -792,9 +734,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1788277111000,
-   "last_msg": "README：補上 GitHub Pages 線上版網址"
+   "ver": ""
   },
   {
    "exists": true,
@@ -885,9 +825,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.9.0",
-   "last_ts": 1793352339000,
-   "last_msg": "實際紀錄：10/30 開工更新（公司），新增 0 筆，資料到 10/30 收盤，更新績效曲線"
+   "ver": "v1.9.0"
   },
   {
    "exists": true,
@@ -916,9 +854,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1793600802000,
-   "last_msg": "台股策略分析 v019：財報分析連結改到自用網址 tw-stock-analysis-f3f9488f"
+   "ver": ""
   },
   {
    "exists": true,
@@ -964,7 +900,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793616201521,
+ "generated": 1793616228765,
  "generated_text": "11/02 18:43",
  "host": "HP"
 }
