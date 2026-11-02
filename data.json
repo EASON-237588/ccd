@@ -97,7 +97,7 @@
    "name": "TT財報分析",
    "en": "TW Financial Analysis",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/tw-stock-analysis/",
+   "live": "https://eason-237588.github.io/tw-stock-analysis-f3f9488f/",
    "summary": "三維財報儀表板。Python 後端抓 Goodinfo 財報，build_static.py 可產出免伺服器的單檔版。",
    "publish": "python build_static.py 產出 dist/ 單檔版；docs/ 是 Pages 來源。",
    "notes": [
@@ -111,7 +111,7 @@
     }
    ],
    "machine": "共用",
-   "repo": "tw-stock-analysis"
+   "repo": "tw-stock-analysis-f3f9488f"
   },
   {
    "id": "weather",
@@ -565,7 +565,7 @@
    "name": "TT趨勢儀表板",
    "en": "TW Trend Dashboard",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/tw-trend-dashboard/",
+   "live": "https://eason-237588.github.io/tw-trend-dashboard-09d8e5ce/",
    "summary": "TT的趨勢儀表板：加權指數日線 Range Filter 取樣 15、倍數 4，轉多就買進 00631L（台灣 50 正 2）、轉空就空手。目前 v1.9.0，五格依序是正 2、加權、台積電、聯發科、元大台灣高股息優質龍頭基金 B 類型（月配息；後三格各用自己價格跑同一套濾網，只當看盤參考；基金一天一個淨值畫成線，淨值由轉接站代抓 Yahoo）；K 棒與背景依多空上色（紅持有、綠空手），不畫濾網線與進出點；標題列是「價格方塊（持有紅底、空手綠底）＋漲跌點數＋商品名稱（黃字）＋持有／空手 MM/DD 起」，12 年績效與逐筆進出在「交易明細」；游標提示框只顯示日期與收盤；盤中試算會翻轉時跳警告窗。圖表讀證交所，盤中正 2 與個股即時價走自建 Cloudflare 轉接站 tw-quote，12 年績效用 FinMind。12 年（2014/10/31 起）只做多 vs 抱著：正 2 +3,754% 對 +4,353%、加權 +401% 對 +449%、台積電 +1,207% 對 +1,846%、聯發科 +980% 對 +968%（大多頭期間策略多半輸抱著）。外資台指期格已刪。",
    "publish": "推上 main 即更新 GitHub Pages（公開 repo）。改版要同時改 index.html 的 VERSION 與標題；網頁會自動偵測新版並提示。GitHub Pages 暫存約 10 分鐘，驗證線上版要加一個沒用過的網址參數（用過的參數也會被暫存）。使用者習慣：先本機預覽（手機尺寸）、說確定才升版號推上去。",
    "notes": [
@@ -587,16 +587,16 @@
     }
    ],
    "machine": "共用",
-   "repo": "tw-trend-dashboard"
+   "repo": "tw-trend-dashboard-09d8e5ce"
   },
   {
    "id": "tw-strategy",
    "name": "TT策略分析",
    "en": "TW Strategy Analysis",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/tw-strategy/",
+   "live": "https://eason-237588.github.io/tw-strategy-624a0d79/",
    "summary": "手機直向單檔網頁（v013）：輸入任何TT代號（另含正 2、加權指數、高股息龍頭 B 基金）看主策略「RF＋大盤 只做多」（Range Filter 15/4，且加權指數 RF 15/4 也是多方才做多）的目前狀態、近 3 年（2023/10/20 起、前後兩段）對買進抱著的績效與最慘回落、依策略上色的 K 棒（紅持有綠空手）、策略進出明細、財報體質評分（強／中／弱）；總表列自選清單；「有機會做多」分頁列每日收盤後全市場掃描出「財報健全且剛轉做多」的股票，有新結果時按鈕閃爍。資料：瀏覽器直接讀 FinMind（日線＋除權息自行還原、財報），基金淨值走TT趨勢的轉接站 tw-quote；全市場掃描用 Yahoo。原始碼在私人 repo tw-strategy-src，線上網頁在公開 repo tw-strategy（只放打包後網頁與 chance.json）。",
-   "publish": "改原始碼 → python bump.py → python build_web.py → python 發布.py（推到公開的 tw-strategy，網頁每分鐘比對 version.json 會跳新版提示）；原始碼另外提交推到私人 tw-strategy-src。先本機預覽手機直向，使用者說確定才發布。",
+   "publish": "改原始碼 → python bump.py → python build_web.py → python 發布.py（推到自用網址 tw-strategy-624a0d79，網頁每分鐘比對 version.json 會跳新版提示）；原始碼另外提交推到私人 tw-strategy-src。先本機預覽手機直向，使用者說確定才發布。",
    "notes": [
     {
      "level": "warn",
@@ -697,14 +697,19 @@
    "live": "https://claude.ai/artifact/DLeVFyrj6ypMHFYvbHoSsT",
    "works": [
     {
-     "desc": "浴室排水3D（淡綠立柱面盆款，v1.9.0）",
-     "title": "浴室排水3D v1.9.0",
+     "desc": "浴室排水3D（淡綠立柱面盆款，v1.9.1）",
+     "title": "浴室排水3D v1.9.1",
      "url": "https://claude.ai/artifact/H4Yhj6wcwc5YLWUCWNsoif"
     },
     {
-     "desc": "現代款（浴室給排水模擬，v3.31.0）",
-     "title": "浴室給排水模擬 v3.31.0",
+     "desc": "現代款（浴室給排水模擬，v3.31.1）",
+     "title": "浴室給排水模擬 v3.31.1",
      "url": "https://claude.ai/artifact/DLeVFyrj6ypMHFYvbHoSsT"
+    },
+    {
+     "desc": "整體浴室（1421L A Type，v1.5.3）",
+     "title": "整體浴室給排水模擬 v1.5.3",
+     "url": "https://claude.ai/artifact/TCavuyjPoYwuoMz863y5BM"
     }
    ],
    "summary": "浴室給排水 3D 模擬（另有機電3D產生器規劃書，暫停）",
@@ -727,7 +732,11 @@
     },
     {
      "level": "info",
-     "text": "網址：浴室排水3D＝H4Yhj6wcwc5YLWUCWNsoif（v1.8.0，知道連結可看）；現代款＝DLeVFyrj6ypMHFYvbHoSsT（v3.30.0，目前只有本人可看）。換電腦更新時發布要帶網址，否則會變成新網址"
+     "text": "網址：浴室排水3D＝H4Yhj6wcwc5YLWUCWNsoif（v1.9.1）；現代款＝DLeVFyrj6ypMHFYvbHoSsT（v3.31.1）；整體浴室＝TCavuyjPoYwuoMz863y5BM（v1.5.3）；三個都是知道連結的人可看。換電腦更新時發布要帶網址，否則會變成新網址"
+    },
+    {
+     "level": "warn",
+     "text": "浮水印慣例（2026-11-02 使用者定）：所有 3D 作品一律用「Chong Wei Technology Engineering Co., Ltd.」，45 度斜排滑動、透明度 0.5；新作品照抄現有 #wm 樣式（格子寬 760、第二行 x 394），不要換別的文字，除非使用者另外指定"
     }
    ],
    "repo": "bathroom-plumbing-3d"
@@ -770,15 +779,15 @@
    "exists": true,
    "git": true,
    "ver": "V2.07",
-   "last_ts": 1793377466000,
-   "last_msg": "推播程式改推趨勢版甲 30（Gate 逐筆 30 秒 RF 555/31.9），打開每分鐘排程"
+   "last_ts": 1793597749000,
+   "last_msg": "推播程式：甲30 /j30 改顯示合計（已實現＋浮動）"
   },
   {
    "exists": true,
    "git": true,
    "ver": "v1.49.0",
-   "last_ts": 1793536601000,
-   "last_msg": "TradingView：RF 濾網2 v1.1.0～v1.3.0（甲 30 細部優化測試用）"
+   "last_ts": 1793601608000,
+   "last_msg": "實際紀錄：11/02 開工更新（公司），進出紀錄新增 7 筆，更新紀錄狀態與績效曲線"
   },
   {
    "exists": true,
@@ -870,8 +879,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793546261000,
-   "last_msg": "共用記憶：管理包手機唯讀版上線（1101 收工）"
+   "last_ts": 1793609185000,
+   "last_msg": "共用記憶：舊浮水印提醒改指向公司英文名慣例（格子寬 760）"
   },
   {
    "exists": true,
@@ -908,15 +917,15 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1792999569000,
-   "last_msg": "台股策略分析 v018：聯發科、金像電標「觀察用」"
+   "last_ts": 1793600802000,
+   "last_msg": "台股策略分析 v019：財報分析連結改到自用網址 tw-stock-analysis-f3f9488f"
   },
   {
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793457301000,
-   "last_msg": "浴室排水3D v1.9.0：加「Craft & Core Design」45 度滑動浮水印"
+   "last_ts": 1793609120000,
+   "last_msg": "淡綠款 v1.9.1、現代款 v3.31.1：浮水印改公司英文名；說明加浮水印慣例"
   },
   {
    "exists": true,
@@ -946,10 +955,16 @@
    "level": "warn",
    "done": false,
    "title": "11/10 決定指數所有策略要用哪幾組"
+  },
+  {
+   "title": "評估直播看到的指標（詩魂KD）",
+   "text": "直播（股市邢修 TikTok）TradingView 圖上的「詩魂KD指標」，有空評估值不值得買。不破解，只看說明頁的授權方式，再用 commercial-indicator-audit 流程檢查（回測版是否存在、績效灌水、前後段與不重疊樣本）。",
+   "level": "info",
+   "done": false
   }
  ],
  "unregistered": [],
- "generated": 1793615833393,
- "generated_text": "11/02 18:37",
+ "generated": 1793616201521,
+ "generated_text": "11/02 18:43",
  "host": "HP"
 }
