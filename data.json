@@ -818,8 +818,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.1",
-   "last_ts": 1793601823000,
-   "last_msg": "手機版：TT 自用網址改成存在手機（點一次設定連結 #links=…），公開的 data.json 不放"
+   "last_ts": 1793601924000,
+   "last_msg": "共用記憶：手機管理記住 TT 連結的做法、公司也裝手機版自動更新"
   },
   {
    "exists": true,
@@ -901,7 +901,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793601841505,
- "generated_text": "11/02 14:44",
+ "generated": 1793602025367,
+ "generated_text": "11/02 14:47",
  "host": "公司"
 }
