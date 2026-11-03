@@ -726,7 +726,7 @@
    "en": "CAD Font Fix",
    "cat": "建築&營造工具",
    "live": "",
-   "summary": "progeCAD 開圖中文變問號亂碼時用：把字體或大字體找不到的文字型式一次改成微軟正黑體。把 字型修正.lsp 拖進圖面、輸入 FIXFONT；不存檔，圖檔旁邊會產生修正清單。v1.0。",
+   "summary": "progeCAD 開圖中文變問號亂碼時用：把字體或大字體找不到的文字型式一次改成微軟正黑體。把 字型修正.lsp 拖進圖面、輸入 FIXFONT；不存檔，圖檔旁邊會產生修正清單。v1.0，私人專案 cad-font-fix。",
    "publish": "改 src 裡的 UTF-8 原始檔，跑 python 建置.py 產生給 progeCAD 用的繁中編碼檔，再提交。",
    "notes": [
     {
@@ -740,10 +740,6 @@
     {
      "level": "warn",
      "text": "v1.0 的新判斷方式還沒在 progeCAD 裡實際跑過（只跑過試用版），下次用時先看修正清單裡 Arial、標楷體那幾列是不是「不動」。"
-    },
-    {
-     "level": "warn",
-     "text": "2026-11-03 只在公司本機提交，還沒推上 GitHub（建立私人專案資料夾需要使用者同意）。推上去之前，其他台電腦拉不到。"
     }
    ],
    "machine": "共用",
@@ -861,8 +857,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793671416000,
-   "last_msg": "管理表：新增 CAD字型修正（建築&營造工具）"
+   "last_ts": 1793671694000,
+   "last_msg": "管理表：CAD字型修正已推上 GitHub，拿掉未推注記"
   },
   {
    "exists": true,
@@ -957,7 +953,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793671599854,
- "generated_text": "11/03 10:06",
+ "generated": 1793671783535,
+ "generated_text": "11/03 10:09",
  "host": "公司"
 }
