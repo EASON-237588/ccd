@@ -910,7 +910,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1793671389000,
+   "last_msg": "CAD 字型修正 v1.0：progeCAD 中文亂碼一鍵改微軟正黑體"
   }
  ],
  "todos": [
@@ -939,7 +941,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793704533621,
- "generated_text": "11/03 19:15",
+ "generated": 1793704902019,
+ "generated_text": "11/03 19:21",
  "host": "HP"
 }
