@@ -719,6 +719,35 @@
    ],
    "machine": "線上",
    "repo": ""
+  },
+  {
+   "id": "cad-font-fix",
+   "name": "CAD字型修正",
+   "en": "CAD Font Fix",
+   "cat": "建築&營造工具",
+   "live": "",
+   "summary": "progeCAD 開圖中文變問號亂碼時用：把字體或大字體找不到的文字型式一次改成微軟正黑體。把 字型修正.lsp 拖進圖面、輸入 FIXFONT；不存檔，圖檔旁邊會產生修正清單。v1.0。",
+   "publish": "改 src 裡的 UTF-8 原始檔，跑 python 建置.py 產生給 progeCAD 用的繁中編碼檔，再提交。",
+   "notes": [
+    {
+     "level": "info",
+     "text": "【2026-11-03 v1.0 在公司建立】第一次實戰：一份 2F 機電施工圖 40 多個型式的大字體寫成 @chineset.shx（前面多一個 @），progeCAD 讀不到而亂碼，改成微軟正黑體後全部正常。"
+    },
+    {
+     "level": "warn",
+     "text": "試用版用 findfile 找 Windows 字體資料夾裡的字體會回找不到，曾把 Arial、標楷體等 12 個正常型式也改掉。v1.0 已改成直接開檔確認；之後改判斷規則要記得這個坑。"
+    },
+    {
+     "level": "warn",
+     "text": "v1.0 的新判斷方式還沒在 progeCAD 裡實際跑過（只跑過試用版），下次用時先看修正清單裡 Arial、標楷體那幾列是不是「不動」。"
+    },
+    {
+     "level": "warn",
+     "text": "2026-11-03 只在公司本機提交，還沒推上 GitHub（建立私人專案資料夾需要使用者同意）。推上去之前，其他台電腦拉不到。"
+    }
+   ],
+   "machine": "共用",
+   "repo": "cad-font-fix"
   }
  ],
  "status": [
@@ -887,6 +916,13 @@
    "exists": true,
    "git": true,
    "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": "",
+   "last_ts": 1793671389000,
+   "last_msg": "CAD 字型修正 v1.0：progeCAD 中文亂碼一鍵改微軟正黑體"
   }
  ],
  "todos": [
@@ -921,7 +957,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793664543357,
- "generated_text": "11/03 08:09",
+ "generated": 1793671416104,
+ "generated_text": "11/03 10:03",
  "host": "公司"
 }
