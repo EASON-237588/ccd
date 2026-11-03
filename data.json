@@ -904,8 +904,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793633266000,
-   "last_msg": "機電整合模型3D 搬進來：忽略清單與說明"
+   "last_ts": 1793680065000,
+   "last_msg": "說明：換行符改回 LF（上一筆誤轉成 CRLF）"
   },
   {
    "exists": true,
@@ -957,7 +957,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793672512592,
- "generated_text": "11/03 10:21",
+ "generated": 1793680109252,
+ "generated_text": "11/03 12:28",
  "host": "公司"
 }
