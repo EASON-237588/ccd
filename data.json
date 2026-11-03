@@ -904,8 +904,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793685119000,
-   "last_msg": "說明：機電整合模型3D 一列更新到 v1.4.19"
+   "last_ts": 1793685714000,
+   "last_msg": "說明：機電整合模型3D 一列更新到 v1.4.20"
   },
   {
    "exists": true,
@@ -957,7 +957,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793685175263,
- "generated_text": "11/03 13:52",
+ "generated": 1793685720556,
+ "generated_text": "11/03 14:02",
  "host": "公司"
 }
