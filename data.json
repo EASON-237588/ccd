@@ -762,8 +762,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.49.0",
-   "last_ts": 1793698619000,
-   "last_msg": "實際紀錄：11/03 開工更新（公司，08:38 跑），進出紀錄新增 27 筆（舊A/R30 重複校正列 2 筆不提交，使用者確認），更新紀錄狀態與績效曲線"
+   "last_ts": 1793619271000,
+   "last_msg": "實際紀錄：11/02 晚開工更新（HP），進出紀錄新增 0 筆（舊A/R30 重複校正列不提交），更新紀錄狀態與績效曲線"
   },
   {
    "exists": true,
@@ -801,16 +801,12 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1788482063000,
-   "last_msg": "納入版控：現況存檔"
+   "ver": ""
   },
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1788482064000,
-   "last_msg": "納入版控：現況存檔"
+   "ver": ""
   },
   {
    "exists": true,
@@ -841,9 +837,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1791337346000,
-   "last_msg": "產日誌加 --todo、--make-all 固定指令；日誌比照片或說明舊時自動重產"
+   "ver": ""
   },
   {
    "exists": true,
@@ -853,9 +847,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1791788296000,
-   "last_msg": "鋼筋搭接查詢 002 版：手機查鋼筋搭接與伸展長度"
+   "ver": ""
   },
   {
    "exists": true,
@@ -891,25 +883,6 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1792368450000,
-   "last_msg": "掃描圖 PDF 標單加上文字辨識（10/16 豬事圓滿配電盤標單）"
-  },
-  {
-   "exists": true,
-   "git": true,
-   "ver": ""
-  },
-  {
-   "exists": true,
-   "git": true,
-   "ver": "",
-   "last_ts": 1793696100000,
-   "last_msg": "說明：機電整合模型3D 一列更新到 v1.4.44"
-  },
-  {
-   "exists": true,
-   "git": true,
    "ver": ""
   },
   {
@@ -921,8 +894,23 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793671389000,
-   "last_msg": "CAD 字型修正 v1.0：progeCAD 中文亂碼一鍵改微軟正黑體"
+   "last_ts": 1793633266000,
+   "last_msg": "機電整合模型3D 搬進來：忽略清單與說明"
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
   }
  ],
  "todos": [
@@ -951,7 +939,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793698823819,
- "generated_text": "11/03 17:40",
- "host": "公司"
+ "generated": 1793703978449,
+ "generated_text": "11/03 19:06",
+ "host": "HP"
 }
