@@ -861,8 +861,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793636608000,
-   "last_msg": "手機版 v2.2.2：主畫面圖示也能設定 TT 自用網址"
+   "last_ts": 1793671416000,
+   "last_msg": "管理表：新增 CAD字型修正（建築&營造工具）"
   },
   {
    "exists": true,
@@ -957,7 +957,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793671416104,
- "generated_text": "11/03 10:03",
+ "generated": 1793671599854,
+ "generated_text": "11/03 10:06",
  "host": "公司"
 }
