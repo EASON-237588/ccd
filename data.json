@@ -731,6 +731,10 @@
    "notes": [
     {
      "level": "info",
+     "text": "【使用方式】每次使用：①progeCAD 開著要修的圖（建議先複製一份備份）②把本資料夾最上層的 字型修正.lsp 拖進圖面（或 工具→載入應用程式）③指令列輸入 FIXFONT 按 Enter ④畫面自動重生，中文恢復正常；程式不會存檔，看過沒問題再自己存。圖檔旁邊會多一個「圖檔名_字型修正清單.txt」，列出每個型式改了沒有、原本用什麼字體。　第一次在別台電腦：先在管理包按「開工」更新管理表，再把工具複製下來（跟 Claude 說「開工」會自動處理，或自己在命令視窗貼：gh repo clone EASON-237588/cad-font-fix \"%USERPROFILE%\\Desktop\\CC\\CAD字型修正\"）。　需要：progeCAD（AutoCAD 照理也能跑但沒測過）、微軟正黑體（Windows 內建）；Python 只有改程式才需要。"
+    },
+    {
+     "level": "info",
      "text": "【2026-11-03 v1.0 在公司建立】第一次實戰：一份 2F 機電施工圖 40 多個型式的大字體寫成 @chineset.shx（前面多一個 @），progeCAD 讀不到而亂碼，改成微軟正黑體後全部正常。"
     },
     {
@@ -857,8 +861,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793671694000,
-   "last_msg": "管理表：CAD字型修正已推上 GitHub，拿掉未推注記"
+   "last_ts": 1793672122000,
+   "last_msg": "管理表：CAD字型修正加上使用方式（每次用法、別台第一次複製、需要條件）"
   },
   {
    "exists": true,
@@ -953,7 +957,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793671783535,
- "generated_text": "11/03 10:09",
+ "generated": 1793672147983,
+ "generated_text": "11/03 10:15",
  "host": "公司"
 }
