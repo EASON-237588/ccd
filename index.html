@@ -296,7 +296,7 @@ function pageHome() {
   }).join('');
   // 加到主畫面的網頁跟瀏覽器分開存資料，點設定連結會跳去瀏覽器；沒有自用網址時給一個在這裡貼上的入口（2026-11-03）
   const newOnes = STATIC ? (Object.keys(privLinks()).length ? '' : `<button class="item dash" onclick="pastePriv()"><div class="ico">連</div>
-        <div class="txt"><b>貼上自用連結</b><span>TT 系列顯示「沒有網址」時：先複製設定連結，再按這裡貼上</span></div>
+        <div class="txt"><b>貼上自用連結</b><span>TT 系列沒有網址時：先複製設定連結，再按這裡貼上</span></div>
         <span class="chev">›</span></button>`) : S.unregistered.length
     ? S.unregistered.map(u => `<div class="item dash"><div class="ico">＋</div>
         <div class="txt"><b>${esc(u.dir)}</b><span>偵測到未登錄的資料夾・${esc(u.repo || '未設定遠端')}</span></div>
@@ -420,7 +420,7 @@ function pageCat(c) {
       const sub = (p.works || []).length
         ? p.works.map(w => link(w.url, w.title)).join('')
         : liveOf(p) ? link(liveOf(p), liveOf(p).replace(/^https?:\/\//, '').replace(/\/$/, ''))
-        : '<span class="nolive">沒有網址</span>';
+        : '';  // 沒網址就不顯示（2026-11-03 使用者要求）
       return `<div class="item" role="button" tabindex="0" onclick="go('/p/${encodeURIComponent(p.id)}')">
         <div class="ico sm">${esc([...p.name][0])}${needs(i) ? '<span class="n">!</span>' : ''}</div>
         <div class="txt"><b>${esc(p.name)}${p.en ? `<small class="en">${esc(p.en)}</small>` : ''}${verTag(i)}</b>${sub}</div>
