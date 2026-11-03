@@ -772,12 +772,16 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1788482063000,
+   "last_msg": "納入版控：現況存檔"
   },
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1788482064000,
+   "last_msg": "納入版控：現況存檔"
   },
   {
    "exists": true,
@@ -808,7 +812,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1791337346000,
+   "last_msg": "產日誌加 --todo、--make-all 固定指令；日誌比照片或說明舊時自動重產"
   },
   {
    "exists": true,
@@ -818,7 +824,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1791788296000,
+   "last_msg": "鋼筋搭接查詢 002 版：手機查鋼筋搭接與伸展長度"
   },
   {
    "exists": true,
@@ -854,7 +862,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1792368450000,
+   "last_msg": "掃描圖 PDF 標單加上文字辨識（10/16 豬事圓滿配電盤標單）"
   },
   {
    "exists": true,
@@ -911,7 +921,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793636713907,
- "generated_text": "11/03 00:25",
- "host": "HP"
+ "generated": 1793664543357,
+ "generated_text": "11/03 08:09",
+ "host": "公司"
 }
