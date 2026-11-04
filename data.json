@@ -761,9 +761,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.49.0",
-   "last_ts": 1793704404000,
-   "last_msg": "實際紀錄：11/03 晚開工更新（HP），進出紀錄新增 5 筆（B、B2、GA、觀察二兩組傍晚翻多；舊A/R30 重複校正列 2 筆不提交），更新紀錄狀態與績效曲線"
+   "ver": "v1.50.0",
+   "last_ts": 1793776107000,
+   "last_msg": "期貨趨勢 v1.50.0：績效表備註加紅字閃爍「觀察中」（那斯達克短趨勢甲 30、中長趨勢 D2、台指 B2、黃金 F 甲）（使用者 2026-11-04）"
   },
   {
    "exists": true,
@@ -801,12 +801,16 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1788482063000,
+   "last_msg": "納入版控：現況存檔"
   },
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1788482064000,
+   "last_msg": "納入版控：現況存檔"
   },
   {
    "exists": true,
@@ -837,7 +841,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1791337346000,
+   "last_msg": "產日誌加 --todo、--make-all 固定指令；日誌比照片或說明舊時自動重產"
   },
   {
    "exists": true,
@@ -847,14 +853,16 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1791788296000,
+   "last_msg": "鋼筋搭接查詢 002 版：手機查鋼筋搭接與伸展長度"
   },
   {
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793708687000,
-   "last_msg": "開工拿掉期貨績效表、三候選、名次總表、四格績效與學院專區：注意事項、待辦與共用記憶同步改（使用者 11/03）"
+   "last_ts": 1793709155000,
+   "last_msg": "共用記憶：1103 晚 HP 收工（機電整合模型3D v1.4.51、開工瘦身、接續技能 handoff-1103）"
   },
   {
    "exists": true,
@@ -883,7 +891,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1792368450000,
+   "last_msg": "掃描圖 PDF 標單加上文字辨識（10/16 豬事圓滿配電盤標單）"
   },
   {
    "exists": true,
@@ -941,7 +951,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793709152423,
- "generated_text": "11/03 20:32",
- "host": "HP"
+ "generated": 1793776310529,
+ "generated_text": "11/04 15:11",
+ "host": "公司"
 }
