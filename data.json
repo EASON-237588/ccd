@@ -853,8 +853,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793798370000,
-   "last_msg": "管理包：機電整合模型3D v1.4.60 已發布到私人網址第 45 版（卡片與 1104 晚收工記憶）"
+   "last_ts": 1793807898000,
+   "last_msg": "共用記憶：1104 深夜 HP 收工（機電整合模型3D v1.4.61 已發布、HP 健康檢查結論）＋ HP 的 Chrome 要用 NVIDIA"
   },
   {
    "exists": true,
@@ -941,7 +941,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793798466741,
- "generated_text": "11/04 21:21",
+ "generated": 1793807962442,
+ "generated_text": "11/04 23:59",
  "host": "HP"
 }
