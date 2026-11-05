@@ -782,8 +782,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.50.0",
-   "last_ts": 1793883448000,
-   "last_msg": "實際紀錄：1105 HP 晚間開工更新，新增 5 列（GA、O1 17:51，G 16:17，G2 18:30，O2 19:54 平空翻多），更新紀錄狀態與績效曲線；程式重排序與舊A/R30 10/28 重複校正列 2 筆不提交，改原檔只追加"
+   "last_ts": 1793888994000,
+   "last_msg": "TradingView：補上 D 甲改良腳本 v1.0.0（10/31 寫的，一直沒進版控）"
   },
   {
    "exists": true,
@@ -978,7 +978,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793886476213,
- "generated_text": "11/05 21:47",
+ "generated": 1793889026537,
+ "generated_text": "11/05 22:30",
  "host": "HP"
 }
