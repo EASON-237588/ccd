@@ -748,6 +748,26 @@
    ],
    "machine": "共用",
    "repo": "cad-font-fix"
+  },
+  {
+   "id": "floorplan-3d",
+   "name": "平面圖轉3D",
+   "en": "Floor Plan to 3D",
+   "cat": "建築&營造工具",
+   "live": "",
+   "summary": "把辦公室平面配置圖轉成 3D 漫遊影片，不看圖也能一眼看懂新格局。第一個實例：中部辦公室搬遷（2026-11-05），60 秒影片「中部辦公室格局最終方案」＋來源搬遷計畫簡報 1105。",
+   "notes": [
+    {
+     "level": "info",
+     "text": "資料夾在桌面 CC\\平面圖轉3D（影片、搬遷計畫簡報、說明），GitHub 私人倉庫 office-floorplan-3d（2026-11-05 使用者同意後建立）。原始資料（座位表圖檔、照片、第一次搬遷計畫）在 桌面\\劉協交辦事項\\2026-09-16 中辦 搬遷，不複製。"
+    },
+    {
+     "level": "info",
+     "text": "第一次在別台電腦：跟 Claude 說「開工」會自動複製，或自己在命令視窗貼：gh repo clone EASON-237588/office-floorplan-3d \"%USERPROFILE%\\Desktop\\CC\\平面圖轉3D\""
+    }
+   ],
+   "machine": "共用",
+   "repo": "office-floorplan-3d"
   }
  ],
  "status": [
@@ -853,8 +873,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793807898000,
-   "last_msg": "共用記憶：1104 深夜 HP 收工（機電整合模型3D v1.4.61 已發布、HP 健康檢查結論）＋ HP 的 Chrome 要用 NVIDIA"
+   "last_ts": 1793871325000,
+   "last_msg": "1105 公司收工：共用記憶（期貨紀錄兩次更新到 11/05 15:47、HP 每晚 8 點績效比對沒在跑已列待辦、平面圖轉3D 新專案晚上討論、提交說明不要用 Out-File 寫）"
   },
   {
    "exists": true,
@@ -913,6 +933,11 @@
    "ver": "",
    "last_ts": 1793671389000,
    "last_msg": "CAD 字型修正 v1.0：progeCAD 中文亂碼一鍵改微軟正黑體"
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
   }
  ],
  "todos": [
@@ -938,10 +963,22 @@
    "text": "直播（股市邢修 TikTok）TradingView 圖上的「詩魂KD指標」，有空評估值不值得買。不破解，只看說明頁的授權方式，再用 commercial-indicator-audit 流程檢查（回測版是否存在、績效灌水、前後段與不重疊樣本）。",
    "level": "info",
    "done": false
+  },
+  {
+   "title": "HP 每晚 8 點績效比對沒在跑",
+   "text": "期貨趨勢｜HP 的排程「每晚 8 點 期貨趨勢×TV 績效比對」沒在跑，要到 HP 上查排程狀態與最近執行紀錄、找出原因並回復。可能原因：HP 沒開 Claude、Chrome 沒開或 TradingView 被登出、HP 凍住重開後沒再打開、排程被停用。到 HP 開 Claude 與已登入 TradingView 的 Chrome 後，開新對話說「每晚 8 點期貨趨勢 × TV 績效比對沒在跑，查排程狀態和最近幾次執行紀錄，找出原因並回復」。（2026-11-05 使用者在公司要求）",
+   "level": "warn",
+   "done": false
+  },
+  {
+   "title": "晚上討論：平面圖轉3D",
+   "text": "平面圖轉3D｜晚上討論（2026-11-05 使用者在公司交代）：中部辦公室搬遷的 3D 漫遊影片是由平面圖轉出來的。要談：影片用什麼軟體、從座位表圖檔還是簡報做的；要不要做成「給平面圖 → 自動出 3D 與影片」的可重複流程；跟機電3D模擬怎麼分工。（GitHub 私人倉庫 office-floorplan-3d 已建好推上去）",
+   "level": "warn",
+   "done": false
   }
  ],
  "unregistered": [],
- "generated": 1793807962442,
- "generated_text": "11/04 23:59",
+ "generated": 1793882629908,
+ "generated_text": "11/05 20:43",
  "host": "HP"
 }
