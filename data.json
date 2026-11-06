@@ -768,6 +768,34 @@
    ],
    "machine": "共用",
    "repo": "office-floorplan-3d"
+  },
+  {
+   "id": "asset-platform",
+   "name": "全台智慧資產管理平台",
+   "en": "Smart Asset Platform",
+   "cat": "建築&營造工具",
+   "live": "",
+   "summary": "營建集團設備資產管理辦法第四篇的平台展示版 v1.0.0，向長官報告用：13 個功能模組（主檔與資產卡、QR 標籤、掃碼借還、全台總覽、搜尋媒合、跨工地借用調撥、結案釋出、預警、先查後買、盤點、保養校驗、報表指標、權限軌跡），圓滿案 618 件實際資料＋示意工地。附約 8 分鐘功能簡介影片。",
+   "notes": [
+    {
+     "level": "info",
+     "text": "給長官用「全台智慧資產管理平台.html」單一網頁檔（LINE／email 轉傳點開即用，手機電腦都可，頁面沒有 AI 字眼）；操作只存在開啟的那台裝置，「權限與軌跡 → 重置展示資料」可還原。"
+    },
+    {
+     "level": "info",
+     "text": "簡介影片在 影片M1106_全台智慧資產管理平台簡介影片-01.mp4；重做：影片資料夾依序跑 配音.py → 錄影.py → 合成.py（口白稿在 口白.py，語音為微軟曉臻、需連網）。"
+    },
+    {
+     "level": "info",
+     "text": "私人網址（只有自己看得到、會露出 AI）：https://claude.ai/artifact/A1ZYBRZzoXdkTFTvNozuYL ；改平台改 平台_src.html 後跑 組裝.py。"
+    },
+    {
+     "level": "warn",
+     "text": "含公司資產實際資料（單價、發票），倉庫必須 private，網頁檔不可上公開網站。"
+    }
+   ],
+   "machine": "HP",
+   "repo": "asset-platform"
   }
  ],
  "status": [
@@ -950,6 +978,11 @@
    "ver": "",
    "last_ts": 1793936178000,
    "last_msg": "平面圖轉3D：小工具半成品（丟 CAD／PDF 轉 3D 網頁），CAD 已通、PDF 圖片未完，使用者說暫停；說明檔記進度與待做"
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
   }
  ],
  "todos": [
@@ -989,7 +1022,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793964868342,
- "generated_text": "11/06 19:34",
+ "generated": 1793974700697,
+ "generated_text": "11/06 22:18",
  "host": "HP"
 }
