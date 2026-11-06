@@ -948,8 +948,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793871089000,
-   "last_msg": "平面圖轉 3D：第一個實例 中部辦公室搬遷（3D 漫遊影片 60 秒＋來源搬遷計畫簡報 1105＋說明）"
+   "last_ts": 1793936178000,
+   "last_msg": "平面圖轉3D：小工具半成品（丟 CAD／PDF 轉 3D 網頁），CAD 已通、PDF 圖片未完，使用者說暫停；說明檔記進度與待做"
   }
  ],
  "todos": [
@@ -984,7 +984,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793934815797,
- "generated_text": "11/06 11:13",
+ "generated": 1793936267173,
+ "generated_text": "11/06 11:37",
  "host": "公司"
 }
