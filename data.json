@@ -783,7 +783,7 @@
     },
     {
      "level": "info",
-     "text": "簡介影片在 影片M1106_全台智慧資產管理平台簡介影片-01.mp4；重做：影片資料夾依序跑 配音.py → 錄影.py → 合成.py（口白稿在 口白.py，語音為微軟曉臻、需連網）。"
+     "text": "簡介影片在 影片/1151106_全台智慧資產管理平台簡介影片-01.mp4；重做：影片資料夾依序跑 配音.py → 錄影.py → 合成.py（口白稿在 口白.py，語音為微軟曉臻、需連網）。"
     },
     {
      "level": "info",
@@ -792,9 +792,13 @@
     {
      "level": "warn",
      "text": "含公司資產實際資料（單價、發票），倉庫必須 private，網頁檔不可上公開網站。"
+    },
+    {
+     "level": "info",
+     "text": "GitHub 私人倉庫 asset-platform（2026-11-06 使用者同意後建立）。第一次在別台電腦：跟 Claude 說「開工」會自動複製，或自己在命令視窗貼：gh repo clone EASON-237588/asset-platform \"%USERPROFILE%\\Desktop\\CC\\全台資產平台\""
     }
    ],
-   "machine": "HP",
+   "machine": "共用",
    "repo": "asset-platform"
   }
  ],
@@ -909,8 +913,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793958064000,
-   "last_msg": "收工記憶：營建集團資產管理辦法補上推送位置、學院專區查詢結果、料件領用系統待辦"
+   "last_ts": 1793976206000,
+   "last_msg": "建築&營造工具新增卡片：全台智慧資產管理平台"
   },
   {
    "exists": true,
@@ -1024,7 +1028,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793976165684,
- "generated_text": "11/06 22:42",
+ "generated": 1793976352354,
+ "generated_text": "11/06 22:45",
  "host": "HP"
 }
