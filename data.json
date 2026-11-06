@@ -881,8 +881,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793957785000,
-   "last_msg": "新增待辦：料件領用系統擴充設備資產版（再找時間處理）"
+   "last_ts": 1793958064000,
+   "last_msg": "收工記憶：營建集團資產管理辦法補上推送位置、學院專區查詢結果、料件領用系統待辦"
   },
   {
    "exists": true,
@@ -989,7 +989,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793957837673,
- "generated_text": "11/06 17:37",
+ "generated": 1793958202735,
+ "generated_text": "11/06 17:43",
  "host": "公司"
 }
