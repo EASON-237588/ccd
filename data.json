@@ -921,8 +921,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793980170000,
-   "last_msg": "手機版：有本機展示網頁的卡片改放 mobile_live（全台資產平台放私人網址）"
+   "last_ts": 1793980518000,
+   "last_msg": "共用記憶：全台資產平台手機版改放私人網址"
   },
   {
    "exists": true,
@@ -1036,7 +1036,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793980357013,
- "generated_text": "11/06 23:52",
+ "generated": 1793980546981,
+ "generated_text": "11/06 23:55",
  "host": "HP"
 }
