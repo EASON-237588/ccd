@@ -982,7 +982,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1793976133000,
+   "last_msg": "全台智慧資產管理平台展示版 v1.0.0 與功能簡介影片"
   }
  ],
  "todos": [
@@ -1022,7 +1024,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793974700697,
- "generated_text": "11/06 22:18",
+ "generated": 1793976165684,
+ "generated_text": "11/06 22:42",
  "host": "HP"
 }
