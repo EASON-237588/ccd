@@ -783,6 +783,10 @@
     },
     {
      "level": "info",
+     "text": "簡介影片雲端硬碟分享網址（知道連結的人可觀看、檢視者）：https://drive.google.com/file/d/1VuoTLR1eTAePkGh2FCV0HFnd5pqHBnSY/view?usp=sharing ；檔案在 我的雲端硬碟/全台智慧資產管理平台。"
+    },
+    {
+     "level": "info",
      "text": "簡介影片在 影片/1151106_全台智慧資產管理平台簡介影片-01.mp4；重做：影片資料夾依序跑 配音.py → 錄影.py → 合成.py（口白稿在 口白.py，語音為微軟曉臻、需連網）。"
     },
     {
@@ -913,8 +917,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793977324000,
-   "last_msg": "全台智慧資產管理平台卡片掛上展示板網址"
+   "last_ts": 1793977692000,
+   "last_msg": "共用記憶：全台資產平台補上雲端硬碟影片網址"
   },
   {
    "exists": true,
@@ -1028,7 +1032,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793977449799,
- "generated_text": "11/06 23:04",
+ "generated": 1793977821803,
+ "generated_text": "11/06 23:10",
  "host": "HP"
 }
