@@ -916,8 +916,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793977692000,
-   "last_msg": "共用記憶：全台資產平台補上雲端硬碟影片網址"
+   "last_ts": 1793978031000,
+   "last_msg": "管理包可直接打開卡片登記的展示網頁；全台智慧資產管理平台改連本機展示板"
   },
   {
    "exists": true,
@@ -1031,7 +1031,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793977997824,
- "generated_text": "11/06 23:13",
+ "generated": 1793978188041,
+ "generated_text": "11/06 23:16",
  "host": "HP"
 }
