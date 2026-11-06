@@ -782,8 +782,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.50.0",
-   "last_ts": 1793888994000,
-   "last_msg": "TradingView：補上 D 甲改良腳本 v1.0.0（10/31 寫的，一直沒進版控）"
+   "last_ts": 1793924670000,
+   "last_msg": "實際紀錄：1106 公司開工更新，新增 32 列（那斯達克各組 11/05 22:11～11/06 02:02 翻向、G 04:57 翻空、O1 08:16 翻多、DB DC 11/06 07:00 平多翻空），資料到 11/06 早上；程式重排序造成的搬移與 R30 10/28 重複校正列不提交，改原檔只追加"
   },
   {
    "exists": true,
@@ -821,12 +821,16 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1788482063000,
+   "last_msg": "納入版控：現況存檔"
   },
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1788482064000,
+   "last_msg": "納入版控：現況存檔"
   },
   {
    "exists": true,
@@ -851,8 +855,15 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793886345000,
-   "last_msg": "績效比對：補算漏跑晚上的工具（11/05 HP）"
+   "last_ts": 1793925196000,
+   "last_msg": "project-hub-ops：開工處理自查第二之一段（沒收工、可能已處理的待辦）、收工先跑收工檢查、錯誤表加第 11 條"
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": "",
+   "last_ts": 1791337346000,
+   "last_msg": "產日誌加 --todo、--make-all 固定指令；日誌比照片或說明舊時自動重產"
   },
   {
    "exists": true,
@@ -862,19 +873,16 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
-  },
-  {
-   "exists": true,
-   "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1791788296000,
+   "last_msg": "鋼筋搭接查詢 002 版：手機查鋼筋搭接與伸展長度"
   },
   {
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793871325000,
-   "last_msg": "1105 公司收工：共用記憶（期貨紀錄兩次更新到 11/05 15:47、HP 每晚 8 點績效比對沒在跑已列待辦、平面圖轉3D 新專案晚上討論、提交說明不要用 Out-File 寫）"
+   "last_ts": 1793925374000,
+   "last_msg": "管理包：勾掉待辦「HP 每晚 8 點期貨趨勢×TV 績效比對沒在跑」"
   },
   {
    "exists": true,
@@ -903,7 +911,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1792368450000,
+   "last_msg": "掃描圖 PDF 標單加上文字辨識（10/16 豬事圓滿配電盤標單）"
   },
   {
    "exists": true,
@@ -937,7 +947,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1793871089000,
+   "last_msg": "平面圖轉 3D：第一個實例 中部辦公室搬遷（3D 漫遊影片 60 秒＋來源搬遷計畫簡報 1105＋說明）"
   }
  ],
  "todos": [
@@ -968,7 +980,7 @@
    "title": "HP 每晚 8 點績效比對沒在跑",
    "text": "期貨趨勢｜HP 的排程「每晚 8 點 期貨趨勢×TV 績效比對」沒在跑，要到 HP 上查排程狀態與最近執行紀錄、找出原因並回復。可能原因：HP 沒開 Claude、Chrome 沒開或 TradingView 被登出、HP 凍住重開後沒再打開、排程被停用。到 HP 開 Claude 與已登入 TradingView 的 Chrome 後，開新對話說「每晚 8 點期貨趨勢 × TV 績效比對沒在跑，查排程狀態和最近幾次執行紀錄，找出原因並回復」。（2026-11-05 使用者在公司要求）",
    "level": "warn",
-   "done": false
+   "done": true
   },
   {
    "title": "晚上討論：平面圖轉3D",
@@ -978,7 +990,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793889026537,
- "generated_text": "11/05 22:30",
- "host": "HP"
+ "generated": 1793925391867,
+ "generated_text": "11/06 08:36",
+ "host": "公司"
 }
