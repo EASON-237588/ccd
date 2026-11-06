@@ -774,6 +774,7 @@
    "name": "全台智慧資產管理平台",
    "en": "Smart Asset Platform",
    "cat": "建築&營造工具",
+   "live": "https://claude.ai/artifact/A1ZYBRZzoXdkTFTvNozuYL",
    "summary": "營建集團設備資產管理辦法第四篇的平台展示版 v1.0.0，向長官報告用：13 個功能模組（主檔與資產卡、QR 標籤、掃碼借還、全台總覽、搜尋媒合、跨工地借用調撥、結案釋出、預警、先查後買、盤點、保養校驗、報表指標、權限軌跡），圓滿案 618 件實際資料＋示意工地。附約 8 分鐘功能簡介影片。",
    "notes": [
     {
@@ -920,8 +921,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.2",
-   "last_ts": 1793978799000,
-   "last_msg": "全台智慧資產管理平台卡片：加上下兩集影片說明與影片資料夾按鈕"
+   "last_ts": 1793979874000,
+   "last_msg": "共用記憶：料件領用系統待辦使用者說先留著"
   },
   {
    "exists": true,
@@ -1035,7 +1036,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793978935917,
- "generated_text": "11/06 23:28",
+ "generated": 1793980167109,
+ "generated_text": "11/06 23:49",
  "host": "HP"
 }
