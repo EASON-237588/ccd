@@ -781,9 +781,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.51.0",
-   "last_ts": 1793937331000,
-   "last_msg": "v1.51.0：淘汰格加紅色大叉浮水印（半透明閃爍、不擋點擊）"
+   "ver": "v1.52.0",
+   "last_ts": 1793937516000,
+   "last_msg": "v1.52.0：🌟 首頁台指 B3 換成台指 B2"
   },
   {
    "exists": true,
@@ -984,7 +984,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1793937362251,
- "generated_text": "11/06 11:56",
+ "generated": 1793937546189,
+ "generated_text": "11/06 11:59",
  "host": "公司"
 }
