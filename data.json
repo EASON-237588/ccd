@@ -995,8 +995,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793978712000,
-   "last_msg": "簡介影片切成上下兩集（LINE 可直接播放）"
+   "last_ts": 1794056480000,
+   "last_msg": "精華短片 4 分 45 秒：從完整版素材挑 45 句重剪（13 個模組都保留、不重錄），開頭標精華版"
   }
  ],
  "todos": [
@@ -1031,7 +1031,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794056045526,
- "generated_text": "11/07 20:54",
+ "generated": 1794056599418,
+ "generated_text": "11/07 21:03",
  "host": "HP"
 }
