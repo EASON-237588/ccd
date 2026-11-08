@@ -771,9 +771,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v2.2.3",
-   "last_ts": 1794137859000,
-   "last_msg": "書籤匯入檔（含自己用網址）排除版控"
+   "ver": "v2.2.4",
+   "last_ts": 1794138936000,
+   "last_msg": "首頁 v2.2.4：手機版「貼上／更新自用連結」一直顯示（作品改私人後自用網址整批換新，主畫面 App 要能重貼）；手機設定連結檔排除版控"
   },
   {
    "exists": true,
@@ -887,7 +887,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794137946093,
- "generated_text": "11/08 19:39",
+ "generated": 1794139050148,
+ "generated_text": "11/08 19:57",
  "host": "HP"
 }

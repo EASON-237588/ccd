@@ -171,7 +171,7 @@
 </div>
 
 <script>
-const VERSION = 'v2.2.3';
+const VERSION = 'v2.2.4';
 let S = null;
 const NL = String.fromCharCode(10);
 const BS = String.fromCharCode(92);
@@ -295,8 +295,9 @@ function pageHome() {
       <span class="chev">›</span></button>`;
   }).join('');
   // 加到主畫面的網頁跟瀏覽器分開存資料，點設定連結會跳去瀏覽器；沒有自用網址時給一個在這裡貼上的入口（2026-11-03）
-  const newOnes = STATIC ? (Object.keys(privLinks()).length ? '' : `<button class="item dash" onclick="pastePriv()"><div class="ico">連</div>
-        <div class="txt"><b>貼上自用連結</b><span>TT 系列沒有網址時：先複製設定連結，再按這裡貼上</span></div>
+  // 2026-11-08 起一直顯示：網頁改私人走分享鎖後，自用網址會整批換新，要能在主畫面 App 裡重新貼
+  const newOnes = STATIC ? (`<button class="item dash" onclick="pastePriv()"><div class="ico">連</div>
+        <div class="txt"><b>${Object.keys(privLinks()).length ? '更新自用連結' : '貼上自用連結'}</b><span>作品沒有網址或打不開時：先複製設定連結，再按這裡貼上</span></div>
         <span class="chev">›</span></button>`) : S.unregistered.length
     ? S.unregistered.map(u => `<div class="item dash"><div class="ico">＋</div>
         <div class="txt"><b>${esc(u.dir)}</b><span>偵測到未登錄的資料夾・${esc(u.repo || '未設定遠端')}</span></div>
