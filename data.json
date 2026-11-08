@@ -772,8 +772,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.2.3",
-   "last_ts": 1794137058000,
-   "last_msg": "待辦：分享控制台的管理金鑰與自己用網址只在 HP，公司、華碩要手動複製"
+   "last_ts": 1794137859000,
+   "last_msg": "書籤匯入檔（含自己用網址）排除版控"
   },
   {
    "exists": true,
@@ -887,7 +887,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794137208323,
- "generated_text": "11/08 19:26",
+ "generated": 1794137946093,
+ "generated_text": "11/08 19:39",
  "host": "HP"
 }
