@@ -171,7 +171,7 @@
 </div>
 
 <script>
-const VERSION = 'v2.2.2';
+const VERSION = 'v2.2.3';
 let S = null;
 const NL = String.fromCharCode(10);
 const BS = String.fromCharCode(92);
@@ -312,6 +312,7 @@ function pageHome() {
       <button class="pill main" onclick="startAll()">全部開工</button>
       <button class="pill" id="fetchBtn" onclick="fetchAll()">連線查看遠端</button>
       <button class="pill" onclick="load()">重新整理</button>
+      <a class="pill" href="/share" style="text-decoration:none">分享控制台</a>
     </div>`}
   </section>
   <details class="box todobox" ${todoOpen() ? 'open' : ''} ontoggle="saveTodoOpen(this.open)">
