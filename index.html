@@ -171,7 +171,7 @@
 </div>
 
 <script>
-const VERSION = 'v2.2.5';
+const VERSION = 'v2.3.0';
 let S = null;
 const NL = String.fromCharCode(10);
 const BS = String.fromCharCode(92);
@@ -509,9 +509,34 @@ function pageProj(id) {
       ${p.repo ? `<button class="btn ghost" onclick="openIt('${p.id}','github')">GitHub ↗</button>` : ''}
       <button class="btn ghost" onclick="addNote('${p.id}')">＋注意事項</button>
     </div>`}
+    ${STATIC || !S.share || !S.share[p.id] ? '' : shareRow(p.id, S.share[p.id])}
   </section>
   ${(p.notes || []).length ? `<section class="box"><h2>注意事項${en('注意事項')}</h2><ul class="notes">${p.notes.map(n =>
     `<li><i class="lv ${n.level}"></i><span>${esc(n.text)}</span></li>`).join('')}</ul></section>` : ''}`;
+}
+
+/* ---------- 分享鎖（2026-11-08）：作品頁顯示加鎖狀態，可一鍵加入 ---------- */
+function shareRow(id, s) {
+  const can = s.state === 'gh' || s.state === 'bundle';
+  const col = s.state === 'locked' ? 'var(--green)' : can ? 'var(--yellow)' : 'var(--dim)';
+  return `<p class="sum"><b>分享鎖：</b><span style="color:${col}">${esc(s.text)}</span></p>
+    ${can ? `<div class="btns"><button class="btn go" onclick="shareEnroll('${id}','${s.state}')">加入分享鎖</button>
+      <a class="btn ghost" href="/share" style="text-decoration:none">分享控制台</a></div>` : ''}`;
+}
+async function shareEnroll(id, state) {
+  const p = S.projects.find(x => x.id === id);
+  const warn = state === 'gh'
+    ? `「${p.name}」的 GitHub 專案會改成私人，原本的公開網址立刻失效（以前分享出去的都打不開）。\n之後只能用分享鎖的網址開，管理包卡片會換成你自己用的網址。`
+    : `「${p.name}」的本機網頁會上傳一份到分享鎖，管理包卡片換成你自己用的網址。`;
+  if (!confirm(warn + '\n\n確定加入分享鎖？')) return;
+  openLog('加入分享鎖：' + p.name);
+  const r = await api('/api/share_enroll', {id});
+  showMsg(r);
+  if (r.need_token) {
+    document.getElementById('logBody').insertAdjacentHTML('beforeend',
+      `<div class="step bad"><a href="${esc(r.token_page)}" target="_blank" rel="noopener" style="color:var(--yellow)">打開 GitHub 金鑰設定頁 ↗</a>：點 share-lock → Edit → Repository access 多勾「${esc(r.need_token)}」→ Update</div>`);
+  }
+  load();
 }
 
 /* ---------- 動作 ---------- */

@@ -771,7 +771,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v2.2.5",
+   "ver": "v2.3.0",
    "last_ts": 1794143117000,
    "last_msg": "首頁 v2.2.5：手機版「更新自用連結」可貼主人登記連結，向分享鎖取自己用網址清單（長的設定連結從聊天複製常斷行）；分享鎖加 /ownerlinks 與 /admin/selflinks"
   },
@@ -887,7 +887,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794143280460,
- "generated_text": "11/08 21:08",
+ "generated": 1794143833907,
+ "generated_text": "11/08 21:17",
  "host": "HP"
 }
