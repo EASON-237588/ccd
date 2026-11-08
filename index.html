@@ -171,7 +171,7 @@
 </div>
 
 <script>
-const VERSION = 'v2.2.4';
+const VERSION = 'v2.2.5';
 let S = null;
 const NL = String.fromCharCode(10);
 const BS = String.fromCharCode(92);
@@ -222,12 +222,26 @@ if (location.hash.startsWith('#links=')) {
   history.replaceState(null, '', location.pathname);
 }
 const liveOf = p => p.live || privLinks()[p.id] || '';
-function pastePriv() {
-  const s = prompt('貼上設定連結（整串網址，或 #links= 後面那段）');
+async function pastePriv() {
+  let s = prompt('貼上主人登記連結（share-lock…/owner/ 開頭那條短的），或舊的設定連結');
   if (!s) return;
+  s = s.replace(/\s+/g, '');   // 從聊天訊息複製常被斷行或夾空白
+  // 2026-11-08 起：貼主人登記連結（或 16 碼登記碼），直接向分享鎖取「自己用網址」清單
+  const oc = (s.match(/\/owner\/([A-Za-z0-9]{16})/) || s.match(/^([A-Za-z0-9]{16})$/) || [])[1];
+  if (oc) {
+    try {
+      const r = await fetch('https://share-lock.eason-237588.workers.dev/ownerlinks/' + oc, {cache: 'no-store'});
+      if (!r.ok) throw new Error();
+      const add = await r.json();
+      localStorage.setItem(PRIV_KEY, JSON.stringify(Object.assign(privLinks(), add)));
+      alert('這支手機已記住 ' + Object.keys(add).length + ' 個自用連結');
+      render();
+    } catch (e) { alert('登記連結無效或連不上，請到管理包分享控制台重新複製'); }
+    return;
+  }
   const i = s.indexOf('#links=');
   try {
-    const add = JSON.parse(decodeURIComponent((i >= 0 ? s.slice(i + 7) : s).trim()));
+    const add = JSON.parse(decodeURIComponent(i >= 0 ? s.slice(i + 7) : s));
     localStorage.setItem(PRIV_KEY, JSON.stringify(Object.assign(privLinks(), add)));
     alert('這支手機已記住 ' + Object.keys(add).length + ' 個自用連結');
     render();
@@ -297,7 +311,7 @@ function pageHome() {
   // 加到主畫面的網頁跟瀏覽器分開存資料，點設定連結會跳去瀏覽器；沒有自用網址時給一個在這裡貼上的入口（2026-11-03）
   // 2026-11-08 起一直顯示：網頁改私人走分享鎖後，自用網址會整批換新，要能在主畫面 App 裡重新貼
   const newOnes = STATIC ? (`<button class="item dash" onclick="pastePriv()"><div class="ico">連</div>
-        <div class="txt"><b>${Object.keys(privLinks()).length ? '更新自用連結' : '貼上自用連結'}</b><span>作品沒有網址或打不開時：先複製設定連結，再按這裡貼上</span></div>
+        <div class="txt"><b>${Object.keys(privLinks()).length ? '更新自用連結' : '貼上自用連結'}</b><span>作品沒有網址或打不開時：複製主人登記連結，按這裡貼上</span></div>
         <span class="chev">›</span></button>`) : S.unregistered.length
     ? S.unregistered.map(u => `<div class="item dash"><div class="ico">＋</div>
         <div class="txt"><b>${esc(u.dir)}</b><span>偵測到未登錄的資料夾・${esc(u.repo || '未設定遠端')}</span></div>
