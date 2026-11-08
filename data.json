@@ -748,8 +748,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1793925196000,
-   "last_msg": "project-hub-ops：開工處理自查第二之一段（沒收工、可能已處理的待辦）、收工先跑收工檢查、錯誤表加第 11 條"
+   "last_ts": 1794144575000,
+   "last_msg": "新增技能 share-lock-ops（作品分享控制台／分享鎖）；index-trend-ops 舊網址改指向分享鎖"
   },
   {
    "exists": true,
@@ -772,8 +772,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794143945000,
-   "last_msg": "首頁 v2.3.0：作品頁「加入分享鎖」一鍵完成（GitHub 網頁改私人或本機網頁上傳、建自己用網址、卡片換網址、同步手機清單）；上傳版每 5 分鐘偵測本機檔案改動自動重傳；作品對照表搬到 分享鎖/作品表.json"
+   "last_ts": 1794144613000,
+   "last_msg": "收工共用記憶：1108 晚 HP 分享鎖整套上線；勾掉「管理金鑰要手動複製」待辦（已進版控）"
   },
   {
    "exists": true,
@@ -883,11 +883,11 @@
   {
    "text": "專案管理包｜分享控制台：管理金鑰（專案管理包\\分享鎖\\管理金鑰.txt）與自己用網址清單（分享鎖\\自己用網址.json）只在 HP 本機、不進版控；公司、華碩要用分享控制台，需把這兩個檔從 HP 手動複製到同一個資料夾",
    "level": "info",
-   "done": false
+   "done": true
   }
  ],
  "unregistered": [],
- "generated": 1794144091182,
- "generated_text": "11/08 21:21",
+ "generated": 1794144648425,
+ "generated_text": "11/08 21:30",
  "host": "HP"
 }
