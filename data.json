@@ -11,86 +11,16 @@
    "name": "GOLD分析儀表板",
    "en": "Gold Analytics Dashboard",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/gold-range-filter/",
    "summary": "Range Filter 訊號單頁 App（上方 11 分、下方 15 分），PWA 可裝主畫面。另含 Cloudflare Worker 做 LINE 推播（只推 11 分），關掉 App 也收得到訊號。資料源 Binance PAXG，Coinbase／OKX／gold-api 備援。",
-   "publish": "push 到 main 即更新 Pages。推播 Worker 要另外 wrangler deploy。",
-   "notes": [
-    {
-     "level": "info",
-     "text": "【現況 V2.05，2026-09-14】上下兩格都是 11 分：上方 Donchian 回看350時／1段／停損8 ATR／只做多，下方 Range Filter 200/23 多空反轉。11 分不是 Binance 原生週期，用 1 分 K 合成，而 1 分 K 只回溯約 312 天，實際只載得動 20,000 根＝約 152 天——這兩格是看即時訊號與訊號分歧，不是判斷策略好壞；看績效去 TradingView。改預設值要同時改 HTML 的 value/selected/checked、JS 的 DEFAULTS、以及兩處 A/B 重設迴圈，只改一邊會被蓋回去。新增面板時凡是 $(\"xxx\"+p.k) 的取值都要確認元素存在，讀到 null 會整頁空白。維運細節看 skill gold-dashboard-ops。"
-    },
-    {
-     "level": "warn",
-     "text": "回測會騙人的五個地方：①Range Filter 前 6×per 根是暖機假訊號，要排除，否則優化出相反結論。②根數不是天數：15 分 50,000 根只有 2.1 年、140,000 根才 5.8 年，兩者對空單的結論相反（+6.40% 對 -1.09%）。③TradingView 佣金預設 0：RF 9,469 筆零成本 -0.39%，加 0.02% 變 -29.17%。④訂單大小選「數量」會變幾百倍槓桿（+50,783% 同時回撤 446%，回撤超過 100% 就是斷頭）。⑤止損／止盈／移動止損會殺死 RF：同參數開著 -27.38%、全關 +363.05%，趨勢訊號要讓它自己出場。"
-    },
-    {
-     "level": "warn",
-     "text": "移植策略時，值域、再平衡頻率、做不做空都跟參數一樣是規格，要逐項對原始碼，這類錯不會報錯只會結果怪：①Faber 200MA 與 TSMOM 是月底檢查一次，寫成日檢 GC=F 26 年從 21 筆 +666.5% 變 104 筆 +507.8%，大空頭也擋不住；Donchian 本來就是日頻別改。②廣度×密度原始值域 0~1 只做多，JS 寫成 ×2-1 變成會翻空，-27.25% 對 +40.02%。Pine 四個坑：括號外續行縮排是 4 的倍數會被當新區塊；if 與 else if 之間不能空行；barcolor 只對 K 棒有效，折線圖要用 plot(close,color=…)；只寫兩態反轉時關掉做空會變成買進持有（+540%、0 筆已平倉，很像大成功）。"
-    },
-    {
-     "level": "warn",
-     "text": "【日線長期結論 2026-09-13】七種結構不同的策略（Range Filter 各週期、Faber 200MA、TSMOM 回看 1-24 月、Donchian、雙確認、動量廣度、新高密度）× 三個資料源（GC=F 26 年含 2011-15 -43% 大空頭、GLD、PAXG）：①沒有一個穩定贏買進持有，最好的 TSMOM12 換 GLD 就輸，回看期敏感度是雙峰不是高原。②樣本對半切，後半段（2013 起）沒有任何策略任何參數贏全抱。③擇時唯一穩定的能力是降低回撤，是保險不是報酬增強器。取捨（26 年 報酬/回撤/空頭段）：全抱 +1492%/44.4%/-42.4%；TSMOM12 只做多 +1153%/34.4%/-24.6%；廣度×密度 +299%/17.0%/-14.4%。沒有大空頭時擇時就是持續扣報酬。這是日線結論；之後 11 分在 TradingView 上另有結果，見下面幾條。"
-    },
-    {
-     "level": "info",
-     "text": "失敗的嘗試，不要重做（程式在 research/）：①一半抱著＋一半由 RF 只做多控制（2026-09-11，GC=F 20 年 0/195 組及格，事先約定不再調）。②雙確認防護（12 月動量與 200 日均線同時轉空才出場）：沒解決後半段失效，出場嚴則保護弱、出場鬆則多頭被巴，調出場時機跳不出這個蹺蹺板。③廣度×密度：回撤壓到 17% 但報酬只剩 +299%，指標本身帶選擇偏誤；V1.11 曾放在第三張圖當風險狀態指示，PAXG 4 年 +40%／回撤 9.3%，小輸全抱。"
-    },
-    {
-     "level": "info",
-     "text": "TVC:GOLD 11 分 19.5 年（2007-03~2026-09）最佳參數，無槓桿＋含成本：Range Filter 取樣 200／乘數 23／ATR 12／源 (H+L)/2／止損全關 → +608.28%／回撤 24.77%／774 筆／獲利因子 1.443，首次在報酬上超過買進持有（約 +540%），代價是回撤大四倍。取樣 150~250 是平緩區；乘數 23 是窄峰（15 只剩 5.5、30 剩 7.2 的報酬÷回撤）。Donchian 回看 350 時／1 段／停損 8 → +41.96%／回撤 5.75%／156 筆。分批加碼單調變差（1 段最好）。儀表板 152 天 PAXG 上同一組是 -6.76%，樣本差 47 倍又是不同商品，沒有可比性。"
-    },
-    {
-     "level": "warn",
-     "text": "做空的實測紀錄：TVC:GOLD 19.5 年 Donchian 只做多 +13.72%／回撤 17.12%，多空 -14.95%／61.12%；再加上七種日線策略、七個加密商品、160 組不對稱空單、EURUSD，五次都是空單扣分。短樣本裡空單好看多半是單一筆：11 分 221 天空單 +28.88% 中，2026-03-03 那一筆（5650→4048 崩跌）占 67.4%，前 3 筆占 92.9%；起點挪 91 天多單就差四倍。看到漂亮的空單先算單筆集中度。注意：使用者 2026-09-20 明確要求GOLD與台指期多空雙做，這條是給測試時參考的數字，不要拿來勸只做多或自己關掉做空去測。"
-    },
-    {
-     "level": "warn",
-     "text": "Range Filter 的 ATR 過濾與交易量過濾（V2.05 依常見寫法實作，不是 TradingView 原碼；TradingView 原碼的 ATR 過濾本身就無效）：PAXG 11 分 20,000 根，兩道都關 -5.78%，只開 ATR 完全相同（一次都沒擋到），只開量 -3.95%，四種設定筆數都是 34——只推遲換手時機、不取消換手，想靠它減少交易次數是錯方向。TVC:GOLD 幾乎沒有成交量，量過濾在那邊形同虛設。"
-    },
-    {
-     "level": "info",
-     "text": "通用趨勢反手 v1.2.0（2026-09-23，檔案在專案根目錄）：加了多空不對稱倍數與日線方向濾網，預設關閉時與 v1.1.0 結果完全相同。台指期 10 秒只有約 17 個月且全是多頭，驗不了空單；那斯達克 NQ1! 2 分 60/70＋日線 60 日濾網（只擋空單）5 年 +131%、回撤 11.8%、逐年無虧、空單轉正，已套用到版面 844 並存成腳本預設。倍數 70 是窄峰，60 只剩 +30%。TradingView 版面會記住舊版腳本，改完程式碼不會自動套到其他格。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "gold-range-filter"
+   "machine": "共用"
   },
   {
    "id": "indextrend",
    "name": "期貨趨勢",
    "en": "Futures Trend",
    "cat": "交易策略",
-   "live": "https://eason-237588.github.io/index-trend-dashboard/",
    "summary": "三格即時趨勢訊號：那斯達克 30 秒 Range Filter 200/23、那斯達克 6 分 Donchian 350 小時只做多、GOLD 8 分 Donchian 350 小時多空反轉。照 TradingView 版面 JuwDqkR0 的腳本原始碼逐行移植。單檔 index.html，純前端。手機直式三格上下等分、不捲動；30 秒標「短趨勢」、6 分與GOLD 8 分標「中長趨勢」（那斯達克空手畫綠、GOLD空手畫紅）；預設縮到最小、數字不顯示小數；價格刻度在右側窄欄（寬度依數字自動算，不跟走勢線疊在一起）。目前 v1.0.5。",
-   "publish": "推到 main 即更新 GitHub Pages。版本號改 index.html 的 VERSION 與標題。",
-   "notes": [
-    {
-     "level": "warn",
-     "text": "每次開工都要跑「實際紀錄」資料夾的更新紀錄程式（python 更新紀錄.py），把上次之後的進出點追加進進出紀錄檔（2026-11-03 起開工不出績效表、三候選、名次總表、四格綜合績效，使用者用手機網頁自己看）。紀錄只追加不改舊列；C 格用單一月份合約，換月時記「換倉」；12 月約之後的合約清單在程式開頭，2027-06 以後要往下加。B 格 Hyperliquid 只給最近約 3.5 天，超過 3 天沒開工會缺資料。跑完記得提交進出紀錄檔。"
-    },
-    {
-     "level": "warn",
-     "text": "那斯達克兩格用 Binance QQQUSDT 永續合約代替 NQ（NQ 無免費即時源，Yahoo 延遲 10 分鐘且無 CORS），價格依 Hyperliquid xyz:XYZ100 換算成那斯達克 100 點數，比 NQ 低約 0.9%（期貨持有成本）。Hyperliquid 每種週期只給最近 5,000 根，回看 350 小時不夠用，所以訊號不能改用它算。"
-    },
-    {
-     "level": "info",
-     "text": "2026-10-07 對帳：GOLD 8 分最近翻空時間與 TradingView 完全相同（9/02 09:44），證明 Donchian 移植、8 分從美東 18:00 起算、休市剔除都正確。那斯達克 6 分進場晚 3 天（TV 9/18、這裡 9/21），推測是 NQ 回溯調整連續合約換月平移。30 秒在美歐時段差約 2 分鐘，美東半夜 QQQ 合約成交稀疏會多出假翻轉。"
-    },
-    {
-     "level": "warn",
-     "text": "歷史要抓回看長度的 3 倍（約 64 天的 1 分 K）。只抓回看＋一點點會從半路算起，v1.0.0 開發時只抓 23 天，那斯達克與GOLD的進場都錯。30 秒要 3,200 根（前 1,200 根暖機），第一次開約一分多鐘，之後存在瀏覽器只補缺。"
-    },
-    {
-     "level": "info",
-     "text": "Range Filter 原碼的 ATR 過濾是 close > close − ATR×1.5，ATR>0 時恆成立、不擋訊號；量過濾是量 > 20 根均量 ×0.8（不是GOLD儀表板寫的「> 均量」）。GOLD儀表板的 Donchian 停損後要等方向離開才重進，Pine 原碼是再突破一次就重進，這裡照 Pine。"
-    },
-    {
-     "level": "warn",
-     "text": "iPhone 加到主畫面時，100dvh 會少算高度、底部空一大塊（v1.0.2 實際發生），所以外框用 position:fixed＋上下左右 0 釘滿螢幕。另外測試時連續重新整理會撞到 Binance 每分鐘請求上限（429），頁面會自動等 60 秒，開發時不要短時間內反覆重載。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "index-trend-dashboard"
+   "machine": "共用"
   },
   {
    "id": "stock",
@@ -105,59 +35,24 @@
    "name": "工地降雨系統",
    "en": "Site Weather Monitor",
    "cat": "建築&營造工具",
-   "live": "https://eason-237588.github.io/site-weather/",
    "summary": "工地氣象監控。桌機版 v2.9 定版，只改手機版。上線走另一個 repo site-weather，只放產出不做開發。",
-   "publish": "python build_web.py → 把 上傳這個_手機版/m.html 複製進 site-weather repo 的 m.html 再推送。",
-   "notes": [
-    {
-     "level": "warn",
-     "text": "工地氣象監控_v2.9_定版.html 永不修改。手機版只改 make_mobile.py，絕不手改產出的 HTML。"
-    },
-    {
-     "level": "info",
-     "text": "交接_降雨系統-3.md 第 11 行的路徑還是舊機器的 C:/Users/User/Desktop/CC/，在公司照貼會找不到。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "site-weather-src"
+   "machine": "共用"
   },
   {
    "id": "exhaust",
    "name": "排氣聲浪",
    "en": "Exhaust Note",
    "cat": "個人小品",
-   "live": "https://eason-237588.github.io/exhaust-note-site/",
    "summary": "GPS 車速驅動的引擎聲浪模擬。六段 wav 已 base64 內嵌，完全離線可用。",
-   "publish": "push 到 main 即更新 Pages。",
-   "notes": [
-    {
-     "level": "warn",
-     "text": "SportsSound 資料夾還在進行中，不要動、不要合併、不要刪。"
-    },
-    {
-     "level": "info",
-     "text": "原始音檔在 運動音效素材/，刻意只留本機不進 Git。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "exhaust-note-site"
+   "machine": "共用"
   },
   {
    "id": "brain",
    "name": "腦波同步實驗室",
    "en": "Brainwave Entrainment Lab",
    "cat": "個人小品",
-   "live": "https://eason-237588.github.io/entrainment-lab/",
    "summary": "光聲夾帶實驗台。單檔 index.html，瀏覽器直接開。",
-   "publish": "push 到 main 即更新 Pages。",
-   "notes": [
-    {
-     "level": "info",
-     "text": "所有專案裡最單薄的：只有一個 commit、沒有 README。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "entrainment-lab"
+   "machine": "共用"
   },
   {
    "id": "gps",
@@ -209,25 +104,8 @@
    "name": "倉儲管理領料台",
    "en": "Warehouse Material Issue",
    "cat": "建築&營造工具",
-   "live": "https://eason-237588.github.io/site-material/",
    "summary": "圓滿案工地倉庫料件領用系統（現場端測試版）。品項主檔 + 流水帳兩層，期初庫存由系統回推而非人工輸入。主體是含 VBA 的 xlsm，另出網頁版供工地端使用。",
-   "publish": "現場端網頁走 上線用/ 底下的 public repo site-material → GitHub Pages；xlsm 主體只存在 private repo material-requisition。",
-   "notes": [
-    {
-     "level": "warn",
-     "text": "xlsm 是二進位檔，Git 沒辦法做差異比對，每改一次就整包再存一份（單檔約 1MB）。"
-    },
-    {
-     "level": "warn",
-     "text": "上線用/ 是另一個獨立的 public repo site-material（現場端），已在 .gitignore 排除，要更新現場端請進那個資料夾操作。"
-    },
-    {
-     "level": "info",
-     "text": "site-material 是 public，上工地端前確認沒有把工地名稱以外的業主資料寫進去。"
-    }
-   ],
-   "machine": "公司",
-   "repo": "material-requisition"
+   "machine": "公司"
   },
   {
    "id": "legend",
@@ -506,21 +384,8 @@
    "name": "鋼筋搭接查詢",
    "en": "Rebar Lap Lookup",
    "cat": "建築&營造工具",
-   "live": "https://eason-237588.github.io/rebar-lap/",
    "summary": "手機點幾下查鋼筋搭接／伸展長度。依結構混凝土設計規範簡化式計算（D19 以下 ÷6.6、D22 以上 ÷5.3；乙級 1.3ℓd、甲級＝乙級÷1.3），與示範影片數字逐一核對一致。純前端、免安裝。",
-   "publish": "改完 python bump.py → python build_web.py，再提交推上去，Pages 一兩分鐘後更新。",
-   "notes": [
-    {
-     "level": "info",
-     "text": "原始碼是 index.html／styles.css／data.js／app.js，GitHub Pages 直接從 main 根目錄發布；單檔版、上線用、送出用都是產物，不進版控。"
-    },
-    {
-     "level": "warn",
-     "text": "未計入間距保護層不足 ×1.5、環氧樹脂塗布、輕質混凝土；fy 5000／5600 為公式外推，未查證高強度鋼筋限制。受壓搭接與受壓伸展沒有實表可對，尚未核對。"
-    }
-   ],
-   "machine": "共用",
-   "repo": "rebar-lap"
+   "machine": "共用"
   },
   {
    "id": "project-hub",
@@ -814,16 +679,12 @@
   {
    "exists": true,
    "git": true,
-   "ver": "V2.07",
-   "last_ts": 1793597749000,
-   "last_msg": "推播程式：甲30 /j30 改顯示合計（已實現＋浮動）"
+   "ver": "V2.07"
   },
   {
    "exists": true,
    "git": true,
-   "ver": "v1.57.0",
-   "last_ts": 1794121304000,
-   "last_msg": "v1.57.0：🌟 首頁改上 4 下 4，上排最右加那斯達克日線 RF 15/4"
+   "ver": "v1.57.0"
   },
   {
    "exists": true,
@@ -833,23 +694,17 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v2.9",
-   "last_ts": 1792763896000,
-   "last_msg": "影片製作：補上今日版本比對與腳本，新網站副本不進版控"
+   "ver": "v2.9"
   },
   {
    "exists": true,
    "git": true,
-   "ver": "v2.1",
-   "last_ts": 1788266794000,
-   "last_msg": "橫向版面保留調校滑桿，改用壓縮尺寸容納"
+   "ver": "v2.1"
   },
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1788269724000,
-   "last_msg": "光聲夾帶實驗台：可調頻率的聲光夾帶示範"
+   "ver": ""
   },
   {
    "exists": true,
@@ -868,9 +723,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1793977339000,
-   "last_msg": "設備資產版 Excel（副產品留存）"
+   "ver": ""
   },
   {
    "exists": true,
@@ -913,9 +766,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "",
-   "last_ts": 1791788296000,
-   "last_msg": "鋼筋搭接查詢 002 版：手機查鋼筋搭接與伸展長度"
+   "ver": ""
   },
   {
    "exists": true,
@@ -1031,7 +882,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794131656032,
- "generated_text": "11/08 17:54",
+ "generated": 1794134910777,
+ "generated_text": "11/08 18:48",
  "host": "HP"
 }
