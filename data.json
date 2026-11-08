@@ -772,8 +772,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794143117000,
-   "last_msg": "首頁 v2.2.5：手機版「更新自用連結」可貼主人登記連結，向分享鎖取自己用網址清單（長的設定連結從聊天複製常斷行）；分享鎖加 /ownerlinks 與 /admin/selflinks"
+   "last_ts": 1794143945000,
+   "last_msg": "首頁 v2.3.0：作品頁「加入分享鎖」一鍵完成（GitHub 網頁改私人或本機網頁上傳、建自己用網址、卡片換網址、同步手機清單）；上傳版每 5 分鐘偵測本機檔案改動自動重傳；作品對照表搬到 分享鎖/作品表.json"
   },
   {
    "exists": true,
@@ -887,7 +887,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794143833907,
- "generated_text": "11/08 21:17",
+ "generated": 1794144091182,
+ "generated_text": "11/08 21:21",
  "host": "HP"
 }
