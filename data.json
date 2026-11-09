@@ -756,8 +756,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794184934000,
-   "last_msg": "share-lock-ops：主人裝置兩段式登記、名稱欄、這台是哪一筆、11/09 名稱現況"
+   "last_ts": 1794204799000,
+   "last_msg": "share-lock-ops：金鑰改全部專案（11/09）、正確的 Edit 位置、新專案搜尋延遲、同帳號 workers 互打錯誤 1042 改服務綁定"
   },
   {
    "exists": true,
@@ -780,8 +780,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794204462000,
-   "last_msg": "分享鎖：同步轉送改走服務綁定 SYNC（同帳號 workers.dev 用網址互打被 Cloudflare 擋，錯誤 1042）；已部署，自主檢查表實測「已同步」"
+   "last_ts": 1794204797000,
+   "last_msg": "分享鎖：唯讀金鑰 share-lock 改為全部專案（使用者 11/09 決定，新作品不必再進 GitHub 勾專案）；加入分享鎖讀不到時的提示改成正確路徑（Access on 的 Edit → All repositories）"
   },
   {
    "exists": true,
@@ -903,7 +903,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794204760148,
- "generated_text": "11/09 14:12",
+ "generated": 1794204898950,
+ "generated_text": "11/09 14:14",
  "host": "公司"
 }
