@@ -866,12 +866,16 @@
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1794222348000,
+   "last_msg": "雲端程式設定：填入已建立的資料庫編號（11/09 上午建好並部署時填的，當時漏提交）"
   },
   {
    "exists": true,
    "git": true,
-   "ver": ""
+   "ver": "",
+   "last_ts": 1794210088000,
+   "last_msg": "機電工地管理平台（草案）版本 030：桌機版九大模組"
   }
  ],
  "todos": [
@@ -911,7 +915,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794223314939,
- "generated_text": "11/09 19:21",
+ "generated": 1794224048968,
+ "generated_text": "11/09 19:34",
  "host": "HP"
 }
