@@ -748,8 +748,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794144575000,
-   "last_msg": "新增技能 share-lock-ops（作品分享控制台／分享鎖）；index-trend-ops 舊網址改指向分享鎖"
+   "last_ts": 1794184934000,
+   "last_msg": "share-lock-ops：主人裝置兩段式登記、名稱欄、這台是哪一筆、11/09 名稱現況"
   },
   {
    "exists": true,
@@ -882,7 +882,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794184451709,
- "generated_text": "11/09 08:34",
+ "generated": 1794184998091,
+ "generated_text": "11/09 08:43",
  "host": "公司"
 }
