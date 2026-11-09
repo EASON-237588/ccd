@@ -772,8 +772,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794184427000,
-   "last_msg": "待辦：使用者在公司從管理包頁面刪除兩條（分享控制台管理金鑰手動複製〔已完成〕、分享鎖主人裝置清單加名稱欄〔使用者確認不做〕）"
+   "last_ts": 1794192816000,
+   "last_msg": "分享鎖：加同步作品轉送（施工查驗 gh:site-inspection 的 api/ 驗過後帶 SYNC_KEY 轉給 site-inspect-sync）；尚未部署"
   },
   {
    "exists": true,
@@ -882,7 +882,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794184998091,
- "generated_text": "11/09 08:43",
+ "generated": 1794192971830,
+ "generated_text": "11/09 10:56",
  "host": "公司"
 }
