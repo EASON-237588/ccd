@@ -685,6 +685,7 @@
   {
    "id": "mep-site-platform",
    "name": "機電工地管理平台",
+   "cat": "建築&營造工具",
    "summary": "崇偉科技 機電工地管理平台（草案）：管理規章、工作職掌、施工計畫書送審與範本、採購、圖說／材料送審、工程進度、日報週報、自主檢查表線上填寫（桌機版，手機版待做）"
   }
  ],
@@ -785,8 +786,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794204797000,
-   "last_msg": "分享鎖：唯讀金鑰 share-lock 改為全部專案（使用者 11/09 決定，新作品不必再進 GitHub 勾專案）；加入分享鎖讀不到時的提示改成正確路徑（Access on 的 Edit → All repositories）"
+   "last_ts": 1794210285000,
+   "last_msg": "管理包：機電工地管理平台卡片分類設為「建築&營造工具」（原落在未分類）"
   },
   {
    "exists": true,
@@ -909,7 +910,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794210160452,
- "generated_text": "11/09 15:42",
+ "generated": 1794210345696,
+ "generated_text": "11/09 15:45",
  "host": "公司"
 }
