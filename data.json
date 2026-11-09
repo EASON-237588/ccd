@@ -780,8 +780,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794194205000,
-   "last_msg": "管理包：加「自主檢查表」卡片（gh:site-inspection 私人版、自己用網址）；待辦：自主檢查表上線最後一步（勾唯讀金鑰＋雲端實測）"
+   "last_ts": 1794204462000,
+   "last_msg": "分享鎖：同步轉送改走服務綁定 SYNC（同帳號 workers.dev 用網址互打被 Cloudflare 擋，錯誤 1042）；已部署，自主檢查表實測「已同步」"
   },
   {
    "exists": true,
@@ -903,7 +903,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794194245810,
- "generated_text": "11/09 11:17",
+ "generated": 1794204576070,
+ "generated_text": "11/09 14:09",
  "host": "公司"
 }
