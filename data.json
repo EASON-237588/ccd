@@ -894,16 +894,10 @@
    "text": "平面圖轉3D｜晚上討論（2026-11-05 使用者在公司交代）：中部辦公室搬遷的 3D 漫遊影片是由平面圖轉出來的。要談：影片用什麼軟體、從座位表圖檔還是簡報做的；要不要做成「給平面圖 → 自動出 3D 與影片」的可重複流程；跟機電3D模擬怎麼分工。（GitHub 私人倉庫 office-floorplan-3d 已建好推上去）",
    "level": "warn",
    "done": false
-  },
-  {
-   "title": "自主檢查表上線最後一步",
-   "level": "warn",
-   "done": false,
-   "text": "自主檢查表（資料夾 施工查驗、GitHub 私人 site-inspection）｜2026-11-09 公司已完成：雲端資料庫 D1 site-inspect、同步伺服器 site-inspect-sync、兩邊暗號（LOCK_KEY／SYNC_KEY）、分享鎖新版部署、管理包卡片與自己用網址。還差：①使用者到 https://github.com/settings/personal-access-tokens → share-lock → Edit → Repository access 多勾 site-inspection → Update（勾之前網頁打不開）；②勾好後用管理金鑰查 ghcheck?repo=site-inspection 要 200；③另建一條「測試」分享實測開網頁、存檔同步、照片上傳下載，測完刪掉（不要用自己用網址測，會佔名額）；④主人裝置開自己用網址確認。"
   }
  ],
  "unregistered": [],
- "generated": 1794204898950,
- "generated_text": "11/09 14:14",
+ "generated": 1794205445347,
+ "generated_text": "11/09 14:24",
  "host": "公司"
 }
