@@ -534,7 +534,7 @@ async function shareEnroll(id, state) {
   showMsg(r);
   if (r.need_token) {
     document.getElementById('logBody').insertAdjacentHTML('beforeend',
-      `<div class="step bad"><a href="${esc(r.token_page)}" target="_blank" rel="noopener" style="color:var(--yellow)">打開 GitHub 金鑰設定頁 ↗</a>：點 share-lock → Edit → Repository access 多勾「${esc(r.need_token)}」→ Update</div>`);
+      `<div class="step bad"><a href="${esc(r.token_page)}" target="_blank" rel="noopener" style="color:var(--yellow)">打開 GitHub 金鑰設定頁 ↗</a>：分享鎖讀不到「${esc(r.need_token)}」。點 share-lock →「Access on EASON-237588」右邊的 Edit → Repository access 應選 All repositories → Update</div>`);
   }
   load();
 }
