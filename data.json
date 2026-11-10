@@ -888,8 +888,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794295389000,
-   "last_msg": "出勤管制平台第一版 v001：月總表、每日登錄、統計、人員、Excel 匯入匯出"
+   "last_ts": 1794296021000,
+   "last_msg": "出勤管制平台 v002：雲端同步"
   }
  ],
  "todos": [
@@ -933,7 +933,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794295450287,
- "generated_text": "11/10 15:24",
+ "generated": 1794296177345,
+ "generated_text": "11/10 15:36",
  "host": "公司"
 }
