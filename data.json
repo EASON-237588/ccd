@@ -793,8 +793,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794297913000,
-   "last_msg": "共用記憶：新增「出勤管制平台 1110」"
+   "last_ts": 1794298980000,
+   "last_msg": "分享控制台：控制表一條一框，依對象分色"
   },
   {
    "exists": true,
@@ -933,7 +933,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794298002431,
- "generated_text": "11/10 16:06",
+ "generated": 1794299091806,
+ "generated_text": "11/10 16:24",
  "host": "公司"
 }
