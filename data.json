@@ -769,8 +769,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794301036000,
-   "last_msg": "技能 share-lock-ops：記錄卡片網址自動同步給手機（11/10）"
+   "last_ts": 1794301775000,
+   "last_msg": "技能：新增 attendance-control-ops（出勤管制平台操作）與 handoff-1110（11/10 公司接續清單）"
   },
   {
    "exists": true,
@@ -793,8 +793,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794301054000,
-   "last_msg": "共用記憶：新增「新作品不准要使用者記手動步驟」（1110）"
+   "last_ts": 1794301778000,
+   "last_msg": "共用記憶：1110 公司收工"
   },
   {
    "exists": true,
@@ -939,7 +939,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794301172027,
- "generated_text": "11/10 16:59",
+ "generated": 1794301900263,
+ "generated_text": "11/10 17:11",
  "host": "公司"
 }
