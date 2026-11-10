@@ -692,7 +692,6 @@
    "id": "attendance-control",
    "name": "出勤管制平台",
    "cat": "建築&營造工具",
-   "live": "",
    "summary": "崇偉機電部人員出勤管制，取代 Excel 機電每日出勤表。以第三張工作表記法為準（空白＝出勤、只記例外），月總表點格子填、手機每日登錄、人數與假別自動統計、匯入匯出 Excel。11/10 初步架構，見 架構說明.md。",
    "notes": [
     {
@@ -936,7 +935,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794294355125,
- "generated_text": "11/10 15:05",
+ "generated": 1794294539246,
+ "generated_text": "11/10 15:08",
  "host": "公司"
 }
