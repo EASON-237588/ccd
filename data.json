@@ -888,8 +888,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794296021000,
-   "last_msg": "出勤管制平台 v002：雲端同步"
+   "last_ts": 1794297695000,
+   "last_msg": "出勤管制平台 v003：資料頁加「清除整個月」"
   }
  ],
  "todos": [
@@ -933,7 +933,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794296729442,
- "generated_text": "11/10 15:45",
+ "generated": 1794297818430,
+ "generated_text": "11/10 16:03",
  "host": "公司"
 }
