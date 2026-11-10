@@ -222,6 +222,23 @@ if (location.hash.startsWith('#links=')) {
   history.replaceState(null, '', location.pathname);
 }
 const liveOf = p => p.live || privLinks()[p.id] || '';
+// 2026-11-10：貼過主人登記連結就記住登記碼，之後每次打開（或從背景切回來）自動重抓清單，新作品不必再貼
+const OWNER_KEY = 'hub.ownerCode';
+const OWNER_LINKS = 'https://share-lock.eason-237588.workers.dev/ownerlinks/';
+async function refreshPriv() {
+  let oc = '';
+  try { oc = localStorage.getItem(OWNER_KEY) || ''; } catch (e) {}
+  if (!STATIC || !oc) return;
+  try {
+    const r = await fetch(OWNER_LINKS + oc, {cache: 'no-store'});
+    if (r.status === 404) { localStorage.removeItem(OWNER_KEY); return; }   // 登記碼被「全部作廢」換掉了，要重貼新的
+    if (!r.ok) return;
+    const before = JSON.stringify(privLinks()), add = await r.json();
+    const after = JSON.stringify(Object.assign(privLinks(), add));
+    if (after !== before) { localStorage.setItem(PRIV_KEY, after); if (S) render(); }
+  } catch (e) {}
+}
+if (STATIC) document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshPriv(); });
 async function pastePriv() {
   let s = prompt('貼上主人登記連結（share-lock…/owner/ 開頭那條短的），或舊的設定連結');
   if (!s) return;
@@ -230,11 +247,12 @@ async function pastePriv() {
   const oc = (s.match(/\/owner\/([A-Za-z0-9]{16})/) || s.match(/^([A-Za-z0-9]{16})$/) || [])[1];
   if (oc) {
     try {
-      const r = await fetch('https://share-lock.eason-237588.workers.dev/ownerlinks/' + oc, {cache: 'no-store'});
+      const r = await fetch(OWNER_LINKS + oc, {cache: 'no-store'});
       if (!r.ok) throw new Error();
       const add = await r.json();
       localStorage.setItem(PRIV_KEY, JSON.stringify(Object.assign(privLinks(), add)));
-      alert('這支手機已記住 ' + Object.keys(add).length + ' 個自用連結');
+      localStorage.setItem(OWNER_KEY, oc);
+      alert('這支手機已記住 ' + Object.keys(add).length + ' 個自用連結，之後新作品會自動補上');
       render();
     } catch (e) { alert('登記連結無效或連不上，請到管理包分享控制台重新複製'); }
     return;
@@ -591,6 +609,7 @@ async function fetchAll() {
 }
 
 load();
+refreshPriv();
 </script>
 </body>
 </html>
