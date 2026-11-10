@@ -793,8 +793,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794296221000,
-   "last_msg": "分享鎖接上出勤管制平台雲端同步（已部署）"
+   "last_ts": 1794296482000,
+   "last_msg": "待辦：刪除「11/10 決定指數所有策略要用哪幾組」"
   },
   {
    "exists": true,
@@ -933,7 +933,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794296361222,
- "generated_text": "11/10 15:39",
+ "generated": 1794296545429,
+ "generated_text": "11/10 15:42",
  "host": "公司"
 }
