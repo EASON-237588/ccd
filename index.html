@@ -127,6 +127,8 @@
   .notes{margin:6px 0 0;padding:0}
   .notes li{list-style:none;display:flex;gap:8px;font-size:14px;padding:6px 0;position:relative}
   .works a{color:#fff;text-shadow:var(--glowHead)}
+  /* 2026-11-11 使用者：所有影片連結紅字 */
+  .txt a.live.vid,.works a.vid{color:#ff4d4d!important;text-shadow:0 0 6px rgba(255,60,60,.55)!important}
   .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
   .btn{border:1px solid rgba(0,229,255,.75);background:transparent;border-radius:10px;padding:6px 13px;font-size:14px;box-shadow:0 0 2px #00E5FF}
   a.btn{display:inline-block;text-decoration:none;color:#fff}
@@ -222,6 +224,8 @@ if (location.hash.startsWith('#links=')) {
   history.replaceState(null, '', location.pathname);
 }
 const liveOf = p => p.live || privLinks()[p.id] || '';
+// 作品行的網址：電腦版直接有 url；手機公開清單把帶鎖網址拿掉、留 sl（自用連結清單的鍵「卡片id#w第幾行」）
+const workUrl = w => w.url || (w.sl && privLinks()[w.sl]) || '';
 // 2026-11-10：貼過主人登記連結就記住登記碼，之後每次打開（或從背景切回來）自動重抓清單，新作品不必再貼
 const OWNER_KEY = 'hub.ownerCode';
 const OWNER_LINKS = 'https://share-lock.eason-237588.workers.dev/ownerlinks/';
@@ -450,9 +454,9 @@ function pageCat(c) {
       const col = ICO_COLORS[[...p.name].reduce((a, ch) => a + ch.charCodeAt(0), 0) % ICO_COLORS.length];
       // 只放最新網址（線上版），細節到專案頁再看
       // 有多個作品（works）就每個作品一行，名稱後面帶版本號（改版時記得更新 projects.json 的 title）
-      const link = (url, text) => `<a class="live" href="${esc(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(text)} ↗</a>`;
+      const link = (url, text, vid) => `<a class="live${vid ? ' vid' : ''}" href="${esc(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(text)} ↗</a>`;
       const sub = (p.works || []).length
-        ? p.works.map(w => link(w.url, w.title)).join('')
+        ? p.works.map(w => workUrl(w) ? link(workUrl(w), w.title, w.video) : '').join('')
         : liveOf(p) ? link(liveOf(p), liveOf(p).replace(/^https?:\/\//, '').replace(/\/$/, ''))
         : '';  // 沒網址就不顯示（2026-11-03 使用者要求）
       return `<div class="item" role="button" tabindex="0" onclick="go('/p/${encodeURIComponent(p.id)}')">
@@ -508,7 +512,7 @@ function pageProj(id) {
     ${STATIC ? '' : lastRunLine(p.id, st)}
     ${STATIC ? '' : `<div class="badges">${badges(st, p)}</div>`}
     ${p.summary ? `<p class="sum">${esc(p.summary)}</p>` : ''}
-    ${(p.works || []).length ? `<div class="works">${p.works.map(w => `<div>${esc(w.desc)}：<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.title)} ↗</a></div>`).join('')}</div>` : ''}
+    ${(p.works || []).length ? `<div class="works">${p.works.filter(workUrl).map(w => `<div>${esc(w.desc)}：<a${w.video ? ' class="vid"' : ''} href="${esc(workUrl(w))}" target="_blank" rel="noopener">${esc(w.title)} ↗</a></div>`).join('')}</div>` : ''}
     ${p.publish ? `<p class="sum"><b>發佈：</b>${esc(p.publish)}</p>` : ''}
     ${STATIC ? '' : away ? `<p class="sum">${p.repo ? `這台沒有這個資料夾。要在這裡開發：<br><code>gh repo clone ${esc(S.github)}/${esc(p.repo)} ${esc(p.dir)}</code>`
               : '這台沒有這個資料夾，而且它沒有 GitHub —— 只存在另一台電腦上。'}</p>` : `

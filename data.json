@@ -191,6 +191,14 @@
    "en": "Smart Legend Counter",
    "cat": "建築&營造工具",
    "live": "",
+   "works": [
+    {
+     "desc": "影片・1 分 55 秒",
+     "title": "Smart圖例計算操作示範-01",
+     "url": "https://share-lock.eason-237588.workers.dev/s/fd3MmUoLuCGr/#1150911_Smart%E5%9C%96%E4%BE%8B%E8%A8%88%E7%AE%97%E6%93%8D%E4%BD%9C%E7%A4%BA%E7%AF%84-01.mp4",
+     "video": true
+    }
+   ],
    "summary": "圖例數量計算的第二代，概念換掉：不找圖例表也不比圖塊名稱，改成人工框選「圖例表」與「計算範圍」，再用圖元（線／圓／弧／文字）辨識圖形。產出含縮圖的 Excel 與單檔預覽網頁。目前 V1.24（版本流水號只有兩位，下一版 V1.25）。舊版 legend 保留不動。操作與錄影片的做法寫在 skill smart-legend-ops。",
    "publish": "private repo dwg-legend-boxselect。雙擊 Smart 圖例計算.bat，或先跑 建立桌面捷徑.bat 建桌面圖示。",
    "notes": [
@@ -454,6 +462,14 @@
    "en": "Pipe Support Angular Absorber",
    "cat": "建築&營造工具",
    "live": "",
+   "works": [
+    {
+     "desc": "影片・0 分 25 秒",
+     "title": "機電通用技術研析 管支架角變位吸收器示意動畫-01",
+     "url": "https://share-lock.eason-237588.workers.dev/s/sGpu9cG5Bohh/#1151014_%E6%A9%9F%E9%9B%BB%E9%80%9A%E7%94%A8%E6%8A%80%E8%A1%93%E7%A0%94%E6%9E%90_%E7%AE%A1%E6%94%AF%E6%9E%B6%E8%A7%92%E8%AE%8A%E4%BD%8D%E5%90%B8%E6%94%B6%E5%99%A8%E7%A4%BA%E6%84%8F%E5%8B%95%E7%95%AB-01.mp4",
+     "video": true
+    }
+   ],
    "summary": "機電管支架角變位吸收器（角應力吸收器）通用技術研析，不綁案子。A4 黑白 Word 報告 5 頁：應力四種成因、七種吸收器型式比較、固定／導向／承重支架配置原則、選型計算（熱脹量、層間變位、位移換算角度）、十項送審檢核表。核心結論：吸收器有沒有效看兩側支架配得對不對。",
    "publish": "不對外發布。",
    "notes": [
@@ -522,6 +538,12 @@
      "desc": "機電整合模型 3D（分層開關、水流動畫、真陰影、點空間上帝／凡人雙畫面；v1.4.53 電腦版六區塊、v1.4.54～1.4.58 框內藍玻璃底色與斜俯視、v1.4.59～1.4.60 系統閃爍按鈕；已發布到私人網址第 45 版）",
      "title": "機電整合模型3D v1.4.60",
      "url": "https://claude.ai/artifact/JQVigjsedqDVJzGMNiuhm6"
+    },
+    {
+     "desc": "影片・4 分 45 秒",
+     "title": "機電整合模型3D功能簡介影片-01",
+     "url": "https://share-lock.eason-237588.workers.dev/s/WUxjVdpRJey9/#1151111_%E6%A9%9F%E9%9B%BB%E6%95%B4%E5%90%88%E6%A8%A1%E5%9E%8B3D%E5%8A%9F%E8%83%BD%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01.mp4",
+     "video": true
     }
    ],
    "summary": "機電 3D 模擬：浴室給排水 3D 三款，加上機電整合模型 3D 網頁（在這個資料夾裡，有自己的私人倉庫）；機電3D產生器規劃書暫停",
@@ -640,6 +662,43 @@
    "en": "Smart Asset Platform",
    "cat": "建築&營造工具",
    "live": "https://claude.ai/artifact/A1ZYBRZzoXdkTFTvNozuYL",
+   "works": [
+    {
+     "desc": "展示網頁（管理包本機）",
+     "title": "全台智慧資產管理平台",
+     "url": "http://127.0.0.1:7788/page/asset-platform"
+    },
+    {
+     "desc": "影片・8 分 26 秒",
+     "title": "全台智慧資產管理平台簡介影片-01",
+     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151106_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01.mp4",
+     "video": true
+    },
+    {
+     "desc": "影片・3 分 56 秒",
+     "title": "全台智慧資產管理平台簡介影片-01 上集",
+     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151106_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01_%E4%B8%8A%E9%9B%86.mp4",
+     "video": true
+    },
+    {
+     "desc": "影片・4 分 30 秒",
+     "title": "全台智慧資產管理平台簡介影片-01 下集",
+     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151106_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01_%E4%B8%8B%E9%9B%86.mp4",
+     "video": true
+    },
+    {
+     "desc": "影片・4 分 45 秒",
+     "title": "全台智慧資產管理平台工地自主管理篇-01",
+     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151107_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E5%B7%A5%E5%9C%B0%E8%87%AA%E4%B8%BB%E7%AE%A1%E7%90%86%E7%AF%87-01.mp4",
+     "video": true
+    },
+    {
+     "desc": "影片・4 分 45 秒",
+     "title": "全台智慧資產管理平台精華短片-01",
+     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151107_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B2%BE%E8%8F%AF%E7%9F%AD%E7%89%87-01.mp4",
+     "video": true
+    }
+   ],
    "summary": "營建集團設備資產管理辦法第四篇的平台展示版 v1.0.0，向長官報告用：13 個功能模組（主檔與資產卡、QR 標籤、掃碼借還、全台總覽、搜尋媒合、跨工地借用調撥、結案釋出、預警、先查後買、盤點、保養校驗、報表指標、權限軌跡），圓滿案 618 件實際資料＋示意工地。附約 8 分鐘功能簡介影片。",
    "notes": [
     {
@@ -757,8 +816,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1792488666000,
-   "last_msg": "﻿新增圖層設定檔：記錄使用者在畫面上勾選的長度計算圖層"
+   "last_ts": 1794363993000,
+   "last_msg": "影片資料夾加播放頁（分享鎖私人版給手機看影片；網址加 #檔名 直接選那支）"
   },
   {
    "exists": true,
@@ -769,8 +828,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794303161000,
-   "last_msg": "技能 share-lock-ops：同一專案多個作品、APIS 一作品一組暗號、作品命名（11/10）"
+   "last_ts": 1794363232000,
+   "last_msg": "技能 index-trend-ops：記 TV 版面 853（甲30減量兩格）"
   },
   {
    "exists": true,
@@ -793,8 +852,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794314204000,
-   "last_msg": "收工共用記憶：1110 晚 HP 收工"
+   "last_ts": 1794389368000,
+   "last_msg": "待辦：施工計劃書資料庫雲端檔案空間待決定（R2 或 GitHub 私人）"
   },
   {
    "exists": true,
@@ -817,8 +876,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1792257095000,
-   "last_msg": "補推產報告程式（第 01 版報告的產生器）"
+   "last_ts": 1794363997000,
+   "last_msg": "影片資料夾加播放頁（分享鎖私人版給手機看影片；網址加 #檔名 直接選那支）"
   },
   {
    "exists": true,
@@ -867,8 +926,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794057711000,
-   "last_msg": "工地自主管理篇 4 分 45 秒：01～04、10～12 用完整版原句仔細介紹，05～09、13 跨工地共享用新口白＋畫面片段約 25 秒帶過；不重錄"
+   "last_ts": 1794363983000,
+   "last_msg": "影片資料夾加播放頁（分享鎖私人版給手機看影片；網址加 #檔名 直接選那支）"
   },
   {
    "exists": true,
@@ -881,8 +940,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794283331000,
-   "last_msg": "說明：機電工地管理平台架構定案（2026-11-10 使用者核可）——平台當正本、權限兩種、獨立、只做機電、先桌機；架構草案與實作順序"
+   "last_ts": 1794363988000,
+   "last_msg": "影片資料夾加播放頁（分享鎖私人版給手機看影片；網址加 #檔名 直接選那支）"
   },
   {
    "exists": true,
@@ -932,14 +991,18 @@
    "done": false
   },
   {
-   "text": "公司電腦｜只存在公司這台（PC2601003）、壞了會不見或停擺的東西要備份（2026-11-10 實查，使用者說先記待辦、暫不備份）：①工地日誌機器人的 工地照片／日誌產出 約 715 MB（LINE 原圖會過期，最優先）；②施工計劃書資料庫 約 1.7 GB、178 檔（不進版控）；③天花板裂縫會勘 約 19 MB。另外只在這台跑的排程：工地照片自動拉取（每 30 分）、日誌時段喚醒、有機會做多掃描（交易日 15:30），這台壞了會停，要決定是否在別台備一份。其餘作品都已推上 GitHub 或在 Cloudflare，不受影響。",
-   "level": "warn",
-   "done": false,
-   "title": "公司電腦獨有資料要備份"
+   "text": "機電整合模型3D-地下室至2F｜回家在 HP 轉檔：拉下 mep-3d-b2f，照說明檔「HP 上要做的」轉筏基層～2F 七層（地下四層用 BIM 的 4D 分層模型、1F～2F 用 11/03 那批）；網頁 v1.1.0 已做好看哪層才載哪層，公司只有 Freedom 轉不了",
+   "level": "info",
+   "done": false
+  },
+  {
+   "text": "施工計劃書資料庫｜雲端檔案空間待決定：約 4 GB（範本、範例、施工規範、材料送審）放 Cloudflare R2（要本人到後台開通、可能綁卡，10 GB 內免費）或 GitHub 私人專案（不用綁卡、要拆成幾個專案）。雲端架構已定案（資料庫 說明.md「雲端架構」節），決定後再部署；公司本機產生器 v2.1.0 照常可用。",
+   "level": "info",
+   "done": false
   }
  ],
  "unregistered": [],
- "generated": 1794395755586,
- "generated_text": "11/11 19:15",
+ "generated": 1794395944839,
+ "generated_text": "11/11 19:19",
  "host": "HP"
 }
