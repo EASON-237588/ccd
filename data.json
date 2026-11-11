@@ -580,6 +580,11 @@
      "title": "機電整合模型3D功能簡介影片-01",
      "video": true,
      "sl": "bathroom-plumbing-3d#w4"
+    },
+    {
+     "desc": "機電整合模型 3D 地下室至2F（筏基層、B4F～B1F、1F、2F 七層，看哪層才載哪層；各層灑水、給排水流向）",
+     "title": "機電整合模型3D 地下室至2F v1.4.0",
+     "sl": "bathroom-plumbing-3d#w5"
     }
    ],
    "summary": "機電 3D 模擬：浴室給排水 3D 三款，加上機電整合模型 3D 網頁（在這個資料夾裡，有自己的私人倉庫）；機電3D產生器規劃書暫停",
@@ -1041,7 +1046,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794424634779,
- "generated_text": "11/12 03:17",
+ "generated": 1794425939135,
+ "generated_text": "11/12 03:38",
  "host": "HP"
 }
