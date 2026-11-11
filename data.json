@@ -45,6 +45,30 @@
      "title": "工地降雨系統電腦版 v2.9（單一工地）",
      "desc": "桌機版 v2.9 定版（永不修改），一次一個地點；分享鎖私人版 gh:site-weather",
      "sl": "weather#w1"
+    },
+    {
+     "desc": "影片・2 分 30 秒",
+     "title": "工地環境安全即時監控 成果影片",
+     "video": true,
+     "sl": "weather#w2"
+    },
+    {
+     "desc": "影片・3 分 34 秒",
+     "title": "工地環境安全即時監控 第三版 成果影片",
+     "video": true,
+     "sl": "weather#w3"
+    },
+    {
+     "desc": "影片・3 分 38 秒",
+     "title": "工地環境安全即時監控 V2.9",
+     "video": true,
+     "sl": "weather#w4"
+    },
+    {
+     "desc": "影片・1 分 37 秒",
+     "title": "工地環境安全即時監控 今日版 成果影片",
+     "video": true,
+     "sl": "weather#w5"
     }
    ],
    "summary": "工地氣象監控。桌機版 v2.9 定版，只改手機版。上線走另一個 repo site-weather，只放產出不做開發。",
@@ -1017,7 +1041,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794421127509,
- "generated_text": "11/12 02:18",
+ "generated": 1794422648428,
+ "generated_text": "11/12 02:44",
  "host": "HP"
 }
