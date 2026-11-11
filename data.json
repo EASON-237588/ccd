@@ -35,6 +35,18 @@
    "name": "工地降雨系統",
    "en": "Site Weather Monitor",
    "cat": "建築&營造工具",
+   "works": [
+    {
+     "title": "工地降雨系統手機版（四工地）",
+     "desc": "手機版 1.33，四場地輪播（宜蘭陽醫、台中圓滿、台南成大、高雄台壽），電腦瀏覽器也能開；分享鎖上傳版 site-weather-m",
+     "sl": "weather#w0"
+    },
+    {
+     "title": "工地降雨系統電腦版 v2.9（單一工地）",
+     "desc": "桌機版 v2.9 定版（永不修改），一次一個地點；分享鎖私人版 gh:site-weather",
+     "sl": "weather#w1"
+    }
+   ],
    "summary": "工地氣象監控。桌機版 v2.9 定版，只改手機版。上線走另一個 repo site-weather，只放產出不做開發。",
    "machine": "共用"
   },
@@ -195,8 +207,8 @@
     {
      "desc": "影片・1 分 55 秒",
      "title": "Smart圖例計算操作示範-01",
-     "url": "https://share-lock.eason-237588.workers.dev/s/fd3MmUoLuCGr/#1150911_Smart%E5%9C%96%E4%BE%8B%E8%A8%88%E7%AE%97%E6%93%8D%E4%BD%9C%E7%A4%BA%E7%AF%84-01.mp4",
-     "video": true
+     "video": true,
+     "sl": "legendbox#w0"
     }
    ],
    "summary": "圖例數量計算的第二代，概念換掉：不找圖例表也不比圖塊名稱，改成人工框選「圖例表」與「計算範圍」，再用圖元（線／圓／弧／文字）辨識圖形。產出含縮圖的 Excel 與單檔預覽網頁。目前 V1.24（版本流水號只有兩位，下一版 V1.25）。舊版 legend 保留不動。操作與錄影片的做法寫在 skill smart-legend-ops。",
@@ -466,8 +478,8 @@
     {
      "desc": "影片・0 分 25 秒",
      "title": "機電通用技術研析 管支架角變位吸收器示意動畫-01",
-     "url": "https://share-lock.eason-237588.workers.dev/s/sGpu9cG5Bohh/#1151014_%E6%A9%9F%E9%9B%BB%E9%80%9A%E7%94%A8%E6%8A%80%E8%A1%93%E7%A0%94%E6%9E%90_%E7%AE%A1%E6%94%AF%E6%9E%B6%E8%A7%92%E8%AE%8A%E4%BD%8D%E5%90%B8%E6%94%B6%E5%99%A8%E7%A4%BA%E6%84%8F%E5%8B%95%E7%95%AB-01.mp4",
-     "video": true
+     "video": true,
+     "sl": "pipe-angular-absorber#w0"
     }
    ],
    "summary": "機電管支架角變位吸收器（角應力吸收器）通用技術研析，不綁案子。A4 黑白 Word 報告 5 頁：應力四種成因、七種吸收器型式比較、固定／導向／承重支架配置原則、選型計算（熱脹量、層間變位、位移換算角度）、十項送審檢核表。核心結論：吸收器有沒有效看兩側支架配得對不對。",
@@ -542,8 +554,8 @@
     {
      "desc": "影片・4 分 45 秒",
      "title": "機電整合模型3D功能簡介影片-01",
-     "url": "https://share-lock.eason-237588.workers.dev/s/WUxjVdpRJey9/#1151111_%E6%A9%9F%E9%9B%BB%E6%95%B4%E5%90%88%E6%A8%A1%E5%9E%8B3D%E5%8A%9F%E8%83%BD%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01.mp4",
-     "video": true
+     "video": true,
+     "sl": "bathroom-plumbing-3d#w4"
     }
    ],
    "summary": "機電 3D 模擬：浴室給排水 3D 三款，加上機電整合模型 3D 網頁（在這個資料夾裡，有自己的私人倉庫）；機電3D產生器規劃書暫停",
@@ -664,39 +676,34 @@
    "live": "https://claude.ai/artifact/A1ZYBRZzoXdkTFTvNozuYL",
    "works": [
     {
-     "desc": "展示網頁（管理包本機）",
-     "title": "全台智慧資產管理平台",
-     "url": "http://127.0.0.1:7788/page/asset-platform"
-    },
-    {
      "desc": "影片・8 分 26 秒",
      "title": "全台智慧資產管理平台簡介影片-01",
-     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151106_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01.mp4",
-     "video": true
+     "video": true,
+     "sl": "asset-platform#w1"
     },
     {
      "desc": "影片・3 分 56 秒",
      "title": "全台智慧資產管理平台簡介影片-01 上集",
-     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151106_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01_%E4%B8%8A%E9%9B%86.mp4",
-     "video": true
+     "video": true,
+     "sl": "asset-platform#w2"
     },
     {
      "desc": "影片・4 分 30 秒",
      "title": "全台智慧資產管理平台簡介影片-01 下集",
-     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151106_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B0%A1%E4%BB%8B%E5%BD%B1%E7%89%87-01_%E4%B8%8B%E9%9B%86.mp4",
-     "video": true
+     "video": true,
+     "sl": "asset-platform#w3"
     },
     {
      "desc": "影片・4 分 45 秒",
      "title": "全台智慧資產管理平台工地自主管理篇-01",
-     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151107_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E5%B7%A5%E5%9C%B0%E8%87%AA%E4%B8%BB%E7%AE%A1%E7%90%86%E7%AF%87-01.mp4",
-     "video": true
+     "video": true,
+     "sl": "asset-platform#w4"
     },
     {
      "desc": "影片・4 分 45 秒",
      "title": "全台智慧資產管理平台精華短片-01",
-     "url": "https://share-lock.eason-237588.workers.dev/s/UpNikSUWeeQQ/#1151107_%E5%85%A8%E5%8F%B0%E6%99%BA%E6%85%A7%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E7%B2%BE%E8%8F%AF%E7%9F%AD%E7%89%87-01.mp4",
-     "video": true
+     "video": true,
+     "sl": "asset-platform#w5"
     }
    ],
    "summary": "營建集團設備資產管理辦法第四篇的平台展示版 v1.0.0，向長官報告用：13 個功能模組（主檔與資產卡、QR 標籤、掃碼借還、全台總覽、搜尋媒合、跨工地借用調撥、結案釋出、預警、先查後買、盤點、保養校驗、報表指標、權限軌跡），圓滿案 618 件實際資料＋示意工地。附約 8 分鐘功能簡介影片。",
@@ -745,6 +752,19 @@
    "id": "mep-site-platform",
    "name": "機電工地管理平台",
    "cat": "建築&營造工具",
+   "works": [
+    {
+     "desc": "平台本體（分享鎖自用網址）",
+     "title": "機電工地管理平台",
+     "sl": "mep-site-platform#w0"
+    },
+    {
+     "desc": "影片・4 分 45 秒",
+     "title": "機電工地管理平台功能簡介影片-01",
+     "video": true,
+     "sl": "mep-site-platform#w1"
+    }
+   ],
    "summary": "崇偉科技 機電工地管理平台（草案）：管理規章、工作職掌、施工計畫書送審與範本、採購、圖說／材料送審、工程進度、日報週報、自主檢查表線上填寫（桌機版，手機版待做）"
   },
   {
@@ -992,7 +1012,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794398889664,
- "generated_text": "11/11 20:08",
+ "generated": 1794416565673,
+ "generated_text": "11/12 01:02",
  "host": "HP"
 }
