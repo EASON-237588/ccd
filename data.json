@@ -872,8 +872,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794389368000,
-   "last_msg": "待辦：施工計劃書資料庫雲端檔案空間待決定（R2 或 GitHub 私人）"
+   "last_ts": 1794421025000,
+   "last_msg": "待辦：HP 缺的工具（Revit 2025 沒有 Navisworks 匯出元件、壓縮工具與啟動程式只在暫存）"
   },
   {
    "exists": true,
@@ -1009,10 +1009,15 @@
    "text": "施工計劃書資料庫｜雲端檔案空間待決定：約 4 GB（範本、範例、施工規範、材料送審）放 Cloudflare R2（要本人到後台開通、可能綁卡，10 GB 內免費）或 GitHub 私人專案（不用綁卡、要拆成幾個專案）。雲端架構已定案（資料庫 說明.md「雲端架構」節），決定後再部署；公司本機產生器 v2.1.0 照常可用。",
    "level": "info",
    "done": false
+  },
+  {
+   "text": "HP 缺的工具｜2026-11-12 轉機電3D（地下室至2F）時盤點：① Revit 2025 沒有 Navisworks 匯出元件、Navisworks 是 2024 版讀不了 2025 版 Revit 檔 → 顧問只給 Revit 檔時轉不出來（官方匯出工具要 Autodesk 帳號下載，使用者沒有帳號；替代：請顧問附 NWC／NWD，或自寫 Revit 外掛匯出）。② 模型壓縮工具 gltfpack 沒正式安裝，只在舊暫存資料夾找到，已複製到 C:\\nwx\\tools，應改成固定安裝。③ 轉檔啟動程式 NwHost.exe 也只在暫存，已備份到 C:\\nwx\\bin，應放進專案或固定位置。④ Navisworks 外掛要放 ProgramData 與 Roaming\\Autodesk 兩處的 Plugins 才讀得到（放錯會顯示找不到外掛）。華碩：沒有 Navisworks、Revit 2025 也沒匯出元件；公司：只有 Freedom。三台只有 HP 能匯出。",
+   "level": "warn",
+   "done": false
   }
  ],
  "unregistered": [],
- "generated": 1794416565673,
- "generated_text": "11/12 01:02",
+ "generated": 1794421127509,
+ "generated_text": "11/12 02:18",
  "host": "HP"
 }
