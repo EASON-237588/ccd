@@ -705,7 +705,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.57.0"
+   "ver": "v1.58.0"
   },
   {
    "exists": true,
@@ -939,7 +939,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794355703700,
- "generated_text": "11/11 08:08",
+ "generated": 1794360418316,
+ "generated_text": "11/11 09:26",
  "host": "公司"
 }
