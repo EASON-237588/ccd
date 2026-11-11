@@ -896,8 +896,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794423205000,
-   "last_msg": "降雨影片改一支一筆分享；分享控制台 v1.4.2 專案名稱黃字、分享項目青字"
+   "last_ts": 1794423457000,
+   "last_msg": "分享控制台 v1.4.3：分享給誰改下拉（自己／劉協／他人），他人可填名字"
   },
   {
    "exists": true,
@@ -1041,7 +1041,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794423334466,
- "generated_text": "11/12 02:55",
+ "generated": 1794423524032,
+ "generated_text": "11/12 02:58",
  "host": "HP"
 }
