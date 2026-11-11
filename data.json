@@ -872,8 +872,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794364352000,
-   "last_msg": "影片掛卡片、紅字、手機能播（1111 使用者「所有影片顏色為紅色字」並同意改分享鎖）"
+   "last_ts": 1794368985000,
+   "last_msg": "待辦：機電整合模型3D-地下室至2F 回家在 HP 轉檔"
   },
   {
    "exists": true,
@@ -1015,10 +1015,15 @@
    "level": "warn",
    "done": false,
    "title": "公司電腦獨有資料要備份"
+  },
+  {
+   "text": "機電整合模型3D-地下室至2F｜回家在 HP 轉檔：拉下 mep-3d-b2f，照說明檔「HP 上要做的」轉筏基層～2F 七層（地下四層用 BIM 的 4D 分層模型、1F～2F 用 11/03 那批）；網頁 v1.1.0 已做好看哪層才載哪層，公司只有 Freedom 轉不了",
+   "level": "info",
+   "done": false
   }
  ],
  "unregistered": [],
- "generated": 1794364460595,
- "generated_text": "11/11 10:34",
+ "generated": 1794368987353,
+ "generated_text": "11/11 11:49",
  "host": "公司"
 }
