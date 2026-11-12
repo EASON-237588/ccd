@@ -901,8 +901,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794426274000,
-   "last_msg": "共用記憶：1112 HP 收工補記（技能與工具腳本已推、兩條待辦刻意不勾的原因）"
+   "last_ts": 1794484836000,
+   "last_msg": "共用記憶：分享鎖被擋繼續擋，不改上限（1112 HP 使用者決定）"
   },
   {
    "exists": true,
@@ -1051,7 +1051,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794426312391,
- "generated_text": "11/12 03:45",
+ "generated": 1794484871490,
+ "generated_text": "11/12 20:01",
  "host": "HP"
 }
