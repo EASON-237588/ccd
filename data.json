@@ -877,8 +877,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794584647000,
-   "last_msg": "nq-y45-push：2026-11-13 改推甲 30 減量 1800/42，逐根接續算與種子上傳的做法、重播數字與坑"
+   "last_ts": 1794585943000,
+   "last_msg": "nq-y45-push：J1842／J2045 漏記的真正原因（紀錄程式平常只回抓 3 天）與修法"
   },
   {
    "exists": true,
@@ -1051,7 +1051,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794584949818,
- "generated_text": "11/13 23:49",
+ "generated": 1794586047635,
+ "generated_text": "11/14 00:07",
  "host": "HP"
 }
