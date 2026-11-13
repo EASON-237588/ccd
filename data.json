@@ -813,7 +813,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.59.2"
+   "ver": "v1.60.0"
   },
   {
    "exists": true,
@@ -901,8 +901,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794584345000,
-   "last_msg": "甲30浮動視窗：改甲 30 減量 1800/42（讀紀錄 J1842），回算 10 天改 14 天"
+   "last_ts": 1794584413000,
+   "last_msg": "共用記憶：1113 華碩收工（期貨 v1.60.0 🌟 三排）"
   },
   {
    "exists": true,
@@ -1051,7 +1051,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794584387856,
- "generated_text": "11/13 23:39",
+ "generated": 1794584575971,
+ "generated_text": "11/13 23:42",
  "host": "HP"
 }
