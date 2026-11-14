@@ -877,8 +877,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794585943000,
-   "last_msg": "nq-y45-push：J1842／J2045 漏記的真正原因（紀錄程式平常只回抓 3 天）與修法"
+   "last_ts": 1794698593000,
+   "last_msg": "新技能 tv-sizing-addon-lab：加掛指標／策略當口數依據的測試與長期追蹤"
   },
   {
    "exists": true,
@@ -1062,7 +1062,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794698478177,
- "generated_text": "11/15 07:21",
+ "generated": 1794698892716,
+ "generated_text": "11/15 07:28",
  "host": "HP"
 }
