@@ -877,8 +877,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794704394000,
-   "last_msg": "handoff-1115：HP 11/15 期貨趨勢 855 基準、首頁名次排序、彩虹框記號、TV 對網頁比對、只下 1 口"
+   "last_ts": 1794706428000,
+   "last_msg": "handoff-1115：追加 853 第 3 格改 1400/36、程式改參數存不住要用設定視窗、TV 對網頁時差與四組實際盈餘"
   },
   {
    "exists": true,
@@ -1056,7 +1056,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794704602144,
- "generated_text": "11/15 09:03",
+ "generated": 1794706611615,
+ "generated_text": "11/15 09:36",
  "host": "HP"
 }
