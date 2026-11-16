@@ -934,8 +934,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794816574000,
-   "last_msg": "浮動小工具改顯示台指 B2 30 秒 450/23（讀推播 worker 的 /tx30）"
+   "last_ts": 1794817436000,
+   "last_msg": "浮動小工具說明：手機舊版不用重貼（/j30 已改回台指 B2）"
   },
   {
    "exists": true,
@@ -1084,7 +1084,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794816817561,
- "generated_text": "11/16 16:13",
+ "generated": 1794817545615,
+ "generated_text": "11/16 16:25",
  "host": "公司"
 }
