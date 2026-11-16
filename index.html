@@ -435,10 +435,7 @@ function copyCmd(btn, text) {
 }
 
 /* ---------- 分類頁 ---------- */
-function lastTouch(id, st) {
-  const r = readLastRun()[id];
-  return Math.max(r ? r.t : 0, st && st.last_ts ? st.last_ts : 0);
-}
+function projTime(st) { return (st && (st.last_ts || st.mtime_ts)) || 0; }
 // 版本序號：伺服器從專案主頁抓到的優先，抓不到用 projects.json 手填的 ver
 function verTag(i) {
   const v = (S.status[i] && S.status[i].ver) || S.projects[i].ver || '';
@@ -446,8 +443,9 @@ function verTag(i) {
 }
 function pageCat(c) {
   const idx = S.projects.map((p, i) => i).filter(i => catOf(S.projects[i]) === c)
-    .sort((a, b) => (!liveOf(S.projects[a]) - !liveOf(S.projects[b]))
-      || lastTouch(S.projects[b].id, S.status[b]) - lastTouch(S.projects[a].id, S.status[a]));  // 沒網址的排最後
+    // 2026-11-16 使用者定：純粹依專案本身的更新時間（最新提交），最新的在最上面；點開卡片不算、有沒有網址也不影響
+    // 沒進版控的專案沒有提交時間，改用資料夾檔案的最後修改時間（mtime_ts）
+    .sort((a, b) => projTime(S.status[b]) - projTime(S.status[a]));
   return `<div class="bar"><button class="back" onclick="go('/')">‹ 首頁</button><h1>${esc(c)}${en(c)}</h1></div>
     ${idx.map(i => {
       const p = S.projects[i], st = S.status[i];
