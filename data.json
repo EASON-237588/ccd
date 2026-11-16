@@ -940,8 +940,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794821821000,
-   "last_msg": "分享鎖：苗栗醫院投標3D 影片拆成三筆（01版、02版、03版），可單獨分享"
+   "last_ts": 1794822180000,
+   "last_msg": "浮動小工具：顯示名稱「台指B2」改成「B2」（使用者要求拿掉「台指」兩個字）"
   },
   {
    "exists": true,
@@ -1095,7 +1095,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794821926031,
- "generated_text": "11/16 17:38",
+ "generated": 1794822292297,
+ "generated_text": "11/16 17:44",
  "host": "公司"
 }
