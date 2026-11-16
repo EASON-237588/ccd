@@ -811,16 +811,22 @@
    "live": "",
    "works": [
     {
+     "desc": "影片・4 分 49 秒（污、撒字修正）",
+     "title": "院區機電3D施工規劃展示影片-03",
+     "video": true,
+     "sl": "miaoli-bid-3d#w0"
+    },
+    {
      "desc": "影片・4 分 49 秒",
      "title": "院區機電3D施工規劃展示影片-02",
      "video": true,
-     "sl": "miaoli-bid-3d#w0"
+     "sl": "miaoli-bid-3d#w1"
     },
     {
      "desc": "影片・4 分 47 秒",
      "title": "院區機電3D施工規劃展示影片-01",
      "video": true,
-     "sl": "miaoli-bid-3d#w1"
+     "sl": "miaoli-bid-3d#w2"
     }
    ],
    "summary": "苗栗醫院急重症醫療大樓擴建工程投標用 3D 展示：企劃書插圖、15 分鐘簡報影片、答詢現場轉動的 3D 網頁。依評選配分與 BIM 建置說明列 8 項，第一批 1、2、8。115/11/16 已出呈主管報表 1151116_投標3D展示規劃-01.docx（放招標評估資料夾），待主管決定。投標評估本體看「苗栗醫院」卡片。",
@@ -934,8 +940,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794820172000,
-   "last_msg": "研究目標轉台指：過往不研究、往前看（使用者 2026-11-16）"
+   "last_ts": 1794821156000,
+   "last_msg": "管理包：苗栗醫院投標3D 卡片加影片 03 版（污、撒字修正）"
   },
   {
    "exists": true,
@@ -1036,8 +1042,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794813091000,
-   "last_msg": "影片資料夾加播放頁"
+   "last_ts": 1794821182000,
+   "last_msg": "口白、合成、錄影三支換行符改回 Windows 換行（上一筆誤改成 Unix 換行，內容不變）"
   },
   {
    "exists": true,
@@ -1089,7 +1095,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794820282501,
- "generated_text": "11/16 17:11",
+ "generated": 1794821191640,
+ "generated_text": "11/16 17:26",
  "host": "公司"
 }
