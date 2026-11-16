@@ -916,8 +916,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794820170000,
-   "last_msg": "研究目標轉台指：過往不研究、往前看（使用者 2026-11-16）"
+   "last_ts": 1794821430000,
+   "last_msg": "收工：補苗栗影片 03 版與研究目標轉台指"
   },
   {
    "exists": true,
@@ -940,8 +940,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794821156000,
-   "last_msg": "管理包：苗栗醫院投標3D 卡片加影片 03 版（污、撒字修正）"
+   "last_ts": 1794821434000,
+   "last_msg": "收工：補苗栗影片 03 版與研究目標轉台指"
   },
   {
    "exists": true,
@@ -1095,7 +1095,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794821191640,
- "generated_text": "11/16 17:26",
+ "generated": 1794821558183,
+ "generated_text": "11/16 17:32",
  "host": "公司"
 }
