@@ -1042,8 +1042,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794821182000,
-   "last_msg": "口白、合成、錄影三支換行符改回 Windows 換行（上一筆誤改成 Unix 換行，內容不變）"
+   "last_ts": 1794821730000,
+   "last_msg": "影片改成一版一個資料夾，各自有播放頁（分享鎖可單獨分享）"
   },
   {
    "exists": true,
@@ -1095,7 +1095,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794821558183,
- "generated_text": "11/16 17:32",
+ "generated": 1794821742097,
+ "generated_text": "11/16 17:35",
  "host": "公司"
 }
