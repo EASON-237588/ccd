@@ -909,8 +909,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794789458000,
-   "last_msg": "管理包：新增「苗栗醫院投標3D」專案卡片與 8 條 3D 展示待辦"
+   "last_ts": 1794813212000,
+   "last_msg": "苗栗醫院投標3D卡片掛兩支影片（紅字、分享鎖自用網址）"
   },
   {
    "exists": true,
@@ -1103,7 +1103,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794813167986,
- "generated_text": "11/16 15:12",
+ "generated": 1794813353330,
+ "generated_text": "11/16 15:15",
  "host": "公司"
 }
