@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794896164000,
-   "last_msg": "3D 網頁 v1.25.1：庚→辛 鏡頭不再繞一圈，改沿大樓正面由西南（醫院右側）繞到東南（左側），4 秒"
+   "last_ts": 1794897277000,
+   "last_msg": "專案說明：修正另外兩處暫存路徑的反斜線"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794896245633,
- "generated_text": "11/17 14:17",
+ "generated": 1794897342965,
+ "generated_text": "11/17 14:35",
  "host": "HP"
 }
