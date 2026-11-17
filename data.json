@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794895352000,
-   "last_msg": "3D 網頁 v1.24.5：4D 第 1～5 段（乙～己）改使用者截圖指定鏡頭（截圖反推）"
+   "last_ts": 1794895601000,
+   "last_msg": "3D 網頁 v1.24.6：4D 自動播放、拖拉進度條換段時鏡頭跟著飛到該段角度"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794895504199,
- "generated_text": "11/17 14:05",
+ "generated": 1794895690582,
+ "generated_text": "11/17 14:08",
  "host": "HP"
 }
