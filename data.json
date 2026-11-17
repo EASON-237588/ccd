@@ -966,8 +966,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794887245000,
-   "last_msg": "共用記憶：說「重算」就是全部重跑（1117 HP 使用者糾正）"
+   "last_ts": 1794888673000,
+   "last_msg": "共用記憶：1117 HP 收工（苗栗 3D 全棟模型）與 4 條新規矩"
   },
   {
    "exists": true,
@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794888371000,
-   "last_msg": "3D 網頁 v1.23.0：1000 日 4D 改用全棟模型逐層長高、外牆期逐層裝上外觀"
+   "last_ts": 1794888540000,
+   "last_msg": "3D 網頁 v1.24.0：全棟機電改用全棟模型外殼襯底、手術室剖面補 3F 相鄰房間背景；8 個分頁全部用新模型"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794888540826,
- "generated_text": "11/17 12:09",
+ "generated": 1794888727033,
+ "generated_text": "11/17 12:12",
  "host": "HP"
 }
