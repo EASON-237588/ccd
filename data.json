@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794902381000,
-   "last_msg": "苗栗3D v1.36.0：監視攝影機、資訊插座、無線基地台依弱電電信圖例；防火填塞依 FS 系列"
+   "last_ts": 1794902732000,
+   "last_msg": "苗栗3D：說明與進度表時間更正"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794902488931,
- "generated_text": "11/17 16:01",
+ "generated": 1794902861519,
+ "generated_text": "11/17 16:07",
  "host": "HP"
 }
