@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794887784000,
-   "last_msg": "3D 網頁 v1.21.1：4F 圓柱投射燈加亮（光束加寬加高、疊亮芯）"
+   "last_ts": 1794887944000,
+   "last_msg": "3D 網頁 v1.21.3：恢復 v1.21.1 投射燈光束（撤回打到兩層樓）"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794887798284,
- "generated_text": "11/17 11:56",
+ "generated": 1794887984846,
+ "generated_text": "11/17 11:59",
  "host": "HP"
 }
