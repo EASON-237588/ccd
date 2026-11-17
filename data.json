@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794879096000,
-   "last_msg": "進度表：第一項九步全部完成"
+   "last_ts": 1794880544000,
+   "last_msg": "3D 網頁 v1.11.0：新增「全棟結構」分頁（全棟模型第一階段）"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794879768598,
- "generated_text": "11/17 09:42",
- "host": "公司"
+ "generated": 1794880591957,
+ "generated_text": "11/17 09:56",
+ "host": "HP"
 }
