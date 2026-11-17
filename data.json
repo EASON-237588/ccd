@@ -966,8 +966,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794876792000,
-   "last_msg": "共用記憶：選模型規矩加「策略分析一律用最好的模型」（1117 使用者定）"
+   "last_ts": 1794879560000,
+   "last_msg": "苗栗醫院投標3D：3D 網頁加入分享鎖（私人版，只讀 3D網頁 子資料夾）"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794879489452,
- "generated_text": "11/17 09:38",
+ "generated": 1794879677034,
+ "generated_text": "11/17 09:41",
  "host": "HP"
 }
