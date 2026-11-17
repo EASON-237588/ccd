@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794902732000,
-   "last_msg": "苗栗3D：說明與進度表時間更正"
+   "last_ts": 1794902919000,
+   "last_msg": "苗栗3D：說明時間更正"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794902861519,
- "generated_text": "11/17 16:07",
+ "generated": 1794903050131,
+ "generated_text": "11/17 16:10",
  "host": "HP"
 }
