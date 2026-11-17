@@ -841,6 +841,30 @@
    "cat": "建築&營造工具",
    "summary": "豬事圓滿機電採購發包管制總表的網頁版（試作 004）。六個分頁：總覽、管制總表、採發時程、分工介面、甘特圖、設定；點任何一列就能填，預定日期與燈號照 Excel 公式自動算，11/16 與 Excel 對帳 384 格全符。資料存在各自瀏覽器，尚無雲端共用。",
    "machine": "公司"
+  },
+  {
+   "id": "attendance-control-2",
+   "name": "attendance-control",
+   "live": "",
+   "summary": "",
+   "notes": [],
+   "repo": "attendance-control"
+  },
+  {
+   "id": "bathroom-plumbing-3d-2",
+   "name": "bathroom-plumbing-3d",
+   "live": "",
+   "summary": "",
+   "notes": [],
+   "repo": "bathroom-plumbing-3d"
+  },
+  {
+   "id": "ccd",
+   "name": "ccd",
+   "live": "",
+   "summary": "",
+   "notes": [],
+   "repo": "ccd"
   }
  ],
  "status": [
@@ -852,7 +876,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.65.0"
+   "ver": "v1.66.3"
   },
   {
    "exists": true,
@@ -916,8 +940,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794821430000,
-   "last_msg": "收工：補苗栗影片 03 版與研究目標轉台指"
+   "last_ts": 1794849221000,
+   "last_msg": "新技能 handoff-1116b：華碩 11/16 晚接續清單（台指低頻 900/49 調校、期貨趨勢 v1.66.0～v1.66.3、台指 TV 排程做法）"
   },
   {
    "exists": true,
@@ -940,8 +964,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794823363000,
-   "last_msg": "管理包：分類頁卡片改成純粹依專案更新時間排序，最新的在最上面"
+   "last_ts": 1794849257000,
+   "last_msg": "收工 1116 晚華碩：共用記憶（台指低頻 900/49、期貨趨勢 v1.66.0～v1.66.3）、清單加入 3 個資料夾"
   },
   {
    "exists": true,
@@ -1049,6 +1073,21 @@
    "exists": true,
    "git": true,
    "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": ""
   }
  ],
  "todos": [
@@ -1095,7 +1134,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794823503337,
- "generated_text": "11/16 18:05",
+ "generated": 1794874675960,
+ "generated_text": "11/17 08:17",
  "host": "公司"
 }
