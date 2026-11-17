@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794906427000,
-   "last_msg": "苗栗3D v1.44.0：排水補齊（四組立管、通氣管、3F/4F 器具排水、筏基水池與泵浦、雨水落水管）"
+   "last_ts": 1794906612000,
+   "last_msg": "苗栗3D v1.44.1：4D 頁拿掉既有建物名稱標籤"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794906559425,
- "generated_text": "11/17 17:09",
+ "generated": 1794906745929,
+ "generated_text": "11/17 17:12",
  "host": "HP"
 }
