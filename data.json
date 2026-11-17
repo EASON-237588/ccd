@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794882572000,
-   "last_msg": "3D 網頁 v1.14.1：屋頂院名大字加粗、加深、加厚（疊 8 層約 30 cm）"
+   "last_ts": 1794882696000,
+   "last_msg": "3D 網頁 v1.14.2：屋頂院名大字改白字黑外框，字重退回粗體、1024 點貼圖、後墊 3 層黑（6 cm），白色壓在泛光門檻下"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794882613819,
- "generated_text": "11/17 10:30",
+ "generated": 1794882800163,
+ "generated_text": "11/17 10:33",
  "host": "HP"
 }
