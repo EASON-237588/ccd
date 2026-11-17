@@ -878,7 +878,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.67.1"
+   "ver": "v1.67.0"
   },
   {
    "exists": true,
@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794899129000,
-   "last_msg": "3D 網頁 v1.31.2：撒水主管 B2～4F 逐層照 F-53～F-59，各層撒水頭數對齊圖例"
+   "last_ts": 1794888540000,
+   "last_msg": "3D 網頁 v1.24.0：全棟機電改用全棟模型外殼襯底、手術室剖面補 3F 相鄰房間背景；8 個分頁全部用新模型"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794899181505,
+ "generated": 1794899200235,
  "generated_text": "11/17 15:06",
- "host": "HP"
+ "host": "公司"
 }
