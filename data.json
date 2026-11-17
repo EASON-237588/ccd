@@ -1066,8 +1066,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794821730000,
-   "last_msg": "影片改成一版一個資料夾，各自有播放頁（分享鎖可單獨分享）"
+   "last_ts": 1794879096000,
+   "last_msg": "進度表：第一項九步全部完成"
   },
   {
    "exists": true,
@@ -1134,7 +1134,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794876860890,
- "generated_text": "11/17 08:54",
- "host": "公司"
+ "generated": 1794879121801,
+ "generated_text": "11/17 09:32",
+ "host": "HP"
 }
