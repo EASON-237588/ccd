@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794882312000,
-   "last_msg": "3D 網頁 v1.14.0：全棟模型細部（三色面磚逐樘開窗、小梁實測、連廊、天橋接口、病床、屋頂院名）"
+   "last_ts": 1794882572000,
+   "last_msg": "3D 網頁 v1.14.1：屋頂院名大字加粗、加深、加厚（疊 8 層約 30 cm）"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794882427434,
- "generated_text": "11/17 10:27",
+ "generated": 1794882613819,
+ "generated_text": "11/17 10:30",
  "host": "HP"
 }
