@@ -966,8 +966,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794890825000,
-   "last_msg": "共用記憶：1117 推播只剩那斯達克 1400/36、台指警報停用"
+   "last_ts": 1794891339000,
+   "last_msg": "共用記憶：研究目標 1117 改回那斯達克 1400/36"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794890924135,
- "generated_text": "11/17 12:48",
+ "generated": 1794891475565,
+ "generated_text": "11/17 12:57",
  "host": "HP"
 }
