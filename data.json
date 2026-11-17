@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794905102000,
-   "last_msg": "苗栗3D：說明時間更正"
+   "last_ts": 1794905266000,
+   "last_msg": "苗栗3D v1.43.2：門禁電視求救符號閃爍加亮"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794905256687,
- "generated_text": "11/17 16:47",
+ "generated": 1794905461258,
+ "generated_text": "11/17 16:51",
  "host": "HP"
 }
