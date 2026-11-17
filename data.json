@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794898240000,
-   "last_msg": "3D 網頁 v1.28.1：全棟機電消防撒水細緻化（西北立管、5F～7F 主管照 F-60、撒水頭依房間排並對齊各層圖例數量）"
+   "last_ts": 1794898349000,
+   "last_msg": "3D 網頁 v1.29.0：全棟機電空調細緻化（5F～7F 風管照 M-D16、外氣立管、FCU 300 台）；機電細緻化四階段完成"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794898261942,
- "generated_text": "11/17 14:51",
+ "generated": 1794898447624,
+ "generated_text": "11/17 14:54",
  "host": "HP"
 }
