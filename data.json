@@ -966,8 +966,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794888673000,
-   "last_msg": "共用記憶：1117 HP 收工（苗栗 3D 全棟模型）與 4 條新規矩"
+   "last_ts": 1794890825000,
+   "last_msg": "共用記憶：1117 推播只剩那斯達克 1400/36、台指警報停用"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794890737193,
- "generated_text": "11/17 12:45",
+ "generated": 1794890924135,
+ "generated_text": "11/17 12:48",
  "host": "HP"
 }
