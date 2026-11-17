@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794906612000,
-   "last_msg": "苗栗3D v1.44.1：4D 頁拿掉既有建物名稱標籤"
+   "last_ts": 1794930184000,
+   "last_msg": "苗栗3D 影片 04～06 版播放頁"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794959656569,
- "generated_text": "11/18 07:54",
+ "generated": 1794959844317,
+ "generated_text": "11/18 07:57",
  "host": "HP"
 }
