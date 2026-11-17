@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794900023000,
-   "last_msg": "3D 網頁 v1.33.0：冰水立管依 M-P 系列移至東側、5F～7F 冰水水平管照 M-P09；6F／7F 給水風管核對"
+   "last_ts": 1794900262000,
+   "last_msg": "3D 網頁 v1.34.0：護士呼叫（床頭子機、門口燈、主機）與 5F～7F 弱電電纜架依 S1-07；進度與說明更新"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794900109226,
- "generated_text": "11/17 15:21",
+ "generated": 1794900295167,
+ "generated_text": "11/17 15:24",
  "host": "HP"
 }
