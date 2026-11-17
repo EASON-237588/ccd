@@ -966,8 +966,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794879560000,
-   "last_msg": "苗栗醫院投標3D：3D 網頁加入分享鎖（私人版，只讀 3D網頁 子資料夾）"
+   "last_ts": 1794887245000,
+   "last_msg": "共用記憶：說「重算」就是全部重跑（1117 HP 使用者糾正）"
   },
   {
    "exists": true,
@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794886928000,
-   "last_msg": "3D 網頁 v1.20.3：完工段樓板改實心，外露平台、雨遮不再只剩梁框"
+   "last_ts": 1794887334000,
+   "last_msg": "3D 網頁 v1.21.0：1F 入口門框與自動門、雨遮崁燈、剩餘投射燈 7 與景觀矮燈 2、既有大樓米黃外觀"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794887060131,
- "generated_text": "11/17 11:44",
+ "generated": 1794887429068,
+ "generated_text": "11/17 11:50",
  "host": "HP"
 }
