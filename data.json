@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794882957000,
-   "last_msg": "3D 網頁 v1.14.4：結構體改霧面清水混凝土色（降亮度避開泛光、去金屬感、環境反射 15%），不再反光"
+   "last_ts": 1794883320000,
+   "last_msg": "3D 網頁 v1.15.1：全棟模型加車輛進出地下室、救護車動線兩段模擬"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794882986504,
- "generated_text": "11/17 10:36",
+ "generated": 1794883355384,
+ "generated_text": "11/17 10:42",
  "host": "HP"
 }
