@@ -940,8 +940,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794849221000,
-   "last_msg": "新技能 handoff-1116b：華碩 11/16 晚接續清單（台指低頻 900/49 調校、期貨趨勢 v1.66.0～v1.66.3、台指 TV 排程做法）"
+   "last_ts": 1794876568000,
+   "last_msg": "handoff-1116b：加第八節，11/17 公司交接 45 秒 870/40 細驗給 HP"
   },
   {
    "exists": true,
@@ -964,8 +964,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794849257000,
-   "last_msg": "收工 1116 晚華碩：共用記憶（台指低頻 900/49、期貨趨勢 v1.66.0～v1.66.3）、清單加入 3 個資料夾"
+   "last_ts": 1794876571000,
+   "last_msg": "共用記憶：1117 公司交接台指 45 秒 870/40 細驗給 HP（一組都沒跑）"
   },
   {
    "exists": true,
@@ -1134,7 +1134,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794874747763,
- "generated_text": "11/17 08:19",
- "host": "HP"
+ "generated": 1794876675989,
+ "generated_text": "11/17 08:51",
+ "host": "公司"
 }
