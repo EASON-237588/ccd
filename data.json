@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794897277000,
-   "last_msg": "專案說明：修正另外兩處暫存路徑的反斜線"
+   "last_ts": 1794897987000,
+   "last_msg": "3D 網頁 v1.27.0：全棟機電給排水細緻化（5F～7F 依 W-13 主管與廁所分支、排水依 W-32 立管束、西北管道間立管）"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794897342965,
- "generated_text": "11/17 14:35",
+ "generated": 1794898075841,
+ "generated_text": "11/17 14:47",
  "host": "HP"
 }
