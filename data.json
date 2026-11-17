@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794886592000,
-   "last_msg": "3D 網頁 v1.20.1：外牆恢復使用者規劃的白色大板凹窗，拿掉透視圖藍黃配色與黃色樓梯塔"
+   "last_ts": 1794886765000,
+   "last_msg": "3D 網頁 v1.20.2：日光室玻璃改明顯（淡藍、80% 不透明、有反光），夜景室內暖光"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794886686822,
- "generated_text": "11/17 11:38",
+ "generated": 1794886873528,
+ "generated_text": "11/17 11:41",
  "host": "HP"
 }
