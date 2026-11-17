@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794900262000,
-   "last_msg": "3D 網頁 v1.34.0：護士呼叫（床頭子機、門口燈、主機）與 5F～7F 弱電電纜架依 S1-07；進度與說明更新"
+   "last_ts": 1794900552000,
+   "last_msg": "苗栗3D v1.34.2：醫療氣體 1F、3F、4F 照建築醫療氣體平面；3F 冰水照 M-P07"
   },
   {
    "exists": true,
@@ -1141,7 +1141,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794900295167,
- "generated_text": "11/17 15:24",
+ "generated": 1794900663490,
+ "generated_text": "11/17 15:31",
  "host": "HP"
 }
