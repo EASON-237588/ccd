@@ -1068,8 +1068,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794888199000,
-   "last_msg": "3D 網頁 v1.22.0：院區切換、機房吊裝、碰撞點、純水醫氣改用全棟模型外殼，取代舊方塊外殼"
+   "last_ts": 1794888371000,
+   "last_msg": "3D 網頁 v1.23.0：1000 日 4D 改用全棟模型逐層長高、外牆期逐層裝上外觀"
   },
   {
    "exists": true,
@@ -1136,7 +1136,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794888354090,
- "generated_text": "11/17 12:05",
+ "generated": 1794888540826,
+ "generated_text": "11/17 12:09",
  "host": "HP"
 }
