@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794966568000,
-   "last_msg": "苗栗3D v1.47.3：筏基層軸號四向都有（使用者：網線符號 四向都要有）"
+   "last_ts": 1794966754000,
+   "last_msg": "苗栗3D v1.47.4：筏基層北向、東向網線拉長，軸號外移不被擋（使用者：東向 北向 網線拉長一點 被擋住了）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794966609874,
- "generated_text": "11/18 09:50",
+ "generated": 1794966796047,
+ "generated_text": "11/18 09:53",
  "host": "HP"
 }
