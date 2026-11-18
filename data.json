@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794986744000,
-   "last_msg": "苗栗3D v1.52.8：4F 室內範圍鋪樓板地坪，草皮只留陽台"
+   "last_ts": 1794987004000,
+   "last_msg": "苗栗3D v1.52.9：室外樓板改室外地磚、各層室內另鋪磨石子"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794986864665,
- "generated_text": "11/18 15:27",
+ "generated": 1794987051306,
+ "generated_text": "11/18 15:30",
  "host": "HP"
 }
