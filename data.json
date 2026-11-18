@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794985633000,
-   "last_msg": "苗栗3D v1.52.5：2F 露臺、4F 陽台地坪改草皮"
+   "last_ts": 1794985838000,
+   "last_msg": "苗栗3D v1.52.6：全棟模型 1F 以上不顯示地下室、地面改不透明"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794985757381,
- "generated_text": "11/18 15:09",
+ "generated": 1794985944011,
+ "generated_text": "11/18 15:12",
  "host": "HP"
 }
