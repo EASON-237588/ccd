@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794967319000,
-   "last_msg": "苗栗3D v1.47.6：網線改螢光淡黃、虛線細密化（使用者：虛線再細一點 黃改螢光淡黃）"
+   "last_ts": 1794967476000,
+   "last_msg": "苗栗3D v1.47.8：柱牆白線不發光（亮度壓在發光門檻以下；使用者：白線不用發光）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794967351446,
- "generated_text": "11/18 10:02",
+ "generated": 1794967537774,
+ "generated_text": "11/18 10:05",
  "host": "HP"
 }
