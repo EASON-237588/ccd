@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794993258000,
-   "last_msg": "苗栗3D v1.60.7：修 1F 地坪破口（降版範圍、坡道牆頂、地面顏色）"
+   "last_ts": 1794993702000,
+   "last_msg": "苗栗3D v1.60.8：基地內零碎地面補混凝土底層鋪面"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794993330185,
- "generated_text": "11/18 17:15",
+ "generated": 1794993881684,
+ "generated_text": "11/18 17:24",
  "host": "HP"
 }
