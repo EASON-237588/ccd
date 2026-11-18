@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794981785000,
-   "last_msg": "苗栗3D v1.50.10：全棟模型 1F 以下不顯示車、人、既有醫院"
+   "last_ts": 1794981999000,
+   "last_msg": "苗栗3D v1.50.12：只有筏基、B2F、B1F 不顯示樹車人既有醫院，1F 以上都顯示（使用者更正）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794981860351,
- "generated_text": "11/18 14:04",
+ "generated": 1794982047033,
+ "generated_text": "11/18 14:07",
  "host": "HP"
 }
