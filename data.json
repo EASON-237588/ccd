@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794966844000,
-   "last_msg": "苗栗3D v1.47.5：柱網格線改黃色虛線（使用者：網線 為黃色 虛線）"
+   "last_ts": 1794967319000,
+   "last_msg": "苗栗3D v1.47.6：網線改螢光淡黃、虛線細密化（使用者：虛線再細一點 黃改螢光淡黃）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794966982288,
- "generated_text": "11/18 09:56",
+ "generated": 1794967351446,
+ "generated_text": "11/18 10:02",
  "host": "HP"
 }
