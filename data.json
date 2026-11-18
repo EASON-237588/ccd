@@ -984,8 +984,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1794931180000,
-   "last_msg": "管理包：刪除 11/18 台指換約待辦（使用者自刪）"
+   "last_ts": 1794960681000,
+   "last_msg": "浮動小工具改回那斯達克 855 基準 1400/36：電腦版還原 11/15 版（c033bf8，本機 Gate 重算 K14）、手機程式文字改 855基準，說明更新"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794960186279,
- "generated_text": "11/18 08:03",
- "host": "公司"
+ "generated": 1794960760008,
+ "generated_text": "11/18 08:12",
+ "host": "HP"
 }
