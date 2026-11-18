@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794968202000,
-   "last_msg": "苗栗3D v1.47.12：筏基、B2F、B1F 隱藏地面深色格線輔助網（透出來像黑格線；使用者：有看到格線 黑線? 拿掉）"
+   "last_ts": 1794968321000,
+   "last_msg": "苗栗3D v1.47.13：網線虛線再細（淡到 0.55、段落縮短；使用者：虛線可以再細一點）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794968275445,
- "generated_text": "11/18 10:17",
+ "generated": 1794968462100,
+ "generated_text": "11/18 10:21",
  "host": "HP"
 }
