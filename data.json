@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794988299000,
-   "last_msg": "苗栗3D v1.53.5：4F 陽台欄杆移到樓板外緣"
+   "last_ts": 1794988398000,
+   "last_msg": "苗栗3D v1.53.6：4F 陽台版改照陽台輪廓，斜角不再凸出"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794988347150,
- "generated_text": "11/18 15:52",
+ "generated": 1794988533928,
+ "generated_text": "11/18 15:55",
  "host": "HP"
 }
