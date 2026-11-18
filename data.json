@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794986531000,
-   "last_msg": "苗栗3D v1.52.7：露臺、陽台欄杆鐵件加粗改深色"
+   "last_ts": 1794986744000,
+   "last_msg": "苗栗3D v1.52.8：4F 室內範圍鋪樓板地坪，草皮只留陽台"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794986677685,
- "generated_text": "11/18 15:24",
+ "generated": 1794986864665,
+ "generated_text": "11/18 15:27",
  "host": "HP"
 }
