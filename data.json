@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794968637000,
-   "last_msg": "苗栗3D v1.47.15：筏基層梯井邊線改回原來的樓梯橘、電梯紅（使用者：樓梯和電梯的管道 邊緣線改原來顏色）"
+   "last_ts": 1794968742000,
+   "last_msg": "苗栗3D v1.47.17：筏基層地板改不透明（使用者：地板 不要透明）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794968648703,
- "generated_text": "11/18 10:24",
+ "generated": 1794968835431,
+ "generated_text": "11/18 10:27",
  "host": "HP"
 }
