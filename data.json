@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794983783000,
-   "last_msg": "苗栗3D v1.51.6：網線紅光帶縮成 0.24 m 寬"
+   "last_ts": 1794983988000,
+   "last_msg": "苗栗3D v1.51.7：全棟模型地下三步關掉道路綠地等院區環境與地面"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794983896408,
- "generated_text": "11/18 14:38",
+ "generated": 1794984083016,
+ "generated_text": "11/18 14:41",
  "host": "HP"
 }
