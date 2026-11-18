@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794981610000,
-   "last_msg": "苗栗3D v1.50.9：全棟模型地坪改用使用者給的混凝土材質"
+   "last_ts": 1794981785000,
+   "last_msg": "苗栗3D v1.50.10：全棟模型 1F 以下不顯示車、人、既有醫院"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794981673641,
- "generated_text": "11/18 14:01",
+ "generated": 1794981860351,
+ "generated_text": "11/18 14:04",
  "host": "HP"
 }
