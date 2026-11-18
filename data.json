@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794973355000,
-   "last_msg": "苗栗3D v1.49.7：B2 直線加速器室依結構圖 S12002 補外牆（北西 2 m、南東 1 m、迷路牆 1.2 m）與底板，南側軸號移到外凸外"
+   "last_ts": 1794973545000,
+   "last_msg": "苗栗3D v1.50.0：B2、B1、1F 南緣依結構圖延伸到 A 軸，南擋土牆外移；B2 直線加速器段由其厚北牆接上大樓"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794973436363,
- "generated_text": "11/18 11:43",
+ "generated": 1794973623166,
+ "generated_text": "11/18 11:47",
  "host": "HP"
 }
