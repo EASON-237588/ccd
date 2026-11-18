@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794991232000,
-   "last_msg": "苗栗3D：對圖修正進度表更新"
+   "last_ts": 1794991817000,
+   "last_msg": "苗栗3D v1.59.1：地面高程、彎鉤植栽槽、機車格、停車場入口、鋼絲網、人樹較自然"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794991291073,
- "generated_text": "11/18 16:41",
+ "generated": 1794991843151,
+ "generated_text": "11/18 16:50",
  "host": "HP"
 }
