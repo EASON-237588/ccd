@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794990956000,
-   "last_msg": "苗栗3D v1.57.0：對圖全面修正第四段（5～7F、屋頂、屋突）"
+   "last_ts": 1794991232000,
+   "last_msg": "苗栗3D：對圖修正進度表更新"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794991104458,
- "generated_text": "11/18 16:38",
+ "generated": 1794991291073,
+ "generated_text": "11/18 16:41",
  "host": "HP"
 }
