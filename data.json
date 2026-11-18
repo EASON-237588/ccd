@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794982846000,
-   "last_msg": "苗栗3D v1.51.3：網線霓虹亮度大幅調低"
+   "last_ts": 1794983162000,
+   "last_msg": "苗栗3D v1.51.5：全棟模型網線改紅色霓虹（紅芯＋紅光帶閃爍）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794982976309,
- "generated_text": "11/18 14:22",
+ "generated": 1794983163444,
+ "generated_text": "11/18 14:26",
  "host": "HP"
 }
