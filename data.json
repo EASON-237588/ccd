@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794983162000,
-   "last_msg": "苗栗3D v1.51.5：全棟模型網線改紅色霓虹（紅芯＋紅光帶閃爍）"
+   "last_ts": 1794983783000,
+   "last_msg": "苗栗3D v1.51.6：網線紅光帶縮成 0.24 m 寬"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794983163444,
- "generated_text": "11/18 14:26",
+ "generated": 1794983896408,
+ "generated_text": "11/18 14:38",
  "host": "HP"
 }
