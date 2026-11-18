@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794984893000,
-   "last_msg": "苗栗3D v1.52.2：B1 停車場依 A2-3 加車格、車擋、停車、箭頭、柱腳防撞條"
+   "last_ts": 1794985304000,
+   "last_msg": "苗栗3D v1.52.3：車輛改轎車造型（停車場與道路共用）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794985015088,
- "generated_text": "11/18 14:56",
+ "generated": 1794985383704,
+ "generated_text": "11/18 15:03",
  "host": "HP"
 }
