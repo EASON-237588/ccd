@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794982355000,
-   "last_msg": "苗栗3D v1.51.0：全棟模型地坪試用暖灰磨石子（v1.50.12 已存檔標記）"
+   "last_ts": 1794982437000,
+   "last_msg": "苗栗3D v1.51.1：地坪磚縮小為 60×120 cm"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794982415750,
- "generated_text": "11/18 14:13",
+ "generated": 1794982602305,
+ "generated_text": "11/18 14:16",
  "host": "HP"
 }
