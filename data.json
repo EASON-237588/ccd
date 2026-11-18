@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794972193000,
-   "last_msg": "苗栗3D v1.49.3：網線與四向軸號只畫在當層樓板範圍內，不再懸空飄在露臺上、穿過外牆"
+   "last_ts": 1794972513000,
+   "last_msg": "苗栗3D v1.49.5：2F 露臺地板改不透明（使用者：露臺地板 不要透明）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794972328514,
- "generated_text": "11/18 11:25",
+ "generated": 1794972515542,
+ "generated_text": "11/18 11:28",
  "host": "HP"
 }
