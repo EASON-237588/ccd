@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794985412000,
-   "last_msg": "苗栗3D v1.52.4：停車場補車位編號、特殊車位字、成對車擋"
+   "last_ts": 1794985633000,
+   "last_msg": "苗栗3D v1.52.5：2F 露臺、4F 陽台地坪改草皮"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794985570649,
- "generated_text": "11/18 15:06",
+ "generated": 1794985757381,
+ "generated_text": "11/18 15:09",
  "host": "HP"
 }
