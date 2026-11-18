@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794987491000,
-   "last_msg": "苗栗3D v1.53.2：4F 樓板南緣依結構圖改到 C 軸外 2.4 m"
+   "last_ts": 1794988006000,
+   "last_msg": "苗栗3D v1.53.3：3F 東南角吊裝平台照 A2-6、南側壁柱照 A3-1"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794987608552,
- "generated_text": "11/18 15:40",
+ "generated": 1794988160289,
+ "generated_text": "11/18 15:49",
  "host": "HP"
 }
