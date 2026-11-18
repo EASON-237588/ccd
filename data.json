@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794972876000,
-   "last_msg": "苗栗3D v1.49.6：2F 露臺版抬高 0.1 cm，不再和 2F 樓板同高交錯成條紋（使用者建議）"
+   "last_ts": 1794973355000,
+   "last_msg": "苗栗3D v1.49.7：B2 直線加速器室依結構圖 S12002 補外牆（北西 2 m、南東 1 m、迷路牆 1.2 m）與底板，南側軸號移到外凸外"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794972884704,
- "generated_text": "11/18 11:34",
+ "generated": 1794973436363,
+ "generated_text": "11/18 11:43",
  "host": "HP"
 }
