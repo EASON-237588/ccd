@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794985304000,
-   "last_msg": "苗栗3D v1.52.3：車輛改轎車造型（停車場與道路共用）"
+   "last_ts": 1794985412000,
+   "last_msg": "苗栗3D v1.52.4：停車場補車位編號、特殊車位字、成對車擋"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794985383704,
- "generated_text": "11/18 15:03",
+ "generated": 1794985570649,
+ "generated_text": "11/18 15:06",
  "host": "HP"
 }
