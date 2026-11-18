@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794995514000,
-   "last_msg": "苗栗3D v1.61.1：1000 日 4D 顯示地下室入口坡道"
+   "last_ts": 1794995646000,
+   "last_msg": "苗栗3D v1.61.2：地下室入口坡道末段與地面順接、拿掉蓋住坡道的鋪面"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794995536079,
- "generated_text": "11/18 17:52",
+ "generated": 1794995723083,
+ "generated_text": "11/18 17:55",
  "host": "HP"
 }
