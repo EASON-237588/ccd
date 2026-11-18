@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794963215000,
-   "last_msg": "苗栗3D v1.46.0：全棟模型分頁分兩大類（建築建構、各樓層平面剖圖）"
+   "last_ts": 1794965623000,
+   "last_msg": "說明：更正 v1.47.0 紀錄時間為 09:30～09:33"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794963315586,
- "generated_text": "11/18 08:55",
+ "generated": 1794965689651,
+ "generated_text": "11/18 09:34",
  "host": "HP"
 }
