@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794981244000,
-   "last_msg": "苗栗3D v1.50.7：筏基地梁照結構圖 S12001（邊地梁 70×200、補小地梁、直線加速器室 120 厚）"
+   "last_ts": 1794981418000,
+   "last_msg": "說明：v1.50.8 時間更正為 13:56"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794981301466,
- "generated_text": "11/18 13:55",
+ "generated": 1794981487508,
+ "generated_text": "11/18 13:58",
  "host": "HP"
 }
