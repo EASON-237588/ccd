@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794968742000,
-   "last_msg": "苗栗3D v1.47.17：筏基層地板改不透明（使用者：地板 不要透明）"
+   "last_ts": 1794968976000,
+   "last_msg": "苗栗3D v1.47.18：筏基地板改深炭灰（使用者四色比較後選定）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794968835431,
- "generated_text": "11/18 10:27",
+ "generated": 1794969021789,
+ "generated_text": "11/18 10:30",
  "host": "HP"
 }
