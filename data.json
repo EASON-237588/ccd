@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794992960000,
-   "last_msg": "苗栗3D v1.60.6：洗牆燈光照在白色圓柱表面"
+   "last_ts": 1794993258000,
+   "last_msg": "苗栗3D v1.60.7：修 1F 地坪破口（降版範圍、坡道牆頂、地面顏色）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794993143473,
- "generated_text": "11/18 17:12",
+ "generated": 1794993330185,
+ "generated_text": "11/18 17:15",
  "host": "HP"
 }
