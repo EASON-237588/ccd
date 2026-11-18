@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794984396000,
-   "last_msg": "苗栗3D v1.51.9：B1 汽車坡道重做（弧線柏油路面、矮牆、標線箭頭、照明）"
+   "last_ts": 1794984764000,
+   "last_msg": "苗栗3D v1.52.1：B1 坡道穿出 A 軸擋土牆處開車道口"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794984457559,
- "generated_text": "11/18 14:47",
+ "generated": 1794984828697,
+ "generated_text": "11/18 14:53",
  "host": "HP"
 }
