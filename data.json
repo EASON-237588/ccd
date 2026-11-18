@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794984764000,
-   "last_msg": "苗栗3D v1.52.1：B1 坡道穿出 A 軸擋土牆處開車道口"
+   "last_ts": 1794984893000,
+   "last_msg": "苗栗3D v1.52.2：B1 停車場依 A2-3 加車格、車擋、停車、箭頭、柱腳防撞條"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794984828697,
- "generated_text": "11/18 14:53",
+ "generated": 1794985015088,
+ "generated_text": "11/18 14:56",
  "host": "HP"
 }
