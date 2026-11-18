@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794972513000,
-   "last_msg": "苗栗3D v1.49.5：2F 露臺地板改不透明（使用者：露臺地板 不要透明）"
+   "last_ts": 1794972876000,
+   "last_msg": "苗栗3D v1.49.6：2F 露臺版抬高 0.1 cm，不再和 2F 樓板同高交錯成條紋（使用者建議）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794972515542,
- "generated_text": "11/18 11:28",
+ "generated": 1794972884704,
+ "generated_text": "11/18 11:34",
  "host": "HP"
 }
