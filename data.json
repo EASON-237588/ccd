@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794965623000,
-   "last_msg": "說明：更正 v1.47.0 紀錄時間為 09:30～09:33"
+   "last_ts": 1794965978000,
+   "last_msg": "苗栗3D v1.47.1：筏基層修圖——牆到樓板下、柱牆剖面實黑、網線到 B2 地板、地下層地面變淡"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794965689651,
- "generated_text": "11/18 09:34",
+ "generated": 1794966058833,
+ "generated_text": "11/18 09:40",
  "host": "HP"
 }
