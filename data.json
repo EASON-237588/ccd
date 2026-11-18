@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794973778000,
-   "last_msg": "苗栗3D v1.50.1：B2、B1、1F 南緣改照結構圖折線（2～7 軸外凸到 A 軸，其餘在 B 軸），地下三步不顯示樹"
+   "last_ts": 1794973873000,
+   "last_msg": "苗栗3D v1.50.2：外牆（擋土牆、梯井、直線加速器）不透明、地坪白色、梯井剖面改白色（使用者）"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794973809841,
- "generated_text": "11/18 11:50",
+ "generated": 1794973996296,
+ "generated_text": "11/18 11:53",
  "host": "HP"
 }
