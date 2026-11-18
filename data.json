@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794974732000,
-   "last_msg": "苗栗3D v1.50.5：撤銷 v1.50.4（筏基內牆純白、黑色邊線），回到 v1.50.3 內容（使用者：退回去 不理想）"
+   "last_ts": 1794980694000,
+   "last_msg": "說明：v1.50.6 時間更正為 13:44"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794974734427,
- "generated_text": "11/18 12:05",
+ "generated": 1794980750877,
+ "generated_text": "11/18 13:45",
  "host": "HP"
 }
