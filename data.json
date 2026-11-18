@@ -1086,8 +1086,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794983988000,
-   "last_msg": "苗栗3D v1.51.7：全棟模型地下三步關掉道路綠地等院區環境與地面"
+   "last_ts": 1794984195000,
+   "last_msg": "苗栗3D v1.51.8：網線軸號與樓層名牌每一步都保持藍框"
   },
   {
    "exists": true,
@@ -1149,7 +1149,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1794984083016,
- "generated_text": "11/18 14:41",
+ "generated": 1794984269759,
+ "generated_text": "11/18 14:44",
  "host": "HP"
 }
