@@ -972,8 +972,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795164171000,
-   "last_msg": "handoff-1120：HP 整天接續清單（苗栗 3D、年終績效評核表、工作記憶討論與待辦、收工撞檔處理）"
+   "last_ts": 1794995775000,
+   "last_msg": "handoff-1118：HP 苗栗 3D 對圖全面修正接續清單"
   },
   {
    "exists": true,
@@ -1171,7 +1171,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795164209822,
- "generated_text": "11/20 16:43",
- "host": "HP"
+ "generated": 1795167324800,
+ "generated_text": "11/20 17:35",
+ "host": "公司"
 }
