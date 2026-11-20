@@ -972,8 +972,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794995775000,
-   "last_msg": "handoff-1118：HP 苗栗 3D 對圖全面修正接續清單"
+   "last_ts": 1795164171000,
+   "last_msg": "handoff-1120：HP 整天接續清單（苗栗 3D、年終績效評核表、工作記憶討論與待辦、收工撞檔處理）"
   },
   {
    "exists": true,
@@ -996,8 +996,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795169508000,
-   "last_msg": "待辦：Claude 功能沒發揮的清單 12 項（1120 公司使用者討論，等他挑項目逐項說明）"
+   "last_ts": 1795169554000,
+   "last_msg": "共用記憶：手機討論只討論不動手（1120 公司，使用者兩次糾正後定下）"
   },
   {
    "exists": true,
@@ -1186,7 +1186,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795169512562,
- "generated_text": "11/20 18:11",
+ "generated": 1795169697604,
+ "generated_text": "11/20 18:14",
  "host": "公司"
 }
