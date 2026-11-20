@@ -1092,8 +1092,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795138721000,
-   "last_msg": "苗栗3D v1.69.1：4D 語音簡介時隱藏說明欄、塔吊迴轉限制在工區內"
+   "last_ts": 1795142482000,
+   "last_msg": "苗栗3D v1.70.0：各層簡介鏡頭照截圖、左下機電圖示說明、語音念到的空間名稱閃爍"
   },
   {
    "exists": true,
@@ -1155,7 +1155,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795138812180,
- "generated_text": "11/20 09:40",
+ "generated": 1795142645196,
+ "generated_text": "11/20 10:44",
  "host": "HP"
 }
