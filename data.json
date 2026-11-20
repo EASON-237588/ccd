@@ -996,8 +996,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795157745000,
-   "last_msg": "待辦：施工計畫書產生器讓三台都能用（兩層做法與待決定事項）"
+   "last_ts": 1795157888000,
+   "last_msg": "共用記憶：補登 1118 公司苗栗 3D 室內精裝修（當時只寫在公司本機）"
   },
   {
    "exists": true,
@@ -1166,7 +1166,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795157859107,
- "generated_text": "11/20 14:57",
+ "generated": 1795158044134,
+ "generated_text": "11/20 15:00",
  "host": "公司"
 }
