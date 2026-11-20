@@ -972,8 +972,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1794995775000,
-   "last_msg": "handoff-1118：HP 苗栗 3D 對圖全面修正接續清單"
+   "last_ts": 1795164171000,
+   "last_msg": "handoff-1120：HP 整天接續清單（苗栗 3D、年終績效評核表、工作記憶討論與待辦、收工撞檔處理）"
   },
   {
    "exists": true,
@@ -996,8 +996,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795163858000,
-   "last_msg": "待辦：每個專案設工作記憶檔＋記憶目錄瘦身（1120 HP 使用者交代記錄）"
+   "last_ts": 1795164167000,
+   "last_msg": "共用記憶：1120 HP 收工（評核表填寫版只在 HP、工作記憶待辦延後、技能 handoff-1120）"
   },
   {
    "exists": true,
@@ -1171,7 +1171,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795164022635,
- "generated_text": "11/20 16:40",
+ "generated": 1795164209822,
+ "generated_text": "11/20 16:43",
  "host": "HP"
 }
