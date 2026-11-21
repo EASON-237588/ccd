@@ -998,8 +998,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795265519000,
-   "last_msg": "記憶瘦身後：新記憶改加到分類索引檔 idx-*.md 最上面，不加進 MEMORY.md（project-hub-ops、eod-push-all）"
+   "last_ts": 1795270578000,
+   "last_msg": "share-lock-ops：記下 1121 資安修正（私人版副檔名放行清單與擋資料夾、寫入節流、300 台上限、hub 只收本機 Host、刪除保留紀錄）"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795270569694,
- "generated_text": "11/21 22:16",
+ "generated": 1795270756281,
+ "generated_text": "11/21 22:19",
  "host": "HP"
 }
