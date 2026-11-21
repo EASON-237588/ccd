@@ -998,8 +998,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795164171000,
-   "last_msg": "handoff-1120：HP 整天接續清單（苗栗 3D、年終績效評核表、工作記憶討論與待辦、收工撞檔處理）"
+   "last_ts": 1795265519000,
+   "last_msg": "記憶瘦身後：新記憶改加到分類索引檔 idx-*.md 最上面，不加進 MEMORY.md（project-hub-ops、eod-push-all）"
   },
   {
    "exists": true,
@@ -1022,8 +1022,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795265513000,
-   "last_msg": "記憶瘦身：總索引 214 行→41 行（必守規矩＋11 個分類索引），補進 HP 獨有的 70 個記憶；開工自查查總索引一致、新電腦設定改複製總索引"
+   "last_ts": 1795265532000,
+   "last_msg": "共用記憶：瘦身補記時間改實際 20:52"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795265519294,
- "generated_text": "11/21 20:51",
+ "generated": 1795265708193,
+ "generated_text": "11/21 20:55",
  "host": "HP"
 }
