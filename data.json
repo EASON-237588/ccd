@@ -698,6 +698,26 @@
    "repo": "office-floorplan-3d"
   },
   {
+   "id": "3d-info",
+   "name": "3D資訊",
+   "en": "3D Info",
+   "cat": "建築&營造工具",
+   "live": "",
+   "summary": "機電／建築 3D 的參考資料與製作經驗，給苗栗 3D、機電整合模型 3D、地下室至 2F、浴室、平面圖轉 3D 共用。參考影片.md 收看到覺得好的 3D 影片（第一筆：臉書 Rvt Mel Revit 機電短片），製作經驗.md 整理照圖建模、畫面、網頁程式、錄影片去閃、模型轉換的做法與坑。v1.0.0（1121 HP 建立）。",
+   "notes": [
+    {
+     "level": "info",
+     "text": "資料夾在桌面 C..C\\3D資訊，GitHub 私人倉庫 3d-info（2026-11-21 使用者交代建立）。新增參考：使用者丟網址或截圖 → 截 2～3 張放 截圖/ → 參考影片.md 最上面加一段 → 版本 +1 推上去。"
+    },
+    {
+     "level": "info",
+     "text": "第一次在別台電腦：跟 Claude 說「開工」會自動複製，或自己在命令視窗貼：gh repo clone EASON-237588/3d-info \"%USERPROFILE%\\Desktop\\C..C\\3D資訊\""
+    }
+   ],
+   "machine": "共用",
+   "repo": "3d-info"
+  },
+  {
    "id": "asset-platform",
    "name": "全台智慧資產管理平台",
    "en": "Smart Asset Platform",
@@ -1002,8 +1022,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795264303000,
-   "last_msg": "共用記憶：機電 3D 風格參考（臉書 Rvt Mel Revit 機電短片，1121 HP 使用者要記下）"
+   "last_ts": 1795264563000,
+   "last_msg": "3D資訊卡片：修正注意事項路徑（反斜線被吃掉變成控制字元）"
   },
   {
    "exists": true,
@@ -1071,6 +1091,13 @@
    "ver": "",
    "last_ts": 1793936178000,
    "last_msg": "平面圖轉3D：小工具半成品（丟 CAD／PDF 轉 3D 網頁），CAD 已通、PDF 圖片未完，使用者說暫停；說明檔記進度與待做"
+  },
+  {
+   "exists": true,
+   "git": true,
+   "ver": "",
+   "last_ts": 1795264518000,
+   "last_msg": "3D資訊 v1.0.0：建立（參考影片第一筆 Rvt Mel Revit 機電短片、3D 製作經驗整理）"
   },
   {
    "exists": true,
@@ -1192,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795264394314,
- "generated_text": "11/21 20:33",
+ "generated": 1795264582779,
+ "generated_text": "11/21 20:36",
  "host": "HP"
 }
