@@ -810,57 +810,63 @@
    "cat": "建築&營造工具",
    "works": [
     {
+     "desc": "影片・4 分 58 秒（崇偉集團版；內容同 -06）",
+     "title": "院區機電3D機電系統展示影片-07",
+     "video": true,
+     "sl": "miaoli-bid-3d#w0"
+    },
+    {
      "desc": "影片・4 分 45 秒（網頁 v1.70.0 重錄：各層簡介新視角、圖示說明、念到的空間閃爍）",
      "title": "院區機電3D機電系統展示影片-06",
      "video": true,
-     "sl": "miaoli-bid-3d#w0"
+     "sl": "miaoli-bid-3d#w1"
     },
     {
      "desc": "影片・4 分 45 秒（九項全收：前四項完整、後五項簡述）",
      "title": "院區機電3D機電系統展示影片-05",
      "video": true,
-     "sl": "miaoli-bid-3d#w1"
+     "sl": "miaoli-bid-3d#w2"
     },
     {
      "desc": "影片・3 分 30 秒（四段：院區切換、1000 日、純水醫氣、全棟機電）",
      "title": "院區機電3D機電系統展示影片-03",
      "video": true,
-     "sl": "miaoli-bid-3d#w2"
+     "sl": "miaoli-bid-3d#w3"
     },
     {
      "desc": "影片・3 分 30 秒（七分頁全收）",
      "title": "院區機電3D機電系統展示影片-02",
      "video": true,
-     "sl": "miaoli-bid-3d#w3"
+     "sl": "miaoli-bid-3d#w4"
     },
     {
      "desc": "影片・3 分 33 秒（機電四段，已退回留存）",
      "title": "院區機電3D機電系統展示影片-01",
      "video": true,
-     "sl": "miaoli-bid-3d#w4"
+     "sl": "miaoli-bid-3d#w5"
     },
     {
      "desc": "影片・4 分 49 秒（污、撒字修正）",
      "title": "院區機電3D施工規劃展示影片-03",
      "video": true,
-     "sl": "miaoli-bid-3d#w5"
+     "sl": "miaoli-bid-3d#w6"
     },
     {
      "desc": "影片・4 分 49 秒",
      "title": "院區機電3D施工規劃展示影片-02",
      "video": true,
-     "sl": "miaoli-bid-3d#w6"
+     "sl": "miaoli-bid-3d#w7"
     },
     {
      "desc": "影片・4 分 47 秒",
      "title": "院區機電3D施工規劃展示影片-01",
      "video": true,
-     "sl": "miaoli-bid-3d#w7"
+     "sl": "miaoli-bid-3d#w8"
     },
     {
      "title": "院區機電 3D 網頁 v1.70.0",
      "desc": "答詢現場轉動用・9 個分頁（營運中院區切換、1000 日 4D 模擬、各層簡介、全棟機電、純水與醫療氣體、機房吊裝與維修空間、手術室剖面、直線加速器治療室、碰撞點）＋語音簡介、機電圖示說明",
-     "sl": "miaoli-bid-3d#w8"
+     "sl": "miaoli-bid-3d#w9"
     }
    ],
    "summary": "苗栗醫院急重症醫療大樓擴建工程投標用 3D 展示：企劃書插圖、15 分鐘簡報影片、答詢現場轉動的 3D 網頁。依評選配分與 BIM 建置說明列 8 項，第一批 1、2、8。115/11/16 已出呈主管報表 1151116_投標3D展示規劃-01.docx（放招標評估資料夾），待主管決定。投標評估本體看「苗栗醫院」卡片。",
@@ -996,8 +1002,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795239001000,
-   "last_msg": "待辦：勾掉「分享不加鎖選項」（1121 HP 已做成裝置上限「無」＋轉傳監控，已部署實測）"
+   "last_ts": 1795241277000,
+   "last_msg": "苗栗卡片：加影片 10 版 -07（崇偉集團、4 分 58 秒，分享鎖私人版＋自用網址）；播放頁單支影片改純影片樣式"
   },
   {
    "exists": true,
@@ -1186,7 +1192,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795241151777,
- "generated_text": "11/21 14:05",
+ "generated": 1795241339252,
+ "generated_text": "11/21 14:08",
  "host": "HP"
 }
