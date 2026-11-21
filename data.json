@@ -1022,8 +1022,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795269322000,
-   "last_msg": "3D資訊卡片：v1.0.6，加第七筆參考影片（1121 HP）"
+   "last_ts": 1795270507000,
+   "last_msg": "分享鎖資安修正（1121 檢查後使用者同意修 1～4 項）"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795269377467,
- "generated_text": "11/21 21:56",
+ "generated": 1795270569694,
+ "generated_text": "11/21 22:16",
  "host": "HP"
 }
