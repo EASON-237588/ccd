@@ -1022,8 +1022,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795270842000,
-   "last_msg": "共用記憶：1121 HP 晚上補記（3D資訊專案、AI 工具影片結論、分享鎖資安 4 項修正、誤配待辦不勾）"
+   "last_ts": 1795271122000,
+   "last_msg": "共用記憶：HP 內建瀏覽器主人裝置已重登（第 12 筆），苗栗 3D 自用網址實測正常"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795270945902,
- "generated_text": "11/21 22:22",
+ "generated": 1795271135945,
+ "generated_text": "11/21 22:25",
  "host": "HP"
 }
