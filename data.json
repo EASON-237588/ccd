@@ -1002,8 +1002,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795258137000,
-   "last_msg": "共用記憶：苗栗影片 10 版改 2 分 30 秒精簡版、覆蓋不換網址、去閃做法（1121 HP）"
+   "last_ts": 1795261701000,
+   "last_msg": "共用記憶：1121 HP 收工（分享控制台 v1.5.0、苗栗 v1.71.1 與影片 10 版精簡版、HP 內建瀏覽器主人裝置待重登）"
   },
   {
    "exists": true,
@@ -1192,7 +1192,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795258184705,
- "generated_text": "11/21 18:49",
+ "generated": 1795261828395,
+ "generated_text": "11/21 19:50",
  "host": "HP"
 }
