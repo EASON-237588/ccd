@@ -1002,8 +1002,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795247413000,
-   "last_msg": "苗栗卡片：3D 網頁版號改 v1.71.0（1121 HP）"
+   "last_ts": 1795247928000,
+   "last_msg": "共用記憶：苗栗影片重錄直接覆蓋 10 版、等公司會議結論（1121 HP 使用者交代）"
   },
   {
    "exists": true,
@@ -1192,7 +1192,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795247539745,
- "generated_text": "11/21 15:52",
+ "generated": 1795248093526,
+ "generated_text": "11/21 16:01",
  "host": "HP"
 }
