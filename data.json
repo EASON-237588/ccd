@@ -703,7 +703,7 @@
    "en": "3D Info",
    "cat": "建築&營造工具",
    "live": "",
-   "summary": "機電／建築 3D 的參考資料與製作經驗，給苗栗 3D、機電整合模型 3D、地下室至 2F、浴室、平面圖轉 3D 共用。參考影片.md 收看到覺得好的 3D 影片（第一筆：臉書 Rvt Mel Revit 機電短片），製作經驗.md 整理照圖建模、畫面、網頁程式、錄影片去閃、模型轉換的做法與坑。v1.0.0（1121 HP 建立）。",
+   "summary": "機電／建築 3D 的參考資料與製作經驗，給苗栗 3D、機電整合模型 3D、地下室至 2F、浴室、平面圖轉 3D 共用。參考影片.md 收看到覺得好的 3D 影片（Rvt Mel Revit 機電短片、US MEP learning 消防水量計算），製作經驗.md 整理照圖建模、畫面、網頁程式、錄影片去閃、模型轉換的做法與坑。v1.0.1（1121 HP）。",
    "notes": [
     {
      "level": "info",
@@ -1022,8 +1022,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795264563000,
-   "last_msg": "3D資訊卡片：修正注意事項路徑（反斜線被吃掉變成控制字元）"
+   "last_ts": 1795264728000,
+   "last_msg": "3D資訊卡片：v1.0.1，加第二筆參考影片（1121 HP）"
   },
   {
    "exists": true,
@@ -1096,8 +1096,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795264518000,
-   "last_msg": "3D資訊 v1.0.0：建立（參考影片第一筆 Rvt Mel Revit 機電短片、3D 製作經驗整理）"
+   "last_ts": 1795264718000,
+   "last_msg": "3D資訊 v1.0.1：參考影片第二筆 US MEP learning 消防水量計算 3D 教學（截圖 3 張）"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795264582779,
- "generated_text": "11/21 20:36",
+ "generated": 1795264770937,
+ "generated_text": "11/21 20:39",
  "host": "HP"
 }
