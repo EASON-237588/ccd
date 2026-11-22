@@ -1139,8 +1139,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795338952000,
-   "last_msg": "苗栗3D v1.75.0：手機版改左直欄（標題版本號、十分頁直排、語音簡介）＋右側 3D，按分頁自動播語音"
+   "last_ts": 1795340485000,
+   "last_msg": "苗栗3D v1.75.1：手機版修 LA 治療室空白、不顯示工期列與圖例"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795339449113,
- "generated_text": "11/22 17:24",
+ "generated": 1795340563000,
+ "generated_text": "11/22 17:42",
  "host": "HP"
 }
