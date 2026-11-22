@@ -1166,8 +1166,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.9.0",
-   "last_ts": 1795330919000,
-   "last_msg": "基因研究分析 v1.5.0：排行榜加隱藏總稱病名、同病同基因限 3 個藥、論文篇數欄與排序篩選；掃描補充程式（子分類數＋Europe PMC 論文篇數，2 條連線、優先順序、可續跑）（1122 HP）"
+   "last_ts": 1795331144000,
+   "last_msg": "基因研究分析：論文篇數改查 PubMed（Europe PMC 太慢且限制連線），排行榜連結與說明同步（1122 HP）"
   }
  ],
  "todos": [
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795331022600,
- "generated_text": "11/22 15:03",
+ "generated": 1795331210534,
+ "generated_text": "11/22 15:06",
  "host": "HP"
 }
