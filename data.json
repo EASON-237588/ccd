@@ -1166,8 +1166,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.9.1",
-   "last_ts": 1795333427000,
-   "last_msg": "全庫掃描最終結果：446 種病 4,181 條線索全部附 PubMed 論文篇數與子分類數；衰老分析同步更新（1122 HP）"
+   "last_ts": 1795335236000,
+   "last_msg": "基因3D資料庫：掃描名單結果與工作記憶更新（1122 HP）"
   }
  ],
  "todos": [
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795333607278,
- "generated_text": "11/22 15:46",
+ "generated": 1795335259249,
+ "generated_text": "11/22 16:14",
  "host": "HP"
 }
