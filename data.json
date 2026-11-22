@@ -1139,8 +1139,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795353702000,
-   "last_msg": "苗栗3D v1.80.12：語音簡介可隨按暫停／繼續；加護病房、電力、消防管線加流動動畫"
+   "last_ts": 1795354882000,
+   "last_msg": "苗栗3D v1.80.13：手機版跟上桌機（七分頁、特殊醫療空間四章），語音鈕顯示暫停／繼續"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795353763796,
- "generated_text": "11/22 21:22",
+ "generated": 1795354898107,
+ "generated_text": "11/22 21:41",
  "host": "HP"
 }
