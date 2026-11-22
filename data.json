@@ -1139,8 +1139,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795340485000,
-   "last_msg": "苗栗3D v1.75.1：手機版修 LA 治療室空白、不顯示工期列與圖例"
+   "last_ts": 1795349707000,
+   "last_msg": "苗栗3D v1.80.0：深化 16 項、加護病房／電力／消防／測試運轉；全棟機電依系統分七章（總匯放最後），語音說到哪該區與設備閃"
   },
   {
    "exists": true,
@@ -1219,7 +1219,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795344770999,
- "generated_text": "11/22 18:52",
+ "generated": 1795349796978,
+ "generated_text": "11/22 20:16",
  "host": "HP"
 }
