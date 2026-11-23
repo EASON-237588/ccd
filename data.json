@@ -1188,7 +1188,9 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.0.0"
+   "ver": "v1.0.0",
+   "last_ts": 1795418933000,
+   "last_msg": "消防設備3D v1.0.0：3D 網頁（泵室、立管、撒水、捲盤、消防栓、地下水池，六段導覽）與 3D 模型影片 01 版（橫式 34.5 秒）"
   }
  ],
  "todos": [
@@ -1240,7 +1242,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795418703038,
- "generated_text": "11/23 15:25",
+ "generated": 1795419091772,
+ "generated_text": "11/23 15:31",
  "host": "HP"
 }
