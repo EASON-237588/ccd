@@ -1188,7 +1188,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.2.1",
+   "ver": "v1.2.2",
    "last_ts": 1795421723000,
    "last_msg": "v1.2.1：場景二泵浦組整組放大 1.25 倍並補零件細節，立管加逆止閥與管接頭；檢查程式等待上限放寬"
   }
@@ -1242,7 +1242,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795421891406,
- "generated_text": "11/23 16:18",
+ "generated": 1795422082781,
+ "generated_text": "11/23 16:21",
  "host": "HP"
 }
