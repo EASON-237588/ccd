@@ -1206,8 +1206,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.4.0",
-   "last_ts": 1795425767000,
-   "last_msg": "v1.3.0：加場景三泵浦組（分批組裝、水流方向箭頭）與第三支影片"
+   "last_ts": 1795428375000,
+   "last_msg": "v1.5.0：加模4氣體滅火與第四支影片；一律高畫質並拿掉按鈕；播放帶口白聲音；場景一～四改叫模1～模4；版本寫法改 Craft & Core Design"
   }
  ],
  "todos": [
@@ -1259,7 +1259,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795427147797,
- "generated_text": "11/23 17:45",
+ "generated": 1795428446198,
+ "generated_text": "11/23 18:07",
  "host": "HP"
 }
