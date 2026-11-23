@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795435958000,
-   "last_msg": "共用記憶：1123 HP 收工紀錄補 3D 資訊 1.0.8／1.0.9、技能檔備份與待辦處理說明"
+   "last_ts": 1795438627000,
+   "last_msg": "共用記憶：1123 華碩收工更新——指數儀表板兩筆數字判定華碩最新，已蓋過去並推上去"
   },
   {
    "exists": true,
@@ -1246,7 +1246,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795436058033,
- "generated_text": "11/23 20:14",
+ "generated": 1795476987836,
+ "generated_text": "11/24 07:36",
  "host": "HP"
 }
