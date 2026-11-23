@@ -1199,7 +1199,7 @@
   {
    "exists": true,
    "git": true,
-   "ver": "v1.2.3",
+   "ver": "v1.2.4",
    "last_ts": 1795424058000,
    "last_msg": "v1.2.3：字卡、字幕、口白的 500 不再寫成消防栓，只留數字並註明原片未說明；場景一影片重錄"
   }
@@ -1253,7 +1253,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795424153098,
- "generated_text": "11/23 16:55",
+ "generated": 1795424710531,
+ "generated_text": "11/23 17:05",
  "host": "HP"
 }
