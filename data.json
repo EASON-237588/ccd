@@ -1057,8 +1057,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795355082000,
-   "last_msg": "共用記憶：1122 晚 HP 收工（苗栗 3D v1.80.13）、那斯達克沒開盤不回測、每改一項升版、苗栗手機版規矩更新"
+   "last_ts": 1795423668000,
+   "last_msg": "新增消防設備3D卡片（v1.2.2，兩個場景）：私人倉庫 fire-equipment-3d，分享鎖登記 3D 網頁與兩支影片並建自用網址（1123 HP）"
   },
   {
    "exists": true,
@@ -1200,8 +1200,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.2.2",
-   "last_ts": 1795422882000,
-   "last_msg": "兩支影片的播放頁"
+   "last_ts": 1795423742000,
+   "last_msg": "說明補上倉庫與分享鎖的做法"
   }
  ],
  "todos": [
@@ -1253,7 +1253,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795423220878,
- "generated_text": "11/23 16:40",
+ "generated": 1795423778669,
+ "generated_text": "11/23 16:49",
  "host": "HP"
 }
