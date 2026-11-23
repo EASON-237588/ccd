@@ -1021,8 +1021,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795270578000,
-   "last_msg": "share-lock-ops：記下 1121 資安修正（私人版副檔名放行清單與擋資料夾、寫入節流、300 台上限、hub 只收本機 Host、刪除保留紀錄）"
+   "last_ts": 1795435130000,
+   "last_msg": "新增技能 fire-equipment-3d-ops：消防設備3D 操作與接續（看影片手工建 3D 流程、零件清單、聲音主時鐘、穿牆隱藏、使用者規矩、踩過的坑、待辦）（1123 HP）"
   },
   {
    "exists": true,
@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795435017000,
-   "last_msg": "待辦：消防設備3D 細部質感升級（1123 HP 使用者：之後再找時間做），含還輸影片的項目與實體手機複測"
+   "last_ts": 1795435232000,
+   "last_msg": "共用記憶：1123 HP 收工紀錄補待辦、新技能 fire-equipment-3d-ops 與 three.js 技能組待決定"
   },
   {
    "exists": true,
@@ -1188,8 +1188,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.4.0",
-   "last_ts": 1795433876000,
-   "last_msg": "v1.5.4：手機首頁重新設計（使用者看過預覽後同意）"
+   "last_ts": 1795435136000,
+   "last_msg": "說明檔加一行指向技能 fire-equipment-3d-ops"
   }
  ],
  "todos": [
@@ -1246,7 +1246,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795435126359,
- "generated_text": "11/23 19:58",
+ "generated": 1795435313468,
+ "generated_text": "11/23 20:01",
  "host": "HP"
 }
