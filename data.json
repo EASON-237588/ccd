@@ -1057,8 +1057,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795423668000,
-   "last_msg": "新增消防設備3D卡片（v1.2.2，兩個場景）：私人倉庫 fire-equipment-3d，分享鎖登記 3D 網頁與兩支影片並建自用網址（1123 HP）"
+   "last_ts": 1795424120000,
+   "last_msg": "消防設備3D卡片更新 v1.2.3：字卡的 500 不寫成消防栓，加注意事項（1123 HP）"
   },
   {
    "exists": true,
@@ -1200,8 +1200,8 @@
    "exists": true,
    "git": true,
    "ver": "v1.2.3",
-   "last_ts": 1795423742000,
-   "last_msg": "說明補上倉庫與分享鎖的做法"
+   "last_ts": 1795424058000,
+   "last_msg": "v1.2.3：字卡、字幕、口白的 500 不再寫成消防栓，只留數字並註明原片未說明；場景一影片重錄"
   }
  ],
  "todos": [
@@ -1253,7 +1253,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795423966071,
- "generated_text": "11/23 16:52",
+ "generated": 1795424153098,
+ "generated_text": "11/23 16:55",
  "host": "HP"
 }
