@@ -1021,8 +1021,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795435130000,
-   "last_msg": "新增技能 fire-equipment-3d-ops：消防設備3D 操作與接續（看影片手工建 3D 流程、零件清單、聲音主時鐘、穿牆隱藏、使用者規矩、踩過的坑、待辦）（1123 HP）"
+   "last_ts": 1795435647000,
+   "last_msg": "fire-equipment-3d-ops：質感升級前先讀四個 three.js 技能，並註明 r186 與 r160 的差異"
   },
   {
    "exists": true,
@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795435232000,
-   "last_msg": "共用記憶：1123 HP 收工紀錄補待辦、新技能 fire-equipment-3d-ops 與 three.js 技能組待決定"
+   "last_ts": 1795435630000,
+   "last_msg": "共用記憶：1123 HP 收工紀錄更正（四個 three.js 技能已安裝）"
   },
   {
    "exists": true,
@@ -1246,7 +1246,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795435313468,
- "generated_text": "11/23 20:01",
+ "generated": 1795435683058,
+ "generated_text": "11/23 20:08",
  "host": "HP"
 }
