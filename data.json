@@ -884,7 +884,7 @@
      "sl": "miaoli-bid-3d#w8"
     },
     {
-     "title": "院區機電 3D 網頁 Craft & Core Design 1.81.1",
+     "title": "院區機電 3D 網頁 Craft & Core Design 1.81.2",
      "desc": "答詢現場轉動用・7 個分頁（營運中院區切換、1000 日 4D 模擬、各層簡介、七大機電系統〔含接地系統〕、機房吊裝與維修空間、特殊醫療空間、碰撞點）＋語音簡介、機電圖示說明",
      "sl": "miaoli-bid-3d#w9"
     }
@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795484084000,
-   "last_msg": "苗栗3D 作品卡更新為 Craft & Core Design 1.81.1（接地逐層）"
+   "last_ts": 1795484257000,
+   "last_msg": "苗栗3D 作品卡更新為 Craft & Core Design 1.81.2（接地小分頁）"
   },
   {
    "exists": true,
@@ -1154,8 +1154,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795484077000,
-   "last_msg": "苗栗3D Craft & Core Design 1.81.1：接地系統逐層分開（全棟／筏基／B2～7F／R1）"
+   "last_ts": 1795484262000,
+   "last_msg": "苗栗3D 工作記憶：更正最後更新時間"
   },
   {
    "exists": true,
@@ -1251,7 +1251,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795484125563,
- "generated_text": "11/24 09:35",
+ "generated": 1795484314054,
+ "generated_text": "11/24 09:38",
  "host": "HP"
 }
