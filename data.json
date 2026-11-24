@@ -1021,8 +1021,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795435647000,
-   "last_msg": "fire-equipment-3d-ops：質感升級前先讀四個 three.js 技能，並註明 r186 與 r160 的差異"
+   "last_ts": 1795481753000,
+   "last_msg": "share-lock-ops：自己用的連結一律無上限（1124 HP）"
   },
   {
    "exists": true,
@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795480840000,
-   "last_msg": "待辦：三台沒進版控大檔盤點（1124 HP 起頭，使用者說先停、之後再做；盤點程式在 HP 本機、尚未推上去）"
+   "last_ts": 1795481733000,
+   "last_msg": "分享鎖：自己用的連結預設改成無上限（1124 HP 使用者定）"
   },
   {
    "exists": true,
@@ -1251,7 +1251,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795481007915,
- "generated_text": "11/24 08:43",
+ "generated": 1795481914698,
+ "generated_text": "11/24 08:58",
  "host": "HP"
 }
