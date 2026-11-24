@@ -1021,8 +1021,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795481753000,
-   "last_msg": "share-lock-ops：自己用的連結一律無上限（1124 HP）"
+   "last_ts": 1795508355000,
+   "last_msg": "新技能 children-museum-3d-ops：兒童未來館機電 3D 平台操作、周邊先查衛星圖街景的鐵律與已查證配置"
   },
   {
    "exists": true,
@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795507752000,
-   "last_msg": "共用記憶：1124 HP 兒童未來館 3D 兩條規矩（周邊先查衛星圖街景再建模、投標 3D 以委員角度嚴苛）"
+   "last_ts": 1795508257000,
+   "last_msg": "分享鎖：兒童未來館 3D 平台加入上傳版（3D平台/index.html），卡片換自己用網址"
   },
   {
    "exists": true,
@@ -1251,7 +1251,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795507804028,
- "generated_text": "11/24 16:10",
+ "generated": 1795508370074,
+ "generated_text": "11/24 16:19",
  "host": "HP"
 }
