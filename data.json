@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795684217000,
-   "last_msg": "收工 1126 公司：只做開工（期貨紀錄新增 6 筆、台股 0 筆），收工紀錄 shougong-1126-company"
+   "last_ts": 1795684318000,
+   "last_msg": "共用記憶：1126 HP 收工補下午地下室接力（第 1～4 棒已推 d8dabbe、第 5 棒留 HP 本機）"
   },
   {
    "exists": true,
@@ -1261,7 +1261,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795684223743,
- "generated_text": "11/26 17:10",
- "host": "公司"
+ "generated": 1795684364903,
+ "generated_text": "11/26 17:12",
+ "host": "HP"
 }
