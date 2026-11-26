@@ -1021,8 +1021,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795723773000,
-   "last_msg": "兒童未來館技能：七樓 1.98.0 完成進度"
+   "last_ts": 1795725462000,
+   "last_msg": "兒童未來館技能：六之三進度加八樓 1.99.0"
   },
   {
    "exists": true,
@@ -1256,7 +1256,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795723788656,
- "generated_text": "11/27 04:09",
+ "generated": 1795725618357,
+ "generated_text": "11/27 04:40",
  "host": "HP"
 }
