@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795683745000,
-   "last_msg": "管理包待辦：兒童未來館第 5 棒地下一層 B1F 照圖重做 11/26 下午暫停、晚上繼續"
+   "last_ts": 1795684217000,
+   "last_msg": "收工 1126 公司：只做開工（期貨紀錄新增 6 筆、台股 0 筆），收工紀錄 shougong-1126-company"
   },
   {
    "exists": true,
@@ -1261,7 +1261,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795683810473,
- "generated_text": "11/26 17:03",
- "host": "HP"
+ "generated": 1795684223743,
+ "generated_text": "11/26 17:10",
+ "host": "公司"
 }
