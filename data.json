@@ -1021,8 +1021,8 @@
    "exists": true,
    "git": true,
    "ver": "",
-   "last_ts": 1795745375000,
-   "last_msg": "children-museum-3d-ops：全棟機電逐層點位進度更新（11/27 地下四層～一樓補齊完成）"
+   "last_ts": 1795848490000,
+   "last_msg": "1128 HP 收工：新增 handoff-1128（兒童未來館 3D 1.113～1.128 接續清單）；children-museum-3d-ops 加六之四逐層修圖微調"
   },
   {
    "exists": true,
@@ -1045,8 +1045,8 @@
    "exists": true,
    "git": true,
    "ver": "v2.3.0",
-   "last_ts": 1795759467000,
-   "last_msg": "收工記憶：1127 公司收工（苗栗特殊醫療空間機電分析 -03／-04／創意承諾選項，檔案只在公司）"
+   "last_ts": 1795848482000,
+   "last_msg": "收工 1128 HP：共用記憶補「錄影要等使用者總結」與 1128 HP 收工紀錄；待辦兩條已完成的全棟機電點位換成撒水支管全棟照圖重做（警告級）"
   },
   {
    "exists": true,
@@ -1256,7 +1256,7 @@
   }
  ],
  "unregistered": [],
- "generated": 1795790650862,
- "generated_text": "11/27 22:44",
+ "generated": 1795848551826,
+ "generated_text": "11/28 14:49",
  "host": "HP"
 }
